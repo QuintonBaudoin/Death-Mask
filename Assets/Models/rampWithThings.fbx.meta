@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: e3bfaf9c6dee0024dbead8fe1290c2ed
+timeCreated: 1456433196
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: modularWall_model_001:baseWall
+    100002: modularWall_model_001:baseWall1
+    100004: modularWall_model_001:baseWall2
+    100006: modularWall_model_001:transform1
+    100008: modularWall_model_001:transform2
+    100010: modularWall_model_001:transform3
+    100012: modularWall_model_001:transform4
+    100014: modularWall_model_001:transform5
+    100016: modularWall_model_001:transform6
+    100018: modularWallClothDoor_model_003:modularClothDoor
+    100020: modularWallShingles_model_002:modularShingles
+    100022: modularWallStairway_model_001:modularStairs
+    100024: modularWallWindowOpen_model_003:modularWindowOpen
+    100026: //RootNode
+    400000: modularWall_model_001:baseWall
+    400002: modularWall_model_001:baseWall1
+    400004: modularWall_model_001:baseWall2
+    400006: modularWall_model_001:transform1
+    400008: modularWall_model_001:transform2
+    400010: modularWall_model_001:transform3
+    400012: modularWall_model_001:transform4
+    400014: modularWall_model_001:transform5
+    400016: modularWall_model_001:transform6
+    400018: modularWallClothDoor_model_003:modularClothDoor
+    400020: modularWallShingles_model_002:modularShingles
+    400022: modularWallStairway_model_001:modularStairs
+    400024: modularWallWindowOpen_model_003:modularWindowOpen
+    400026: //RootNode
+    2300000: modularWall_model_001:baseWall2
+    3300000: modularWall_model_001:baseWall2
+    4300000: modularWall_model_001:baseWall2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 4eebd1a12e77b2a4b80c309e04a58e46
+timeCreated: 1456955556
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: modularWall_model_001:baseWall
+    100002: modularWall_model_001:baseWall1
+    100004: modularWall_model_001:baseWall2
+    100006: modularWall_model_001:transform1
+    100008: modularWall_model_001:transform2
+    100010: modularWall_model_001:transform3
+    100012: modularWall_model_001:transform4
+    100014: modularWall_model_001:transform5
+    100016: modularWall_model_001:transform6
+    100018: modularWallClothDoor_model_003:modularClothDoor
+    100020: modularWallShingles_model_002:modularShingles
+    100022: modularWallStairway_model_001:modularStairs
+    100024: modularWallWindowOpen_model_003:modularWindowOpen
+    100026: polySurface1
+    100028: polySurface1 1
+    100030: polySurface10
+    100032: polySurface11
+    100034: polySurface12
+    100036: polySurface13
+    100038: polySurface14
+    100040: polySurface15
+    100042: polySurface16
+    100044: polySurface17
+    100046: polySurface18
+    100048: polySurface19
+    100050: polySurface20
+    100052: polySurface21
+    100054: polySurface22
+    100056: polySurface26
+    100058: polySurface27
+    100060: polySurface28
+    100062: polySurface29
+    100064: polySurface3
+    100066: polySurface30
+    100068: polySurface31
+    100070: polySurface4
+    100072: polySurface5
+    100074: polySurface6
+    100076: polySurface7
+    100078: polySurface8
+    100080: polySurface9
+    100082: transform1
+    100084: transform10
+    100086: transform11
+    100088: transform12
+    100090: transform13
+    100092: transform14
+    100094: transform15
+    100096: transform16
+    100098: transform17
+    100100: transform18
+    100102: transform19
+    100104: transform2
+    100106: transform20
+    100108: transform21
+    100110: transform22
+    100112: transform23
+    100114: transform24
+    100116: transform25
+    100118: transform26
+    100120: transform27
+    100122: transform28
+    100124: transform3
+    100126: transform4
+    100128: transform5
+    100130: transform6
+    100132: transform7
+    100134: transform8
+    100136: transform9
+    100138: //RootNode
+    100140: polySurface23
+    100142: polySurface24
+    100144: polySurface25
+    100146: transform29
+    100148: transform30
+    100150: transform31
+    400000: modularWall_model_001:baseWall
+    400002: modularWall_model_001:baseWall1
+    400004: modularWall_model_001:baseWall2
+    400006: modularWall_model_001:transform1
+    400008: modularWall_model_001:transform2
+    400010: modularWall_model_001:transform3
+    400012: modularWall_model_001:transform4
+    400014: modularWall_model_001:transform5
+    400016: modularWall_model_001:transform6
+    400018: modularWallClothDoor_model_003:modularClothDoor
+    400020: modularWallShingles_model_002:modularShingles
+    400022: modularWallStairway_model_001:modularStairs
+    400024: modularWallWindowOpen_model_003:modularWindowOpen
+    400026: polySurface1
+    400028: polySurface1 1
+    400030: polySurface10
+    400032: polySurface11
+    400034: polySurface12
+    400036: polySurface13
+    400038: polySurface14
+    400040: polySurface15
+    400042: polySurface16
+    400044: polySurface17
+    400046: polySurface18
+    400048: polySurface19
+    400050: polySurface20
+    400052: polySurface21
+    400054: polySurface22
+    400056: polySurface26
+    400058: polySurface27
+    400060: polySurface28
+    400062: polySurface29
+    400064: polySurface3
+    400066: polySurface30
+    400068: polySurface31
+    400070: polySurface4
+    400072: polySurface5
+    400074: polySurface6
+    400076: polySurface7
+    400078: polySurface8
+    400080: polySurface9
+    400082: transform1
+    400084: transform10
+    400086: transform11
+    400088: transform12
+    400090: transform13
+    400092: transform14
+    400094: transform15
+    400096: transform16
+    400098: transform17
+    400100: transform18
+    400102: transform19
+    400104: transform2
+    400106: transform20
+    400108: transform21
+    400110: transform22
+    400112: transform23
+    400114: transform24
+    400116: transform25
+    400118: transform26
+    400120: transform27
+    400122: transform28
+    400124: transform3
+    400126: transform4
+    400128: transform5
+    400130: transform6
+    400132: transform7
+    400134: transform8
+    400136: transform9
+    400138: //RootNode
+    400140: polySurface23
+    400142: polySurface24
+    400144: polySurface25
+    400146: transform29
+    400148: transform30
+    400150: transform31
+    2300000: polySurface1
+    3300000: polySurface1
+    4300000: polySurface1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
