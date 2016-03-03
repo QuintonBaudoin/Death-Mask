@@ -1,49 +1,36 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InputHandler : MonoBehaviour
+public class InputHandler : Singleton<MonoBehaviour>
 {
+
     
+
     public float speed = 5.0f;
+    public float jumpSpeed = 5.0f;
+    public float jumpHeight = 5.0f;
+
+    int currentNode;
+
+
     KeyCode Left = KeyCode.A;
     KeyCode Right = KeyCode.D;
     KeyCode Up = KeyCode.W;
-    KeyCode Down = KeyCode.D;
+    KeyCode Down = KeyCode.S;
 
     KeyCode Jump = KeyCode.Space;
-    bool canJump = true;
+    bool jumping = true;
 
+    
     void Update()
     {
-        Vector3 pos = transform.position;
-
-        if (Input.GetKey(Left))
+        if(Input.GetKey(Right))
         {
-            pos.x-=speed*Time.deltaTime;
-        }
-        if (Input.GetKey(Right))
-        {
-            pos.x+=speed * Time.deltaTime;
-        }
-        if (Input.GetKey(Up))
-        {
-           //do shit
-        }
-        if (Input.GetKey(Down))
-        {
-            //do shit
-        }
-        if (Input.GetKey(Jump))
-        {
-            //
+          LevelPath.GetNodes();  
         }
 
-        transform.position = pos;
+
     }
 
-    void OnCollision(Collision c)
-    {
-       
-    }
 
 }
