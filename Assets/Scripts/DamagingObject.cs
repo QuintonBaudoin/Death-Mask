@@ -21,7 +21,7 @@ public class DamagingObject : MonoBehaviour
     
     void OnCollisionEnter(Collision coll)
     {
-        
+        GetComponent<IHealth>();
             print(gameObject.name + "Collided with " + coll.gameObject.name);
 
     }
