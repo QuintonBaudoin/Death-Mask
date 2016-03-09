@@ -6,6 +6,8 @@ public class PlayerCharacter : MonoBehaviour,IHealth
 {
 
 
+    private int Health;
+
     public float m_Speed = 5.0f;
    // public float m_jumpSpeed = 5.0f;
     public float m_JumpPower = 5.0f;
@@ -97,11 +99,11 @@ public class PlayerCharacter : MonoBehaviour,IHealth
 
     public void ModifyHealth(int damage)
     {
-        throw new NotImplementedException();
+       Health--;
     }
-
     public int ReturnHealth()
     {
-        throw new NotImplementedException();
+        return Health;
     }
+
 }
