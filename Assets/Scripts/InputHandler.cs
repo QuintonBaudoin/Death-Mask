@@ -1,84 +1,53 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(PlayerCharacter))]
 public class InputHandler : Singleton<MonoBehaviour>
 {
+    [SerializeField]
+    KeyCode Left = KeyCode.A;
+    [SerializeField]
+    KeyCode Right = KeyCode.D;
+    [SerializeField]
+    KeyCode Up = KeyCode.W;
+    [SerializeField]
+    KeyCode Down = KeyCode.S;
 
-    [SerializeField] GameObject WeaponA;
+    [SerializeField]
+    KeyCode Attack = KeyCode.K;
+
+    [SerializeField]
+    KeyCode Jump = KeyCode.Space;
 
 
-    public float speed = 5.0f;
-    public float jumpSpeed = 5.0f;
-    public float jumpHeight = 5.0f;
-    Vector3 direction;
+    PlayerCharacter m_Character;
 
-    [SerializeField] KeyCode Left = KeyCode.A;
-    [SerializeField] KeyCode Right = KeyCode.D;
-    [SerializeField] KeyCode Up = KeyCode.W;
-    [SerializeField] KeyCode Down = KeyCode.S;
-
-    [SerializeField] KeyCode K = KeyCode.K;
-
-    [SerializeField] KeyCode Jump = KeyCode.Space;
-    bool onGround = true;
-
-    Rigidbody m_Rigid;
-    
     void Start()
     {
-        m_Rigid = gameObject.GetComponent<Rigidbody>();
-
-        m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
+        m_Character = gameObject.GetComponent<PlayerCharacter>();
     }
     void Update()
     {
-        Vector3 velocity = gameObject.GetComponent<Rigidbody>().velocity;
 
-        if (onGround)
-        {
-            if (Input.GetKey(Right))
-            {
-                gameObject.transform.forward = new Vector3(0, 0, 1);
-                velocity.x = speed ;
-            }
+        bool jump = false;
+        bool attack = false;
+        int move = 0;
 
-            else if (Input.GetKey(Left))
-            {
-                gameObject.transform.forward = new Vector3(0, 0, -1);
-               velocity.x = -speed ;
-            }
-            else velocity.x = 0;
-            if(Input.GetKey(Jump))
-            {
-                
-                velocity.y = jumpHeight;
-            }
+        if (Input.GetKey(Right))
+            move = 1;
+        else if (Input.GetKey(Left))
+            move = -1;
+        if (Input.GetKey(Jump))
+            jump = true;
 
-            if (Input.GetKey(K))
-                Attack(true);
-            else
-            {
-                Attack(false);
-            }
-        }
+        if (Input.GetKey(Attack))
+            attack = true;
 
-
-
-
-        gameObject.GetComponent<Rigidbody>().velocity = velocity;
+        m_Character.ReceiveInput(move, jump, attack);
     }
 
 
-    void Attack(bool state)
-    {
-   
-      if(WeaponA.GetComponent<DamagingObject>())
-        {
-            WeaponA.GetComponent<DamagingObject>().active = state;
-        }
 
 
-
-    }
 
 }
