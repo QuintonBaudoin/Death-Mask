@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿
+
+using UnityEngine;
 using System.Collections;
 
 public class DamagingObject : MonoBehaviour
@@ -13,7 +15,7 @@ public class DamagingObject : MonoBehaviour
         }
         set
         {
-         
+
             _active = gameObject.GetComponent<Collider>().enabled = value;
             
         }
