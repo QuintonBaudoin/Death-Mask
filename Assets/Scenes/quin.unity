@@ -328,7 +328,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1375835540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.291, y: -0.0632813, z: -0.041366577}
+  m_LocalPosition: {x: 1.171, y: -0.0632813, z: -0.041366577}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1756804028}
@@ -342,10 +342,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1756804028}
   - 33: {fileID: 1756804027}
-  - 65: {fileID: 1756804026}
   - 23: {fileID: 1756804025}
   - 54: {fileID: 1756804029}
   - 114: {fileID: 1756804030}
+  - 114: {fileID: 1756804031}
+  - 136: {fileID: 1756804026}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -379,8 +380,8 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!65 &1756804026
-BoxCollider:
+--- !u!136 &1756804026
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -388,8 +389,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 1
+  m_Height: 3
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1756804027
 MeshFilter:
@@ -437,16 +439,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7883fac2df647754c9e05cce0b6901e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponA: {fileID: 1375835540}
-  speed: 5
-  jumpSpeed: 5
-  jumpHeight: 5
   Left: 97
   Right: 100
   Up: 119
   Down: 115
   K: 107
   Jump: 32
+--- !u!114 &1756804031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1756804024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169e1963fa21248408dcac9b2576efbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Speed: 5
+  m_JumpPower: 5
+  m_WeaponA: {fileID: 1375835540}
 --- !u!1 &1814103834
 GameObject:
   m_ObjectHideFlags: 0
