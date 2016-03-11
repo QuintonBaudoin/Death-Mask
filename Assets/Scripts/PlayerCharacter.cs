@@ -54,12 +54,11 @@ public class PlayerCharacter : MonoBehaviour,IHealth
     {
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
             movement = 0;
-        // gameObject.GetComponent<Animator>().SetFloat("runSpeed", Mathf.Abs(movement));
-
+      
 
         if (Mathf.Abs(movement) > 0)
         {
-            //gameObject.GetComponent<Animator>().Play("run");
+            
             GetComponent<Animator>().SetBool("moving", true);
             Vector3 forward = gameObject.transform.forward;
             forward.x = movement;
@@ -68,10 +67,10 @@ public class PlayerCharacter : MonoBehaviour,IHealth
            
         if(Mathf.Abs(movement) <= 0)
             GetComponent<Animator>().SetBool("moving", false);
-        //gameObject.GetComponent<Animator>().Play("idle");
+       
         Vector3 vel = m_Rigid.velocity;
         vel.x = movement;
-         
+        
         m_Rigid.velocity = vel;
     }
     void HandleJump(bool jump)
@@ -115,21 +114,20 @@ public class PlayerCharacter : MonoBehaviour,IHealth
         }
     }
 
-
-
     void CheckForGround()
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f))
-
+        if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f) || Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f))
         {
             m_OnGround = true;
         }
         else m_OnGround = false;
+
+        GetComponent<Animator>().SetBool("grounded", m_OnGround);
     }
 
- 
+    
 
     public void ModifyHealth(int damage)
     {
