@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class PlayerCharacter : MonoBehaviour,IDamageable
+public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
 {
 
 
@@ -80,6 +80,7 @@ public class PlayerCharacter : MonoBehaviour,IDamageable
     {
         m_Rigid = gameObject.GetComponent<Rigidbody>();
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
+        
     }
     void Update()
     {
@@ -178,10 +179,6 @@ public class PlayerCharacter : MonoBehaviour,IDamageable
 
         GetComponent<Animator>().SetBool("grounded", m_OnGround);
     }
-
-    -0.0486
-    -0.0125
-    -0.0237
 
 
     public void TakeDamage()
