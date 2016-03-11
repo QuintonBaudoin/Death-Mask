@@ -18,17 +18,18 @@ public class PlayerCharacter : MonoBehaviour,IHealth
     bool m_Orouch;
     Rigidbody m_Rigid;
 
+
+
     [SerializeField]
-    GameObject m_WeaponA;
+   public GameObject m_WeaponA;
 
 
-    void Start()
+   void Start()
     {
         m_Rigid = gameObject.GetComponent<Rigidbody>();
-
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
     }
-    void Update()
+   void Update()
     {
         CheckForGround();
     }
@@ -39,19 +40,22 @@ public class PlayerCharacter : MonoBehaviour,IHealth
     {
         if(direction > 1)
         direction = direction / direction;
+
+            HandleMovement(direction * m_Speed);
+            HandleJump(jump);
         
-        HandleMovement(direction * m_Speed);
-        HandleJump(jump);
-        HandleAttack(attack);
+        
+            HandleAttack(attack);
 
     }
 
 
     void HandleMovement(float movement)
     {
-      
-        gameObject.GetComponent<Animator>().SetFloat("runSpeed", Mathf.Abs(movement));
-        
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+            movement = 0;
+        // gameObject.GetComponent<Animator>().SetFloat("runSpeed", Mathf.Abs(movement));
+
 
         if (Mathf.Abs(movement) > 0)
         {
@@ -72,8 +76,19 @@ public class PlayerCharacter : MonoBehaviour,IHealth
     }
     void HandleJump(bool jump)
     {
-       if(m_OnGround && jump)
+       if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+           jump = false;
+
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("jump"))
+           jump = false;
+
+        if (m_OnGround && jump)
         {
+            
+
+            
+
+            GetComponent<Animator>().SetTrigger("jump");
             Vector3 vel = m_Rigid.velocity;
 
             vel.y = m_JumpPower;
@@ -83,10 +98,19 @@ public class PlayerCharacter : MonoBehaviour,IHealth
              
     }
     void HandleAttack(bool attack)
-    {if (m_WeaponA == null)
+    {
+
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+          return;
+        if (m_WeaponA == null)
             return;
+        
         if (m_WeaponA.GetComponent<DamagingObject>())
-        {
+        {  
+            if(attack == true)
+            GetComponent<Animator>().SetTrigger("attack");
+           
+
             m_WeaponA.GetComponent<DamagingObject>().active = attack;
         }
     }
