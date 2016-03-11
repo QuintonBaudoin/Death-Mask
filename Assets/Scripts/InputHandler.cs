@@ -28,7 +28,7 @@ public class InputHandler : Singleton<MonoBehaviour>
     }
     void Update()
     {
-
+        
         bool jump = false;
         bool attack = false;
         int move = 0;
