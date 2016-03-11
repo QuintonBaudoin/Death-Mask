@@ -167,7 +167,175 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AnnaRig_MAINSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_l_Leg_HipSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_l_Leg_HipSHJnt/AnnaRig_l_Leg_KneeSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_l_Leg_HipSHJnt/AnnaRig_l_Leg_KneeSHJnt/AnnaRig_l_Leg_AnkleSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_l_Leg_HipSHJnt/AnnaRig_l_Leg_KneeSHJnt/AnnaRig_l_Leg_AnkleSHJnt/AnnaRig_l_Leg_BallSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_l_Leg_HipSHJnt/AnnaRig_l_Leg_KneeSHJnt/AnnaRig_l_Leg_AnkleSHJnt/AnnaRig_l_Leg_BallSHJnt/AnnaRig_l_Leg_ToeSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_r_Leg_HipSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_r_Leg_HipSHJnt/AnnaRig_r_Leg_KneeSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_r_Leg_HipSHJnt/AnnaRig_r_Leg_KneeSHJnt/AnnaRig_r_Leg_AnkleSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_r_Leg_HipSHJnt/AnnaRig_r_Leg_KneeSHJnt/AnnaRig_r_Leg_AnkleSHJnt/AnnaRig_r_Leg_BallSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_r_Leg_HipSHJnt/AnnaRig_r_Leg_KneeSHJnt/AnnaRig_r_Leg_AnkleSHJnt/AnnaRig_r_Leg_BallSHJnt/AnnaRig_r_Leg_ToeSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_01_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_01_01SHJnt/AnnaRig_l_Finger_01_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_01_01SHJnt/AnnaRig_l_Finger_01_02SHJnt/AnnaRig_l_Finger_01_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_01_01SHJnt/AnnaRig_l_Finger_01_02SHJnt/AnnaRig_l_Finger_01_03SHJnt/AnnaRig_l_Finger_01_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_02_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_02_01SHJnt/AnnaRig_l_Finger_02_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_02_01SHJnt/AnnaRig_l_Finger_02_02SHJnt/AnnaRig_l_Finger_02_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_02_01SHJnt/AnnaRig_l_Finger_02_02SHJnt/AnnaRig_l_Finger_02_03SHJnt/AnnaRig_l_Finger_02_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_03_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_03_01SHJnt/AnnaRig_l_Finger_03_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_03_01SHJnt/AnnaRig_l_Finger_03_02SHJnt/AnnaRig_l_Finger_03_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_03_01SHJnt/AnnaRig_l_Finger_03_02SHJnt/AnnaRig_l_Finger_03_03SHJnt/AnnaRig_l_Finger_03_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_04_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_04_01SHJnt/AnnaRig_l_Finger_04_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_04_01SHJnt/AnnaRig_l_Finger_04_02SHJnt/AnnaRig_l_Finger_04_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Finger_04_01SHJnt/AnnaRig_l_Finger_04_02SHJnt/AnnaRig_l_Finger_04_03SHJnt/AnnaRig_l_Finger_04_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Thumb_01_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Thumb_01_01SHJnt/AnnaRig_l_Thumb_01_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Thumb_01_01SHJnt/AnnaRig_l_Thumb_01_02SHJnt/AnnaRig_l_Thumb_01_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_l_Arm_ClavicleSHJnt/AnnaRig_l_Arm_ShoulderSHJnt/AnnaRig_l_Arm_ElbowSHJnt/AnnaRig_l_Arm_WristSHJnt/AnnaRig_l_Thumb_01_01SHJnt/AnnaRig_l_Thumb_01_02SHJnt/AnnaRig_l_Thumb_01_03SHJnt/AnnaRig_l_Thumb_01_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_Neck_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_Neck_01SHJnt/AnnaRig_Neck_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_Neck_01SHJnt/AnnaRig_Neck_02SHJnt/AnnaRig_Neck_TopSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_Neck_01SHJnt/AnnaRig_Neck_02SHJnt/AnnaRig_Neck_TopSHJnt/AnnaRig_Head_TopSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_01_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_01_01SHJnt/AnnaRig_r_Finger_01_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_01_01SHJnt/AnnaRig_r_Finger_01_02SHJnt/AnnaRig_r_Finger_01_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_01_01SHJnt/AnnaRig_r_Finger_01_02SHJnt/AnnaRig_r_Finger_01_03SHJnt/AnnaRig_r_Finger_01_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_02_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_02_01SHJnt/AnnaRig_r_Finger_02_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_02_01SHJnt/AnnaRig_r_Finger_02_02SHJnt/AnnaRig_r_Finger_02_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_02_01SHJnt/AnnaRig_r_Finger_02_02SHJnt/AnnaRig_r_Finger_02_03SHJnt/AnnaRig_r_Finger_02_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_03_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_03_01SHJnt/AnnaRig_r_Finger_03_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_03_01SHJnt/AnnaRig_r_Finger_03_02SHJnt/AnnaRig_r_Finger_03_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_03_01SHJnt/AnnaRig_r_Finger_03_02SHJnt/AnnaRig_r_Finger_03_03SHJnt/AnnaRig_r_Finger_03_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_04_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_04_01SHJnt/AnnaRig_r_Finger_04_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_04_01SHJnt/AnnaRig_r_Finger_04_02SHJnt/AnnaRig_r_Finger_04_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Finger_04_01SHJnt/AnnaRig_r_Finger_04_02SHJnt/AnnaRig_r_Finger_04_03SHJnt/AnnaRig_r_Finger_04_04SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Thumb_01_01SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Thumb_01_01SHJnt/AnnaRig_r_Thumb_01_02SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Thumb_01_01SHJnt/AnnaRig_r_Thumb_01_02SHJnt/AnnaRig_r_Thumb_01_03SHJnt
+        weight: 1
+      - path: AnnaRig_MAINSHJnt/AnnaRig_ROOTSHJnt/AnnaRig_Spine_01SHJnt/AnnaRig_Spine_02SHJnt/AnnaRig_Spine_03SHJnt/AnnaRig_Spine_04SHJnt/AnnaRig_Spine_TopSHJnt/AnnaRig_r_Arm_ClavicleSHJnt/AnnaRig_r_Arm_ShoulderSHJnt/AnnaRig_r_Arm_ElbowSHJnt/AnnaRig_r_Arm_WristSHJnt/AnnaRig_r_Thumb_01_01SHJnt/AnnaRig_r_Thumb_01_02SHJnt/AnnaRig_r_Thumb_01_03SHJnt/AnnaRig_r_Thumb_01_04SHJnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

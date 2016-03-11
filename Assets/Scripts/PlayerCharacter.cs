@@ -2,16 +2,19 @@
 using System.Collections;
 using System;
 
-public class PlayerCharacter : MonoBehaviour,IHealth
+public class PlayerCharacter : MonoBehaviour,IDamageable
 {
 
 
-    private int Health;
+    private int _Health;
+    private int _MaxHealth;
+    private bool _Alive;
+    
 
 
 
 
-    public float m_Speed = 1.0f;
+    public float m_Speed = 5.0f;
    // public float m_jumpSpeed = 5.0f;
     public float m_JumpPower = 5.0f;
     bool m_OnGround;
@@ -23,13 +26,62 @@ public class PlayerCharacter : MonoBehaviour,IHealth
     [SerializeField]
    public GameObject m_WeaponA;
 
+    public int Health
+    {
+        get
+        {
+            return _Health;
+        }
 
-   void Start()
+        set
+        {
+            if (value > MaxHealth)
+                value = MaxHealth;
+            _Health = value;
+
+            if (Health <= 0)
+                Alive = false;
+        }
+    }
+
+    public int MaxHealth
+    {
+        get
+        {
+            return _MaxHealth;
+        }
+
+        set
+        {
+            if (value <= 0)
+                value = 1;
+            _MaxHealth = value;
+        }
+    }
+
+    public bool Alive
+    {
+        get
+        {
+            return _Alive;
+        }
+
+        set
+        {
+            _Alive = value;
+
+            if (!Alive)
+                OnDeath();
+
+        }
+    }
+
+    void Start()
     {
         m_Rigid = gameObject.GetComponent<Rigidbody>();
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
     }
-   void Update()
+    void Update()
     {
         CheckForGround();
     }
@@ -127,15 +179,18 @@ public class PlayerCharacter : MonoBehaviour,IHealth
         GetComponent<Animator>().SetBool("grounded", m_OnGround);
     }
 
-    
+    -0.0486
+    -0.0125
+    -0.0237
 
-    public void ModifyHealth(int damage)
+
+    public void TakeDamage()
     {
-       Health--;
-    }
-    public int ReturnHealth()
-    {
-        return Health;
+        Health--;
     }
 
+    public void OnDeath()
+    {
+        print("Im dead");
+    }
 }
