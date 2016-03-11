@@ -15,7 +15,6 @@ public class InputHandler : Singleton<MonoBehaviour>
 
     [SerializeField]
     KeyCode Attack = KeyCode.K;
-
     [SerializeField]
     KeyCode Jump = KeyCode.Space;
 
@@ -37,10 +36,10 @@ public class InputHandler : Singleton<MonoBehaviour>
             move = 1;
         else if (Input.GetKey(Left))
             move = -1;
-        if (Input.GetKey(Jump))
+        if (Input.GetKeyDown(Jump))
             jump = true;
 
-        if (Input.GetKey(Attack))
+        if (Input.GetKeyDown(Attack))
             attack = true;
 
         m_Character.ReceiveInput(move, jump, attack);
