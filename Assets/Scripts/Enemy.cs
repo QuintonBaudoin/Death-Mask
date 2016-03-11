@@ -73,9 +73,8 @@ public class Enemy : MonoBehaviour, IDamageable
         Health --;
         if(Health < 1)
         {
-            Debug.Log(Health);
-            transform.parent = null;
-            Destroy(parent);
+            //Debug.Log(Health);
+            parent.GetComponent<Pathing>().enabled = !parent.GetComponent<Pathing>().enabled;
             anim.SetTrigger("Dead");
         }
     }
