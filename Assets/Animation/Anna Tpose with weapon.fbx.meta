@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 66c99dbcb509574469a892152a27ea31
-timeCreated: 1457564382
+guid: 1be0120b9ba3fe34ca501ee0ba250dfc
+timeCreated: 1457731772
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -81,6 +81,7 @@ ModelImporter:
     100146: AnnaRig_Spine_04SHJnt
     100148: AnnaRig_Spine_TopSHJnt
     100150: Mesh
+    100152: Sabre_lowpoly:polySurface33
     400000: //RootNode
     400002: anna_body
     400004: anna_bun
@@ -157,11 +158,15 @@ ModelImporter:
     400146: AnnaRig_Spine_04SHJnt
     400148: AnnaRig_Spine_TopSHJnt
     400150: Mesh
+    400152: Sabre_lowpoly:polySurface33
+    2300000: Sabre_lowpoly:polySurface33
+    3300000: Sabre_lowpoly:polySurface33
     4300000: anna_body
     4300002: anna_hair
     4300004: anna_leftbang
     4300006: anna_rightbang
     4300008: anna_bun
+    4300010: Sabre_lowpoly:polySurface33
     9500000: //RootNode
     13700000: anna_body
     13700002: anna_bun
