@@ -2,16 +2,19 @@
 using System.Collections;
 using System;
 
-public class PlayerCharacter : MonoBehaviour,IHealth
+public class PlayerCharacter : MonoBehaviour,IDamageable
 {
 
 
-    private int Health;
+    private int _Health;
+    private int _MaxHealth;
+    private bool _Alive;
+    
 
 
 
 
-    public float m_Speed = 1.0f;
+    public float m_Speed = 5.0f;
    // public float m_jumpSpeed = 5.0f;
     public float m_JumpPower = 5.0f;
     bool m_OnGround;
@@ -23,13 +26,62 @@ public class PlayerCharacter : MonoBehaviour,IHealth
     [SerializeField]
    public GameObject m_WeaponA;
 
+    public int Health
+    {
+        get
+        {
+            return _Health;
+        }
 
-   void Start()
+        set
+        {
+            if (value > MaxHealth)
+                value = MaxHealth;
+            _Health = value;
+
+            if (Health <= 0)
+                Alive = false;
+        }
+    }
+
+    public int MaxHealth
+    {
+        get
+        {
+            return _MaxHealth;
+        }
+
+        set
+        {
+            if (value <= 0)
+                value = 1;
+            _MaxHealth = value;
+        }
+    }
+
+    public bool Alive
+    {
+        get
+        {
+            return _Alive;
+        }
+
+        set
+        {
+            _Alive = value;
+
+            if (!Alive)
+                OnDeath();
+
+        }
+    }
+
+    void Start()
     {
         m_Rigid = gameObject.GetComponent<Rigidbody>();
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
     }
-   void Update()
+    void Update()
     {
         CheckForGround();
     }
@@ -54,12 +106,11 @@ public class PlayerCharacter : MonoBehaviour,IHealth
     {
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
             movement = 0;
-        // gameObject.GetComponent<Animator>().SetFloat("runSpeed", Mathf.Abs(movement));
-
+      
 
         if (Mathf.Abs(movement) > 0)
         {
-            //gameObject.GetComponent<Animator>().Play("run");
+            
             GetComponent<Animator>().SetBool("moving", true);
             Vector3 forward = gameObject.transform.forward;
             forward.x = movement;
@@ -68,10 +119,10 @@ public class PlayerCharacter : MonoBehaviour,IHealth
            
         if(Mathf.Abs(movement) <= 0)
             GetComponent<Animator>().SetBool("moving", false);
-        //gameObject.GetComponent<Animator>().Play("idle");
+       
         Vector3 vel = m_Rigid.velocity;
         vel.x = movement;
-         
+        
         m_Rigid.velocity = vel;
     }
     void HandleJump(bool jump)
@@ -115,29 +166,31 @@ public class PlayerCharacter : MonoBehaviour,IHealth
         }
     }
 
-
-
     void CheckForGround()
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f))
-
+        if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f) || Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f))
         {
             m_OnGround = true;
         }
         else m_OnGround = false;
+
+        GetComponent<Animator>().SetBool("grounded", m_OnGround);
     }
 
- 
+    -0.0486
+    -0.0125
+    -0.0237
 
-    public void ModifyHealth(int damage)
+
+    public void TakeDamage()
     {
-       Health--;
-    }
-    public int ReturnHealth()
-    {
-        return Health;
+        Health--;
     }
 
+    public void OnDeath()
+    {
+        print("Im dead");
+    }
 }
