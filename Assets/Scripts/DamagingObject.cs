@@ -7,7 +7,6 @@ public class DamagingObject : MonoBehaviour
 {
     bool _active;
 
-    public int Damage;
     public bool active
     {
         get
@@ -22,12 +21,16 @@ public class DamagingObject : MonoBehaviour
         }
     }
     
+    void Start()
+    {
+        GetComponent<Collider>().isTrigger = true;
+    }
+
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.GetComponent<IHealth>() == null)
+        if (coll.GetComponent<IDamageable>() == null)
             return;
-        coll.gameObject.GetComponent<IHealth>().ModifyHealth(Damage);
-        print(coll.gameObject.GetComponent<IHealth>().ReturnHealth());
+        coll.GetComponent<IDamageable>().TakeDamage();
     }
 
 }
