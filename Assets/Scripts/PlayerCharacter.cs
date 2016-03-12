@@ -15,16 +15,17 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
 
 
     public float m_Speed = 5.0f;
+
+    public float m_CurrentSpeed;
+
    // public float m_jumpSpeed = 5.0f;
     public float m_JumpPower = 5.0f;
     bool m_OnGround;
     bool m_Orouch;
     Rigidbody m_Rigid;
 
-
-
     [SerializeField]
-   public GameObject m_WeaponA;
+    public GameObject m_WeaponA;
 
     public int Health
     {
@@ -85,6 +86,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     void Update()
     {
         CheckForGround();
+        CheckCurrentSpeed();
     }
    
 
@@ -105,9 +107,12 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
 
     void HandleMovement(float movement)
     {
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
             movement = 0;
-      
+
+
+        if (m_CurrentSpeed <= 1.5 && !m_OnGround)
+            return;
 
         if (Mathf.Abs(movement) > 0)
         {
@@ -123,6 +128,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
        
         Vector3 vel = m_Rigid.velocity;
         vel.x = movement;
+        vel.z = 0;
         
         m_Rigid.velocity = vel;
     }
@@ -165,6 +171,20 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
 
             m_WeaponA.GetComponent<DamagingObject>().active = attack;
         }
+    }
+
+    void CheckCurrentSpeed()
+    {
+       // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
+    
+
+        m_CurrentSpeed = Vector3.Magnitude(GetComponent<Rigidbody>().velocity);
+
+        if(m_CurrentSpeed < .01)
+        {
+            m_CurrentSpeed = 0;
+        }
+
     }
 
     void CheckForGround()
