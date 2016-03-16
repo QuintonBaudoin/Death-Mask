@@ -21,6 +21,11 @@ public class DamagingObject : MonoBehaviour
         }
     }
     
+    void Start()
+    {
+        GetComponent<Collider>().isTrigger = true;
+    }
+
     void OnTriggerEnter(Collider coll)
     {
         if (coll.GetComponent<IDamageable>() == null)
