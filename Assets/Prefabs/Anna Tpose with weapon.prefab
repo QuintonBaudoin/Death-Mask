@@ -2274,6 +2274,7 @@ MonoBehaviour:
   Down: 115
   Attack: 107
   Jump: 32
+  isOn: 1
 --- !u!114 &11497926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2286,6 +2287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Speed: 5
+  m_CurrentSpeed: 0
   m_JumpPower: 5
   m_WeaponA: {fileID: 189700}
 --- !u!136 &13694138
