@@ -28,4 +28,9 @@ public class Dialog
     {
 
     }
+
+    void ReadFile()
+    {
+
+    }
 }
