@@ -1,35 +1,38 @@
-﻿using UnityEngine;
+﻿/*
+To set up a camera:
+    1) Create an empty gameobject named Camera.
+    2) Attach this script to it.
+    3) Create a new camera and make it a child of Camera.
+    4) Tag the child as MainCamera.
+*/
+
+using UnityEngine;
 using System.Collections;
 [ExecuteInEditMode]
 public class DMCamera : MonoBehaviour
-{    
-    public float offset;
-    [Header("Lock to axis (select only one)")]
-    public bool xAxis;
-    public bool yAxis;
-    public bool zAxis;
-
+{
     Transform followTarget;
     Transform cameraChild;
-
-    public float leftDistance = 3f;
-    public float rightDistance = 10f;
-    public float followSpeed = 1f;
-    public float smoothing = 2f;
     Vector3 leftBoundary, rightBoundary;
 
+    public float smoothing = 2f;
+
     float FOV;
-    /// temporary FOV fix
+    //temporary FOV fix
     //this represents the difference between unity's FOV and this FOV.
     //We add this to Camera.main.fieldOfView to make them the same.
-    float tempFOVfix = 27.0f;   //only if unity's FOV is set to 60.
-    //unity FOV needs to subtract 38.7 to get be the same as this FOV.
+
+    //Only if unity's FOV is set to 60,
+    //unity FOV needs to subtract 38.7 to be the same as this FOV.
     //this FOV needs to add 27 to be the same as unity FOV.
+    float tempFOVfix = 27.0f;
 
     //void MoveCamera(float differenceAngle)
     //{
     //    Debug.Log(differenceAngle);
-    //    transform.position = Vector3.Lerp(transform.position, transform.position + (followTarget.forward * differenceAngle * 0.2f), Time.deltaTime * smoothing);
+    //    transform.position = Vector3.Lerp(transform.position, transform.position + 
+    //                                     (followTarget.forward * differenceAngle * 0.2f), 
+    //                                      Time.deltaTime * smoothing);
     //}
     void Start()
     {
@@ -48,37 +51,17 @@ public class DMCamera : MonoBehaviour
 
     void Update()
     {
-        #region dotStuff
-        //We want to calc some threshhold and use the dotproduct to determine if an object has reached the edge of the screen
-        //that threshhold will the the direction vector calculated from the cameras field of view
-        //given the fov, calculate the direction vector by (fov/2) + x = 90 or x = 90 - (fov/2)
-        //alternatively we can use the parall
-        //float Rangle = (180 - Camera.main.fieldOfView) / 2;
-        //Rangle = Rangle * (Mathf.PI / 180); //convert to rads
-        //float Langle = 180 - Camera.main.fieldOfView;
-        //Langle = Langle * (Mathf.PI / 180);
-
-        //Vector3 screenEdgeR = new Vector3(Mathf.Cos(Rangle), 0, Mathf.Sin(Rangle) * -1);
-        //Vector3 screenEdgeL = new Vector3(Mathf.Cos(Langle), 0, Mathf.Sin(Langle)* -1);
-        #endregion
-
         Vector3 followTargetDir = Vector3.Normalize(followTarget.position - transform.position);
         followTargetDir.y = transform.position.y;
 
-        Debug.DrawLine(transform.position, transform.position + rightBoundary * 25, Color.red);
-        Debug.DrawLine(transform.position, transform.position + leftBoundary * 25, Color.red);
-        Debug.DrawLine(transform.position, transform.position + followTargetDir * 25, Color.white);
+        ///Draw FOV lines
+        //Debug.DrawLine(transform.position, transform.position + rightBoundary * 25, Color.red);
+        //Debug.DrawLine(transform.position, transform.position + leftBoundary * 25, Color.red);
+        //Debug.DrawLine(transform.position, transform.position + followTargetDir * 25, Color.white);
 
         float angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
         float angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
-        float camToTargetAngle = Vector3.Dot(followTargetDir, cameraChild.forward);
-        float camToTargetAngle2 = Vector3.Angle(followTargetDir, cameraChild.forward);
-
-        //Debug.Log("cameraPos: " + transform.position);
-        //Debug.Log("playerPos: " + followTarget.position);
-        Debug.Log("angleToEdgeR: " + angleToEdgeR);
-        Debug.Log("angleToEdgeL: " + angleToEdgeL);
-        Debug.Log("camToTargetAngle: " + camToTargetAngle);
+        //float camToTargetAngle = Vector3.Angle(followTargetDir, cameraChild.forward);
 
         //Vector3 newCamPos = followTarget.position - transform.position;
         //Debug.Log("newCamPos: " + newCamPos);
@@ -87,17 +70,14 @@ public class DMCamera : MonoBehaviour
         //newCamPos.y = newCamPos.y * followTarget.forward.y;
         //newCamPos.z = newCamPos.z * followTarget.forward.z;
 
-        if (camToTargetAngle2 >= 3)
+        if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
         {
-            if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
-            {
-                Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
-                transform.position = Vector3.Lerp(transform.position, transform.position + (followTarget.forward * 5.4f), Time.deltaTime * smoothing);
-                return;
-            }
-            
-            //transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
+            //Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
+            transform.position = Vector3.Lerp(transform.position, transform.position + 
+                                             (followTarget.forward * 5.3f), Time.deltaTime * smoothing);
         }
+            
+        //transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
         //MoveCamera(camToTargetAngle2);
 
     }
