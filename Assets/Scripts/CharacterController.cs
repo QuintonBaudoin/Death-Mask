@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(PlayerCharacter))]
-public class InputHandler : Singleton<MonoBehaviour>
+public class CharacterController : MonoBehaviour
 {
     [SerializeField]
     KeyCode Left = KeyCode.A;
@@ -18,6 +18,8 @@ public class InputHandler : Singleton<MonoBehaviour>
     [SerializeField]
     KeyCode Jump = KeyCode.Space;
 
+    [SerializeField]
+    bool isOn = true;
 
     PlayerCharacter m_Character;
 
@@ -27,20 +29,25 @@ public class InputHandler : Singleton<MonoBehaviour>
     }
     void Update()
     {
+
         
         bool jump = false;
         bool attack = false;
         int move = 0;
 
-        if (Input.GetKey(Right))
-            move = 1;
-        else if (Input.GetKey(Left))
-            move = -1;
-        if (Input.GetKeyDown(Jump))
-            jump = true;
+        if (isOn)
+        {
 
-        if (Input.GetKeyDown(Attack))
-            attack = true;
+            if (Input.GetKey(Right))
+                move = 1;
+            else if (Input.GetKey(Left))
+                move = -1;
+            if (Input.GetKeyDown(Jump))
+                jump = true;
+
+            if (Input.GetKeyDown(Attack))
+                attack = true;
+        }
 
         m_Character.ReceiveInput(move, jump, attack);
     }

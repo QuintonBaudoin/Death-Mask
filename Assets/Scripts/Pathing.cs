@@ -19,10 +19,22 @@ public class Pathing : MonoBehaviour
 
     void OnTriggerEnter(Collider co)
     {
-        if( edgeBounce && co.gameObject.tag == "Edge")
-        {   // Invert directional force 
+        Quaternion targetf = Quaternion.Euler(0, 270, 0); // Vector3 Direction Right
+        Quaternion targetb = Quaternion.Euler(0, 90, 0);  // Vector3 Direction Left
+
+
+        if ( edgeBounce && co.gameObject.tag == "Edge")
+        {   
             speed = speed * -1;
-            Debug.Log("Hit");
+            if(transform.rotation == targetf)
+            {
+                transform.rotation = targetb;
+            }
+            else
+            {
+                transform.rotation = targetf;
+            }
+            //Debug.Log("Hit");
         }
         if(co.gameObject.tag == "DeathFloor")
         {
