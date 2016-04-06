@@ -26,7 +26,11 @@ public class DMCamera : MonoBehaviour
     //unity FOV needs to subtract 38.7 to get be the same as this FOV.
     //this FOV needs to add 27 to be the same as unity FOV.
 
-
+    //void MoveCamera(float differenceAngle)
+    //{
+    //    Debug.Log(differenceAngle);
+    //    transform.position = Vector3.Lerp(transform.position, transform.position + (followTarget.forward * differenceAngle * 0.2f), Time.deltaTime * smoothing);
+    //}
     void Start()
     {
         followTarget = GameObject.FindGameObjectWithTag("Player").transform;
@@ -67,15 +71,35 @@ public class DMCamera : MonoBehaviour
 
         float angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
         float angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
+        float camToTargetAngle = Vector3.Dot(followTargetDir, cameraChild.forward);
+        float camToTargetAngle2 = Vector3.Angle(followTargetDir, cameraChild.forward);
 
+        //Debug.Log("cameraPos: " + transform.position);
+        //Debug.Log("playerPos: " + followTarget.position);
         Debug.Log("angleToEdgeR: " + angleToEdgeR);
         Debug.Log("angleToEdgeL: " + angleToEdgeL);
+        Debug.Log("camToTargetAngle: " + camToTargetAngle);
 
-        if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
+        //Vector3 newCamPos = followTarget.position - transform.position;
+        //Debug.Log("newCamPos: " + newCamPos);
+        //Debug.Log("followTargetForward: " + followTarget.forward);
+        //newCamPos.x = newCamPos.x * followTarget.forward.x;
+        //newCamPos.y = newCamPos.y * followTarget.forward.y;
+        //newCamPos.z = newCamPos.z * followTarget.forward.z;
+
+        if (camToTargetAngle2 >= 3)
         {
-            Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
-            transform.position = Vector3.Lerp(transform.position, transform.position + followTarget.position, Time.deltaTime * smoothing);
+            if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
+            {
+                Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
+                transform.position = Vector3.Lerp(transform.position, transform.position + (followTarget.forward * 5.4f), Time.deltaTime * smoothing);
+                return;
+            }
+            
+            //transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
         }
+        //MoveCamera(camToTargetAngle2);
+
     }
 
 }
