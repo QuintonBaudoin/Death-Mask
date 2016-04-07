@@ -167,9 +167,10 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     }
     void HandleAirBorn()
     {
-        if (m_OnGround)
-            return;
-        m_Rigid.AddForce(transform.forward);
+
+       // RaycastHit hit;
+
+      //  if(Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f) || Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f)
         
     }
 
@@ -191,7 +192,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f) || Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f))
+        if (Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f))
         {
             m_OnGround = true;
         }
