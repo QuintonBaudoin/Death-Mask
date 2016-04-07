@@ -5,31 +5,38 @@ using System.Collections;
 public class GUIManager : MonoBehaviour
 {
     private Slider HealthBar;
-
     private static GUIManager instance;
 
     public static GUIManager Instance
     {
         get
         {
-            if(instance == null)
-            { instance = new GUIManager(); }
+            if (instance == null)
+            {
+                instance = (GUIManager)FindObjectOfType(typeof(GUIManager));
+            }
             return instance;
         }
     }
 
-    GUIManager() { }
-
-    void Awake()
+    void Start()
     {
-        HealthBar = (GameObject.Find("HealthSlider") as object) as Slider; 
+        var v = FindObjectsOfType(typeof(Slider));
+        foreach(Slider s in v)
+        {
+            if (s.gameObject.name == "HealthSlider") ;
+                HealthBar = s;
+        }
     }
 
 
-    bool UpdateHealthBar(int min, int max)
+    public bool UpdateHealthBar(int val, int max)
     {
+        if (val < HealthBar.minValue)
+            return false;
 
-
-        return false;
+        HealthBar.maxValue = max;
+        HealthBar.value = val;
+        return true;
     }
 }
