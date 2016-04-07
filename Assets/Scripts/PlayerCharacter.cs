@@ -107,9 +107,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
             movement = 0;
 
 
-        if (m_CurrentSpeed <= 1.5 && !m_OnGround)
-            return;
-
         if (Mathf.Abs(movement) > 0)
         {
             
@@ -165,14 +162,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
             m_WeaponA.GetComponent<DamagingObject>().active = attack;
         }
     }
-    void HandleAirBorn()
-    {
-
-       // RaycastHit hit;
-
-      //  if(Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f) || Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f)
-        
-    }
 
     void CheckCurrentSpeed()
     {
@@ -213,4 +202,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     {
         print("Im dead");
     }
+
+
 }
