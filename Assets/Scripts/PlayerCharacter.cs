@@ -2,14 +2,14 @@
 using System.Collections;
 using System;
 
-public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
+public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
 {
 
 
     private int _Health;
     private int _MaxHealth;
     private bool _Alive;
-
+    
 
 
 
@@ -18,7 +18,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
 
     public float m_CurrentSpeed;
 
-    // public float m_jumpSpeed = 5.0f;
+   // public float m_jumpSpeed = 5.0f;
     public float m_JumpPower = 5.0f;
     bool m_OnGround;
     bool m_Orouch;
@@ -59,7 +59,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
             _MaxHealth = value;
         }
     }
-
     public bool Alive
     {
         get
@@ -81,65 +80,68 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
     {
         m_Rigid = gameObject.GetComponent<Rigidbody>();
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
-
+        
     }
-    void FixedUpdate()
+    void Update()
     {
         CheckForGround();
         CheckCurrentSpeed();
     }
+   
 
 
-    //get input from the keyboard
-    public void ReceiveInput(int direction, bool jump, bool attack)
+    public void ReceiveInput(int direction,bool jump, bool attack)
     {
-        if (direction > 1)
-            direction = direction / direction;
+        if(direction > 1)
+        direction = direction / direction;
 
-        HandleMovement(direction * m_Speed);
-        HandleJump(jump);
-        HandleAttack(attack);
+            HandleMovement(direction * m_Speed);
+            HandleJump(jump);      
+            HandleAttack(attack);
+
+
 
     }
 
 
     void HandleMovement(float movement)
     {
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
             movement = 0;
 
 
-        //if (m_CurrentSpeed <= 1.5 && !m_OnGround)
-        //    return;
+        if (m_CurrentSpeed <= 1.5 && !m_OnGround)
+            return;
 
         if (Mathf.Abs(movement) > 0)
         {
-
+            
             GetComponent<Animator>().SetBool("moving", true);
             Vector3 forward = gameObject.transform.forward;
             forward.x = movement;
             gameObject.transform.forward = forward;
         }
-
-        if (Mathf.Abs(movement) <= 0)
+           
+        if(Mathf.Abs(movement) <= 0)
             GetComponent<Animator>().SetBool("moving", false);
-
+       
         Vector3 vel = m_Rigid.velocity;
         vel.x = movement;
         vel.z = 0;
-
+        
         m_Rigid.velocity = vel;
     }
     void HandleJump(bool jump)
     {
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            jump = false;
+       if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+           jump = false;
 
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("jump"))
-            jump = false;
+           jump = false;
 
         if (m_OnGround && jump)
-        {
+        {         
+                    
             GetComponent<Animator>().SetTrigger("jump");
             Vector3 vel = m_Rigid.velocity;
 
@@ -147,21 +149,21 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
 
             m_Rigid.velocity = vel;
         }
-
+             
     }
     void HandleAttack(bool attack)
     {
 
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            return;
+          return;
         if (m_WeaponA == null)
             return;
-
+        
         if (m_WeaponA.GetComponent<DamagingObject>())
-        {
-            if (attack == true)
-                GetComponent<Animator>().SetTrigger("attack");
-
+        {  
+            if(attack == true)
+            GetComponent<Animator>().SetTrigger("attack");
+           
 
             m_WeaponA.GetComponent<DamagingObject>().active = attack;
         }
@@ -169,12 +171,12 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
 
     void CheckCurrentSpeed()
     {
-        // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
-
+       // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
+    
 
         m_CurrentSpeed = Vector3.Magnitude(GetComponent<Rigidbody>().velocity);
 
-        if (m_CurrentSpeed < .01)
+        if(m_CurrentSpeed < .01)
         {
             m_CurrentSpeed = 0;
         }
@@ -191,9 +193,14 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
         }
         else m_OnGround = false;
 
-        //GetComponent<Animator>().SetBool("grounded", m_OnGround);
+        GetComponent<Animator>().SetBool("airborn", !m_OnGround);
     }
 
+
+    void UpdateAnimator()
+    {
+
+    }
 
     public void TakeDamage()
     {

@@ -43,10 +43,8 @@ public class CharacterController : MonoBehaviour
             else if (Input.GetKey(Left))
                 move = -1;
             if (Input.GetKeyDown(Jump))
-            {
                 jump = true;
-               m_Character.GetComponent<Animator>().SetTrigger("jumpit");  
-            }
+            
 
             if (Input.GetKeyDown(Attack))
                 attack = true;
