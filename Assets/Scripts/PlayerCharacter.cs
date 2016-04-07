@@ -10,10 +10,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     private int _MaxHealth;
     private bool _Alive;
     
-
-
-
-
     public float m_Speed = 5.0f;
 
     public float m_CurrentSpeed;
@@ -82,10 +78,11 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
         
     }
-    void Update()
+    void FixedUpdate()
     {
         CheckForGround();
         CheckCurrentSpeed();
+        HandleAirBorn();
     }
    
 
@@ -109,9 +106,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
          if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
             movement = 0;
 
-
-        if (m_CurrentSpeed <= 1.5 && !m_OnGround)
-            return;
 
         if (Mathf.Abs(movement) > 0)
         {
@@ -171,10 +165,10 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
 
     void CheckCurrentSpeed()
     {
-       // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
-    
+        // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
 
-        m_CurrentSpeed = Vector3.Magnitude(GetComponent<Rigidbody>().velocity);
+
+        m_CurrentSpeed = Vector3.Magnitude(m_Rigid.velocity);
 
         if(m_CurrentSpeed < .01)
         {
@@ -187,7 +181,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hit, .12f) || Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f))
+        if (Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f))
         {
             m_OnGround = true;
         }
@@ -197,10 +191,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     }
 
 
-    void UpdateAnimator()
-    {
-
-    }
+ 
 
     public void TakeDamage()
     {
@@ -211,4 +202,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     {
         print("Im dead");
     }
+
+
 }
