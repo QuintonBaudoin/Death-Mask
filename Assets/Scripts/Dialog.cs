@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿/*
+[Documentation]
+*/
+
+using UnityEngine;
 using System.Collections;
 
 public class Dialog
@@ -25,6 +29,11 @@ public class Dialog
     }
 
     void DoDialog(Vector3 position)
+    {
+
+    }
+
+    void ReadFile()
     {
 
     }

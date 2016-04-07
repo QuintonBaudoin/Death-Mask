@@ -45,8 +45,6 @@ public class Test : MonoBehaviour
     [ExecuteInEditMode]
     void Update()
     {
-
-
         LBInspector = LeftBoundary;
         RBInspector = RightBoundary;
 
@@ -67,13 +65,6 @@ public class Test : MonoBehaviour
         LDot = Vector3.Dot(LeftBoundary, CameraToPlayer);
         if (RDot >= .999999 || LDot >= .999999)
             Debug.DrawLine(CameraPosition, PlayerPosition * 10.0f, Color.black);
-
-
-
-
-
-
-
 
     }
 
