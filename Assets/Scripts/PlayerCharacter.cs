@@ -10,10 +10,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     private int _MaxHealth;
     private bool _Alive;
     
-
-
-
-
     public float m_Speed = 5.0f;
 
     public float m_CurrentSpeed;
@@ -82,10 +78,11 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
         
     }
-    void Update()
+    void FixedUpdate()
     {
         CheckForGround();
         CheckCurrentSpeed();
+        HandleAirBorn();
     }
    
 
@@ -168,13 +165,20 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
             m_WeaponA.GetComponent<DamagingObject>().active = attack;
         }
     }
+    void HandleAirBorn()
+    {
+        if (m_OnGround)
+            return;
+        m_Rigid.AddForce(transform.forward);
+        
+    }
 
     void CheckCurrentSpeed()
     {
-       // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
-    
+        // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
 
-        m_CurrentSpeed = Vector3.Magnitude(GetComponent<Rigidbody>().velocity);
+
+        m_CurrentSpeed = Vector3.Magnitude(m_Rigid.velocity);
 
         if(m_CurrentSpeed < .01)
         {
@@ -197,10 +201,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
     }
 
 
-    void UpdateAnimator()
-    {
-
-    }
+ 
 
     public void TakeDamage()
     {
