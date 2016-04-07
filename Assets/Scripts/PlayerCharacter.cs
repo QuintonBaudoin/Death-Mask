@@ -59,7 +59,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
             _MaxHealth = value;
         }
     }
-
     public bool Alive
     {
         get
@@ -97,10 +96,10 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
         direction = direction / direction;
 
             HandleMovement(direction * m_Speed);
-            HandleJump(jump);
-        
-        
+            HandleJump(jump);      
             HandleAttack(attack);
+
+
 
     }
 
@@ -141,11 +140,8 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
            jump = false;
 
         if (m_OnGround && jump)
-        {
-            
-
-            
-
+        {         
+                    
             GetComponent<Animator>().SetTrigger("jump");
             Vector3 vel = m_Rigid.velocity;
 
@@ -197,9 +193,14 @@ public class PlayerCharacter : Singleton<MonoBehaviour>,IDamageable
         }
         else m_OnGround = false;
 
-        GetComponent<Animator>().SetBool("grounded", m_OnGround);
+        GetComponent<Animator>().SetBool("airborn", !m_OnGround);
     }
 
+
+    void UpdateAnimator()
+    {
+
+    }
 
     public void TakeDamage()
     {
