@@ -1,4 +1,5 @@
 ﻿/*
+[Documentation]
 To set up a camera:
     1) Create an empty gameobject named Camera.
     2) Attach this script to it.

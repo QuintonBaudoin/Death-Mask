@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿/*
+[Documentation]
+*/
+
+using UnityEngine;
 using System.Collections;
 
 public class Dialog
