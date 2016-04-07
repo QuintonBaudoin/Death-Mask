@@ -7,12 +7,10 @@ public static class GameManager
 
     public static void LoadLevel(string name)
     {
-
         SceneManager.LoadScene(name);
-     
     }
 
-    public static void FullReset()
+    public static void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
