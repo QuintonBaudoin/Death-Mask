@@ -19,6 +19,7 @@ public static class GameManager
     {
         GameObject s = GameObject.FindGameObjectWithTag("PlayerSpawnLocation");
         GameObject p = GameObject.FindGameObjectWithTag("Player");
+        if (s != null && p != null)
         p.GetComponent<Transform>().position = s.GetComponent<Transform>().position;
     }    
 }

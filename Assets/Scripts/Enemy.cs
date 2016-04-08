@@ -19,6 +19,15 @@ public class Enemy : MonoBehaviour, IDamageable
         parent = transform.parent.gameObject;
         anim = GetComponent<Animator>();
     }
+    void Update()
+    {
+       // print(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("postdeath"));
+        if(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("postdeath"))
+        { 
+            Destroy(parent);
+            Destroy(gameObject);
+        }
+    }
 
     public bool Alive
     {
@@ -61,9 +70,9 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void OnDeath()
     {
-        // trigger animation
-        // remove collider
-        // sink into earth
+            parent.GetComponent<Pathing>().enabled = !parent.GetComponent<Pathing>().enabled;
+            anim.SetTrigger("Dead");
+            Alive = false;
     }
 
     [ContextMenu ("Damage")]
@@ -74,8 +83,15 @@ public class Enemy : MonoBehaviour, IDamageable
         if(Health < 1)
         {
             //Debug.Log(Health);
-            parent.GetComponent<Pathing>().enabled = !parent.GetComponent<Pathing>().enabled;
-            anim.SetTrigger("Dead");
+            OnDeath();
+        }
+    }
+
+    void OnTriggerStay(Collider c)
+    {
+        if(c.gameObject.GetComponent<IDamageable>() != null && c.tag == "Player")
+        {
+            c.GetComponent<IDamageable>().TakeDamage();
         }
     }
 }
