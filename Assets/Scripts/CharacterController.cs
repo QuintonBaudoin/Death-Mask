@@ -44,6 +44,7 @@ public class CharacterController : MonoBehaviour
                 move = -1;
             if (Input.GetKeyDown(Jump))
                 jump = true;
+            
 
             if (Input.GetKeyDown(Attack))
                 attack = true;

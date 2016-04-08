@@ -550,13 +550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2218ac4e811d0854fb2b8775c6e348ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 5
-  xAxis: 1
-  yAxis: 0
-  zAxis: 0
-  leftDistance: 3
-  rightDistance: 10
-  followSpeed: 1
   smoothing: 1
 --- !u!4 &919792003
 Transform:

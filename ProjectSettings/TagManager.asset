@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Edge
   - DeathFloor
+  - PlayerSpawnLocation
   layers:
   - Default
   - TransparentFX
