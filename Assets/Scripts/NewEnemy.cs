@@ -8,18 +8,22 @@ public class NewEnemy : MonoBehaviour, IDamageable
     public float TurnAroundTimer = 1;
     public float Speed;
 
+    public bool LockY;
+
+    GameObject target = null;
+
     [SerializeField]
     private int m_Health;
     [SerializeField]
     private int m_MaxHealth;
 
     private bool m_Alive;
-  
+
     public bool Alive
     {
         get
         {
-            return m_Alive;   
+            return m_Alive;
         }
 
         set
@@ -78,58 +82,20 @@ public class NewEnemy : MonoBehaviour, IDamageable
         Health--;
     }
 
-    /*
-    
-        ineed to make a path likeness.
-
-        i want to avoid tags(obvy)
-
-        i wana avoid too much numbers and not have any 
-        visual feedback to user
-        
-        avoid the need for colliders ( thats just jank using one (if i do it will be on a trigger))
-        
-        maybe not?
-
-        Zacs hitting things may not have been that bad an idea... 
-
-        maybe checking for ground infront of him?
-
-
-        hit a wall turn around Oh! 
-
-        if i hit an object that doesnt have damager on 
-        turn around. if not continue forward.
-
-        but what about holes... 
-
-        What if i used erics pathfinding idea?
-        nah that one sucked monkey ducks..
-
-        how about i do some shit?>
-
-        lets see... 
-
-          []->  {"not a player"}
-            []->{"not a player"}   shoot ray infront. if hit isnt a player turn around 
-          <-[]  {"not a player"}
-        <-[]    {"not a player"}
-    */
-
     void CheckFront()
     {
         RaycastHit hit;
 
         Ray ray = new Ray(transform.position, transform.forward);
 
-        if(Physics.Raycast(ray, out hit, TurnAwayDistance))
+        if (Physics.Raycast(ray, out hit, TurnAwayDistance))
         {
-            if(hit.collider.gameObject.tag != "Player")
-            transform.forward = -transform.forward;
+            if (hit.collider.gameObject.tag != "Player")
+                transform.forward = -transform.forward;
         }
 
     }
-    void Start ()
+    void Start()
     {
         StartCoroutine("TurningTimer");
         Health = m_Health;
@@ -137,37 +103,71 @@ public class NewEnemy : MonoBehaviour, IDamageable
         transform.forward = new Vector3(1, 0, 0);
         GetComponent<Rigidbody>().freezeRotation = true;
 
-	}		
-	void Update()
+    }
+    void Update()
     {
 
+
+        if (target != null)
+            HandleChase();
+        else HandlePatrol();
+
+
+
+    }
+
+    void HandlePatrol()
+    {
+
+        
         CheckFront();
         Rigidbody Rigid = GetComponent<Rigidbody>();
-
         Vector3 vel = Rigid.velocity;
-
+        if (!LockY)
+            vel.y = 0;
         vel.x = transform.forward.x * Speed;
 
         GetComponent<Rigidbody>().velocity = vel;
+    }
 
+    void HandleChase()
+    {
+        Rigidbody Rigid = GetComponent<Rigidbody>();
+        Vector3 vel = Rigid.velocity;
+        Vector3 dirToPlayer = Vector3.Normalize(target.transform.position - transform.position);
 
+        transform.forward = dirToPlayer;
 
+        dirToPlayer.z = 0; ///Keeps the game in 2D movement
+        if (LockY)
+        {
+            dirToPlayer.y = 0;
+            transform.forward = dirToPlayer;
+            vel.x = dirToPlayer.x * Speed;
+        }
+        else
+        {
+            transform.forward = dirToPlayer;
+            vel = dirToPlayer * Speed;
+        }
+        Rigid.velocity = vel;
+    }
 
-	}
     IEnumerator TurningTimer()
     {
 
-        while(true)
+        while (true)
         {
 
             yield return new WaitForSeconds(TurnAroundTimer);
 
             transform.forward = -transform.forward;
         }
-        
+
     }
-    void OnCollision(Collision c)
+    void OnCollisionEnter(Collision c)
     {
+        print(c);
         if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
             c.collider.GetComponent<IDamageable>().TakeDamage();
     }
@@ -177,5 +177,27 @@ public class NewEnemy : MonoBehaviour, IDamageable
 
         yield return new WaitForSeconds(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
+    }
+
+    void OnTriggerEnter(Collider c)
+    {
+
+        if (c.gameObject.tag == "Player" && c.gameObject.GetComponent<IDamageable>() != null)
+        {
+            StopCoroutine("TurningTimer");
+            target = c.gameObject;
+        }
+    }
+    void OnTriggerExit(Collider c)
+    {
+       
+
+        if (c.gameObject == target)
+        {
+            StartCoroutine("TurningTimer");
+            target = null;
+        }
+
+        transform.forward = new Vector3(transform.forward.x, 0, 0);
     }
 }
