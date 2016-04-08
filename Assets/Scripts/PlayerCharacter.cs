@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 
+public class PlayerCharacter :  MonoBehaviour, IDamageable
 {
 
 
@@ -148,7 +149,7 @@ using System;
     {
 
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            return;
+        { m_WeaponA.GetComponent<DamagingObject>().active = true; return; }
         if (m_WeaponA == null)
             return;
 
@@ -201,7 +202,6 @@ using System;
     {
         GameManager.ResetLevel();
     }
-
     void LoseLife()
     {
         GameManager.PlayerRecall();
