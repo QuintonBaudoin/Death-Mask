@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class PlayerCharacter :  MonoBehaviour, IDamageable
+public class PlayerCharacter : MonoBehaviour, IDamageable
 {
 
 
