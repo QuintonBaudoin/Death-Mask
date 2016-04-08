@@ -159,7 +159,7 @@ Transform:
   m_LocalScale: {x: 4.863222, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &581393949
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +241,7 @@ MonoBehaviour:
   TurnAroundTimer: 1
   Speed: 1
   LockY: 0
+  m_OnGround: 0
   m_Health: 1
   m_MaxHealth: 1
 --- !u!23 &581393954
@@ -299,7 +300,53 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
+--- !u!1001 &620963220
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -23.951065
+      objectReference: {fileID: 0}
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 40.37091
+      objectReference: {fileID: 0}
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147022, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Name
+      value: FootSoldier
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &852399849
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1075789754
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +455,7 @@ MonoBehaviour:
   TurnAroundTimer: 1
   Speed: 1
   LockY: 0
+  m_OnGround: 0
   m_Health: 1
   m_MaxHealth: 1
 --- !u!23 &1075789759
@@ -466,7 +514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &1221659072
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +593,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!114 &1221659077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +609,7 @@ MonoBehaviour:
   TurnAroundTimer: 1
   Speed: 1
   LockY: 0
+  m_OnGround: 0
   m_Health: 1
   m_MaxHealth: 1
 --- !u!54 &1221659078
@@ -774,6 +823,7 @@ MonoBehaviour:
   TurnAroundTimer: 1
   Speed: 1
   LockY: 0
+  m_OnGround: 0
   m_Health: 1
   m_MaxHealth: 1
 --- !u!23 &1490081303
@@ -832,7 +882,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &1717131875
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,6 +964,7 @@ MonoBehaviour:
   TurnAroundTimer: 1
   Speed: 1
   LockY: 0
+  m_OnGround: 0
   m_Health: 1
   m_MaxHealth: 1
 --- !u!23 &1717131880
@@ -972,7 +1023,7 @@ Transform:
   m_LocalScale: {x: 5.7216854, y: 5.7216864, z: 5.7216864}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!1 &1814103834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1084,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1824127500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1166,7 @@ MonoBehaviour:
   TurnAroundTimer: 1
   Speed: 1
   LockY: 0
+  m_OnGround: 0
   m_Health: 1
   m_MaxHealth: 1
 --- !u!23 &1824127505
@@ -1173,7 +1225,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1001 &2118827705
 Prefab:
   m_ObjectHideFlags: 0
@@ -1187,7 +1239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 416968, guid: 9037a97d9a0d28641848f87a292764fa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.241
+      value: 0.279
       objectReference: {fileID: 0}
     - target: {fileID: 416968, guid: 9037a97d9a0d28641848f87a292764fa, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1219,7 +1271,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 444794, guid: 9037a97d9a0d28641848f87a292764fa, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 474836, guid: 9037a97d9a0d28641848f87a292764fa, type: 2}
       propertyPath: m_RootOrder
@@ -1321,6 +1373,7 @@ MonoBehaviour:
   TurnAroundTimer: 1
   Speed: 1
   LockY: 0
+  m_OnGround: 0
   m_Health: 1
   m_MaxHealth: 1
 --- !u!23 &2128139116
@@ -1379,4 +1432,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
