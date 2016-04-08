@@ -24,7 +24,7 @@ public class GUIManager : MonoBehaviour
         var v = FindObjectsOfType(typeof(Slider));
         foreach(Slider s in v)
         {
-            if (s.gameObject.name == "HealthSlider") ;
+            if (s.gameObject.name == "HealthSlider")
                 HealthBar = s;
         }
     }
