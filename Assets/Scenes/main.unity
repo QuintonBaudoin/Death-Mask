@@ -891,7 +891,7 @@ GameObject:
   - 23: {fileID: 1583810572}
   - 114: {fileID: 1583810571}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: FinishLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1006,7 +1006,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.52
-  m_Range: 10
+  m_Range: 4.3876495
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2882,6 +2882,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 416968, guid: 9037a97d9a0d28641848f87a292764fa, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 162176, guid: 9037a97d9a0d28641848f87a292764fa, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
