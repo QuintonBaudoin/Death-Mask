@@ -5,11 +5,15 @@ using System;
 public class PlayerCharacter : MonoBehaviour, IDamageable
 {
 
+    [SerializeField]
+    private int _Health= 1;
+    [SerializeField]
+    private int _MaxHealth = 1;
+    [SerializeField]
 
-    private int _Health;
-    private int _MaxHealth;
-    private bool _Alive;
-    private int _Lives;
+    private int _Lives = 1;
+    private bool _Alive = true;
+   
 
     public float m_Speed = 5.0f;
 
@@ -90,6 +94,10 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
     void Start()
     {
+        Health = _Health;
+        MaxHealth = _MaxHealth;
+        Lives = _Lives;
+
         m_Rigid = gameObject.GetComponent<Rigidbody>();
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
 

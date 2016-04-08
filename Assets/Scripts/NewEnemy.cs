@@ -1,0 +1,203 @@
+﻿using UnityEngine;
+using System.Collections;
+using System;
+
+public class NewEnemy : MonoBehaviour, IDamageable
+{
+    public float TurnAwayDistance = 1.0f;
+    public float TurnAroundTimer = 1;
+    public float Speed;
+
+    public bool LockY;
+
+    GameObject target = null;
+
+    [SerializeField]
+    private int m_Health;
+    [SerializeField]
+    private int m_MaxHealth;
+
+    private bool m_Alive;
+
+    public bool Alive
+    {
+        get
+        {
+            return m_Alive;
+        }
+
+        set
+        {
+            m_Alive = value;
+        }
+    }
+
+    public int Health
+    {
+        get
+        {
+            return m_Health;
+        }
+
+        set
+        {
+            if (value > MaxHealth)
+                value = MaxHealth;
+
+            m_Health = value;
+
+            if (Health <= 0)
+                OnDeath();
+        }
+    }
+
+    public int MaxHealth
+    {
+        get
+        {
+            return m_MaxHealth;
+        }
+
+        set
+        {
+            if (value <= 0)
+                MaxHealth = 1;
+
+            if (Health > value)
+                Health = value;
+
+            m_MaxHealth = value;
+
+        }
+    }
+
+    public void OnDeath()
+    {
+        GetComponent<Collider>().enabled = false;
+        StartCoroutine("Death");
+    }
+
+    public void TakeDamage()
+    {
+        Health--;
+    }
+
+    void CheckFront()
+    {
+        RaycastHit hit;
+
+        Ray ray = new Ray(transform.position, transform.forward);
+
+        if (Physics.Raycast(ray, out hit, TurnAwayDistance))
+        {
+            if (hit.collider.gameObject.tag != "Player")
+                transform.forward = -transform.forward;
+        }
+
+    }
+    void Start()
+    {
+        StartCoroutine("TurningTimer");
+        Health = m_Health;
+        MaxHealth = m_MaxHealth;
+        transform.forward = new Vector3(1, 0, 0);
+        GetComponent<Rigidbody>().freezeRotation = true;
+
+    }
+    void Update()
+    {
+
+
+        if (target != null)
+            HandleChase();
+        else HandlePatrol();
+
+
+
+    }
+
+    void HandlePatrol()
+    {
+
+        
+        CheckFront();
+        Rigidbody Rigid = GetComponent<Rigidbody>();
+        Vector3 vel = Rigid.velocity;
+        if (!LockY)
+            vel.y = 0;
+        vel.x = transform.forward.x * Speed;
+
+        GetComponent<Rigidbody>().velocity = vel;
+    }
+
+    void HandleChase()
+    {
+        Rigidbody Rigid = GetComponent<Rigidbody>();
+        Vector3 vel = Rigid.velocity;
+        Vector3 dirToPlayer = Vector3.Normalize(target.transform.position - transform.position);
+
+        transform.forward = dirToPlayer;
+
+        dirToPlayer.z = 0; ///Keeps the game in 2D movement
+        if (LockY)
+        {
+            dirToPlayer.y = 0;
+            transform.forward = dirToPlayer;
+            vel.x = dirToPlayer.x * Speed;
+        }
+        else
+        {
+            transform.forward = dirToPlayer;
+            vel = dirToPlayer * Speed;
+        }
+        Rigid.velocity = vel;
+    }
+
+    IEnumerator TurningTimer()
+    {
+
+        while (true)
+        {
+
+            yield return new WaitForSeconds(TurnAroundTimer);
+
+            transform.forward = -transform.forward;
+        }
+
+    }
+    void OnCollisionEnter(Collision c)
+    {
+        print(c);
+        if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
+            c.collider.GetComponent<IDamageable>().TakeDamage();
+    }
+    IEnumerator Death()
+    {
+        GetComponent<Animator>().SetTrigger("Death");
+
+        yield return new WaitForSeconds(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
+        Destroy(gameObject);
+    }
+
+    void OnTriggerEnter(Collider c)
+    {
+
+        if (c.gameObject.tag == "Player" && c.gameObject.GetComponent<IDamageable>() != null)
+        {
+            StopCoroutine("TurningTimer");
+            target = c.gameObject;
+        }
+    }
+    void OnTriggerExit(Collider c)
+    {
+       
+
+        if (c.gameObject == target)
+        {
+            StartCoroutine("TurningTimer");
+            target = null;
+        }
+
+        transform.forward = new Vector3(transform.forward.x, 0, 0);
+    }
+}
