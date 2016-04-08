@@ -15,8 +15,8 @@ public class DamagingObject : MonoBehaviour
         }
         set
         {
-
-            _active = gameObject.GetComponent<Collider>().enabled = value;
+            
+            _active  = value;
             
         }
     }

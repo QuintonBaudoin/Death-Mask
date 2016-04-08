@@ -2,13 +2,14 @@
 using System.Collections;
 using System;
 
-public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
+public class PlayerCharacter : MonoBehaviour, IDamageable
 {
 
 
     private int _Health;
     private int _MaxHealth;
     private bool _Alive;
+    private int _Lives;
 
     public float m_Speed = 5.0f;
 
@@ -37,10 +38,13 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
             _Health = value;
 
             if (Health <= 0)
-                Alive = false;
+                Lives--;
+
+            if (GUIManager.Instance != null)
+                GUIManager.Instance.UpdateHealthBar(Health, MaxHealth);
+
         }
     }
-
     public int MaxHealth
     {
         get
@@ -52,7 +56,13 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
         {
             if (value <= 0)
                 value = 1;
+            if (Health > value)
+                Health = value;
             _MaxHealth = value;
+
+            if (GUIManager.Instance != null)
+                GUIManager.Instance.UpdateHealthBar(Health, MaxHealth);
+
         }
     }
     public bool Alive
@@ -70,6 +80,12 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
                 OnDeath();
 
         }
+    }
+
+    public int Lives
+    {
+        get { return _Lives; }
+        set { _Lives = value; if (_Lives <= 0) NoMoreLives(); else OnDeath(); }
     }
 
     void Start()
@@ -149,7 +165,7 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
     {
 
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            return;
+        { m_WeaponA.GetComponent<DamagingObject>().active = true; return; }
         if (m_WeaponA == null)
             return;
 
@@ -176,7 +192,6 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
         }
 
     }
-
     void CheckForGround()
     {
         RaycastHit hit;
@@ -190,22 +205,17 @@ public class PlayerCharacter : Singleton<MonoBehaviour>, IDamageable
         GetComponent<Animator>().SetBool("airborn", !m_OnGround);
     }
 
-
-
-
     public void TakeDamage()
     {
         Health--;
     }
-
     public void OnDeath()
-    {
-        GameManager.ResetLevel();
-    }
-
-    void LoseLife()
-    {
+    {  
         GameManager.PlayerRecall();
+    }
+    void NoMoreLives()
+    {
+        GameManager.ResetLevel(); 
     }
 
 }
