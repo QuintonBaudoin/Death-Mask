@@ -393,8 +393,8 @@ MonoBehaviour:
   Speed: 2
   LockY: 0
   m_OnGround: 0
-  m_Health: 2
-  m_MaxHealth: 2
+  m_Health: 1
+  m_MaxHealth: 1
 --- !u!54 &1434843161
 Rigidbody:
   m_ObjectHideFlags: 0
