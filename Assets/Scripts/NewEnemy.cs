@@ -187,12 +187,18 @@ public class NewEnemy : MonoBehaviour, IDamageable
     }
     void OnCollisionEnter(Collision c)
     {
+        if (!Alive)
+            return;
 
         if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
             c.collider.GetComponent<IDamageable>().TakeDamage();
     }
     IEnumerator Death()
     {
+        Alive = false;
+        foreach (Collider c in GetComponents<Collider>())
+            c.enabled = false;
+        GetComponent<Rigidbody>().Sleep();
         GetComponent<Animator>().SetTrigger("Death");
         StopCoroutine("TurningTimer");
        
