@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 06604b6c70d7b8a40a378ae4df215e38
-timeCreated: 1460672330
+guid: 15eacd64e3f4aed4d998aae58845088d
+timeCreated: 1461183312
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -166,13 +166,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'AnnaRig_Neck_01SHJnt' has translation animation
-      that will be discarded.\n\t'AnnaRig_Neck_02SHJnt' has translation animation
-      that will be discarded.\n\t'AnnaRig_Neck_TopSHJnt' has translation animation
-      that will be discarded.\n\t'AnnaRig_Neck_TopSHJnt' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
