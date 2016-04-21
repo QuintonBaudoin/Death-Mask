@@ -152,7 +152,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
             return;
         Rigidbody Rigid = GetComponent<Rigidbody>();
         Vector3 vel = Rigid.velocity;
-        Vector3 dirToPlayer = Vector3.Normalize(target.transform.position - transform.position);
+        Vector3 dirToPlayer = Vector3.Normalize(new Vector3(target.transform.position.x, target.transform.position.y + 1, target.transform.position.z) - transform.position);
 
         transform.forward = dirToPlayer;
 
@@ -165,6 +165,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
         }
         else
         {
+            
             transform.forward = dirToPlayer;
             vel = dirToPlayer * Speed;
         }
