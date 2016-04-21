@@ -11,6 +11,8 @@ public class NewEnemy : MonoBehaviour, IDamageable
     public bool LockY;
     public bool m_OnGround;
 
+    public float SecondsPerDamage;
+
     GameObject target = null;
 
     [SerializeField]
@@ -78,7 +80,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
         Alive = false;
         StartCoroutine("Death");
     }
-
+  
     public void TakeDamage()
     {
         Health--;
@@ -186,14 +188,24 @@ public class NewEnemy : MonoBehaviour, IDamageable
     }
     void OnCollisionEnter(Collision c)
     {
-       
-        if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
-            c.collider.GetComponent<IDamageable>().TakeDamage();
 
+        if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
+        {
+            StartCoroutine("Hit", c.collider.GetComponent<IDamageable>());
+           
+        }
         //if(c.collider.gameObject.tag != "Player")
         //{
         //    transform.forward = -transform.forward;
         //}
+    }
+
+    void OnCollisionExit(Collision c)
+    {
+        if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
+        {
+            StopCoroutine("Hit");
+        }
     }
     IEnumerator Death()
     {
@@ -207,7 +219,17 @@ public class NewEnemy : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
-
+    IEnumerator Hit(IDamageable d)
+    {int i = 0;
+        while(true)
+        {
+            
+            i++;
+            d.TakeDamage();
+            print("Hit" + i);
+            yield return new WaitForSeconds(SecondsPerDamage);
+        }
+    }
     void OnTriggerEnter(Collider c)
     {
 

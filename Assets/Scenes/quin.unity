@@ -166,6 +166,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11446662, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
+      propertyPath: _Health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446662, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
+      propertyPath: _MaxHealth
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
   m_IsPrefabParent: 0
@@ -212,6 +220,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 94eeb79eb8ff157479e45a13b2434ffe, type: 2}
+    - target: {fileID: 11400552, guid: ede28896cd9ae884f952222899f3eb7f, type: 2}
+      propertyPath: SecondsPerDamage
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ede28896cd9ae884f952222899f3eb7f, type: 2}
   m_IsPrefabParent: 0
@@ -285,6 +297,10 @@ Prefab:
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: TurnAroundTimer
       value: 7.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: SecondsPerDamage
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
