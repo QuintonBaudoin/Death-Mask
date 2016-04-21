@@ -187,7 +187,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -219,8 +219,823 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human: []
-    skeleton: []
+    human:
+    - boneName: AnnaRig_ROOTSHJnt
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Leg_HipSHJnt
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Leg_HipSHJnt
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Leg_KneeSHJnt
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Leg_KneeSHJnt
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Leg_AnkleSHJnt
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Leg_AnkleSHJnt
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_Spine_01SHJnt
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_Spine_03SHJnt
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_Neck_01SHJnt
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_Neck_02SHJnt
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Arm_ClavicleSHJnt
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Arm_ClavicleSHJnt
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Arm_ShoulderSHJnt
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Arm_ShoulderSHJnt
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Arm_ElbowSHJnt
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Arm_ElbowSHJnt
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Arm_WristSHJnt
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Arm_WristSHJnt
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Leg_ToeSHJnt
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Leg_ToeSHJnt
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Thumb_01_01SHJnt
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Thumb_01_02SHJnt
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Thumb_01_03SHJnt
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_01_01SHJnt
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_01_02SHJnt
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_01_03SHJnt
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_02_01SHJnt
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_02_02SHJnt
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_02_03SHJnt
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_03_01SHJnt
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_03_02SHJnt
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_03_03SHJnt
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_04_01SHJnt
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_04_02SHJnt
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_l_Finger_04_03SHJnt
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Thumb_01_01SHJnt
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Thumb_01_02SHJnt
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Thumb_01_03SHJnt
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_01_01SHJnt
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_01_02SHJnt
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_01_03SHJnt
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_02_01SHJnt
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_02_02SHJnt
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_02_03SHJnt
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_03_01SHJnt
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_03_02SHJnt
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_03_03SHJnt
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_04_01SHJnt
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_04_02SHJnt
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AnnaRig_r_Finger_04_03SHJnt
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Anna Tpose with weapon(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Mesh
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: anna_body
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: anna_bun
+      position: {x: -0, y: 0.028211918, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: anna_hair
+      position: {x: -0, y: 0.028211918, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: anna_leftbang
+      position: {x: -0, y: 0.028211918, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: anna_rightbang
+      position: {x: -0, y: 0.028211918, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sabre_lowpoly:polySurface33
+      position: {x: -0.52818745, y: 0.90587455, z: 3.5527136e-17}
+      rotation: {x: 0, y: 0, z: 0.87532717, w: 0.48353112}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_MAINSHJnt
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_ROOTSHJnt
+      position: {x: 6.310887e-32, y: 0.8221957, z: 1.5777218e-32}
+      rotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Spine_01SHJnt
+      position: {x: -0.055646915, y: 4.5772886e-20, z: 2.6071365e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Spine_02SHJnt
+      position: {x: -0.055646915, y: -3.3608586e-18, z: 2.6812732e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Spine_03SHJnt
+      position: {x: -0.055646915, y: -6.4251704e-19, z: 2.4712195e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Spine_04SHJnt
+      position: {x: -0.055646915, y: 3.5991777e-32, z: 2.2611659e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Spine_TopSHJnt
+      position: {x: -0.055646915, y: -2.220446e-18, z: 2.3353024e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_l_Arm_ClavicleSHJnt
+      position: {x: 2.842171e-16, y: -2.1421472e-17, z: -0.062148593}
+      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_l_Arm_ShoulderSHJnt
+      position: {x: -0.08452209, y: 1.4210854e-16, z: -2.6686832e-18}
+      rotation: {x: -0.0010922588, y: 0.0010903341, z: 0.034334965, w: 0.9994092}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_l_Arm_ElbowSHJnt
+      position: {x: -0.18643403, y: 2.842171e-16, z: 3.1086245e-17}
+      rotation: {x: -0.000000010128133, y: 0.00002665173, z: -6.002665e-11, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_l_Arm_WristSHJnt
+      position: {x: -0.18643415, y: -7.105427e-16, z: 3.5527136e-17}
+      rotation: {x: -0.00030313083, y: -0.0059099644, z: 0.051221058, w: 0.9986698}
+      scale: {x: 1, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_01_01SHJnt
+      position: {x: -0.051091697, y: 0.002640064, z: 0.018928029}
+      rotation: {x: 0.030380256, y: 0.08545498, z: -0.042950302, w: 0.99495214}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_01_02SHJnt
+      position: {x: -0.013740597, y: 9.693224e-13, z: -6.5133673e-13}
+      rotation: {x: 0.00000004097819, y: 0.000000015599651, z: -0.000000011874361,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_01_03SHJnt
+      position: {x: -0.013740597, y: 9.684698e-13, z: -6.51319e-13}
+      rotation: {x: 0, y: -0.000000007916242, z: 0.000000045227353, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_01_04SHJnt
+      position: {x: -0.013740597, y: 9.687539e-13, z: -6.5132784e-13}
+      rotation: {x: 0.0000000037252903, y: -0.000000008381903, z: 5.2386895e-10, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_02_01SHJnt
+      position: {x: -0.05336457, y: 0.004030055, z: 0.007539057}
+      rotation: {x: -0.0013514655, y: 0.021869414, z: -0.0172963, w: 0.99961036}
+      scale: {x: 0.99999994, y: 1, z: 0.99999976}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_02_02SHJnt
+      position: {x: -0.013740597, y: 2.5551116e-13, z: -3.24325e-13}
+      rotation: {x: 0.000000017229466, y: -1.1641531e-10, z: 0.00000001527951, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_02_03SHJnt
+      position: {x: -0.013740597, y: 2.562217e-13, z: -3.2435166e-13}
+      rotation: {x: -0.0000000116415295, y: 0.000000008381901, z: -2.3283059e-10,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_02_04SHJnt
+      position: {x: -0.013740597, y: 2.563638e-13, z: -3.2433165e-13}
+      rotation: {x: -0.0000000116415295, y: 0.000000008381901, z: -2.3283059e-10,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_03_01SHJnt
+      position: {x: -0.050409872, y: 0.001562871, z: -0.0039288355}
+      rotation: {x: -0.0056234784, y: -0.011977895, z: -0.03040342, w: 0.99945015}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_03_02SHJnt
+      position: {x: -0.013740597, y: -1.3613999e-13, z: -4.7817306e-13}
+      rotation: {x: 0.000000038184226, y: 0.000000015366822, z: -0.000000015290425,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_03_03SHJnt
+      position: {x: -0.013740597, y: -1.3542944e-13, z: -4.781686e-13}
+      rotation: {x: -0.000000019557774, y: 0.000000027299393, z: 0.00000003018431,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_03_04SHJnt
+      position: {x: -0.013740597, y: -1.3599788e-13, z: -4.7817306e-13}
+      rotation: {x: 0.000000049592927, y: -0.000000078289304, z: 0.000000013886165,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_04_01SHJnt
+      position: {x: -0.04586852, y: -0.0017888045, z: -0.013825806}
+      rotation: {x: -0.003112033, y: -0.011195235, z: -0.03603785, w: 0.9992829}
+      scale: {x: 1, y: 1, z: 0.99999976}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_04_02SHJnt
+      position: {x: -0.011543416, y: -4.841638e-13, z: -4.5081715e-13}
+      rotation: {x: -0.000000020489095, y: -0.00000004610046, z: 0.00000003073364,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_04_03SHJnt
+      position: {x: -0.011543416, y: -4.838796e-13, z: -4.5083823e-13}
+      rotation: {x: 0.000000017695127, y: 0.0000000036088745, z: -0.00000003079185,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Finger_04_04SHJnt
+      position: {x: -0.011543416, y: -4.837375e-13, z: -4.5079495e-13}
+      rotation: {x: -0.000000039115545, y: 0.000000015483236, z: -0.000000012951203,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_l_Thumb_01_01SHJnt
+      position: {x: -0.021512346, y: -0.014513599, z: 0.023342254}
+      rotation: {x: 0.22813582, y: 0.44304994, z: -0.057366475, w: 0.8650838}
+      scale: {x: 0.9999998, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_l_Thumb_01_02SHJnt
+      position: {x: -0.012338324, y: 4.443592e-12, z: -3.609557e-13}
+      rotation: {x: 0.000000014901159, y: -0.0000000372529, z: -0.00000008195638,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999998}
+      transformModified: 1
+    - name: AnnaRig_l_Thumb_01_03SHJnt
+      position: {x: -0.012338324, y: 4.4440185e-12, z: -3.6102675e-13}
+      rotation: {x: 0.000000014901161, y: 0.000000029802322, z: 0.000000074505806,
+        w: 1}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_l_Thumb_01_04SHJnt
+      position: {x: -0.012338324, y: 4.4438763e-12, z: -3.609557e-13}
+      rotation: {x: -0.00000004470348, y: -0.000000014901159, z: 0.0000000074505797,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_r_Arm_ClavicleSHJnt
+      position: {x: 2.842171e-16, y: 3.377757e-17, z: 0.062148593}
+      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_r_Arm_ShoulderSHJnt
+      position: {x: 0.08452209, y: 0, z: -1.653599e-18}
+      rotation: {x: -0.0010922588, y: -0.0010903345, z: -0.03433496, w: 0.9994092}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Arm_ElbowSHJnt
+      position: {x: 0.18643403, y: 1.4210854e-16, z: 2.6645352e-17}
+      rotation: {x: -0.000000010128134, y: -0.000026651718, z: 6.002666e-11, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_r_Arm_WristSHJnt
+      position: {x: 0.18643415, y: -5.684342e-16, z: 4.8849813e-17}
+      rotation: {x: -0.00030313083, y: 0.0059099644, z: -0.051221043, w: 0.9986698}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_01_01SHJnt
+      position: {x: 0.051091697, y: 0.002640064, z: 0.018928029}
+      rotation: {x: 0.030380256, y: -0.085454985, z: 0.042950302, w: 0.9949522}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_01_02SHJnt
+      position: {x: 0.013740597, y: 9.686118e-13, z: -6.513456e-13}
+      rotation: {x: 0.000000016763805, y: 0.00000002630986, z: 0.000000012747476,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_01_03SHJnt
+      position: {x: 0.013740597, y: 9.684698e-13, z: -6.513012e-13}
+      rotation: {x: 0.000000013038514, y: -0.000000066356726, z: -0.000000044645272,
+        w: 1}
+      scale: {x: 0.9999998, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_01_04SHJnt
+      position: {x: 0.013740597, y: 9.687539e-13, z: -6.513012e-13}
+      rotation: {x: -0.000000016763805, y: 0.00000005087349, z: 0.000000044994515,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_02_01SHJnt
+      position: {x: 0.05336457, y: 0.004030055, z: 0.007539057}
+      rotation: {x: -0.0013514658, y: -0.021869414, z: 0.017296283, w: 0.9996103}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999976}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_02_02SHJnt
+      position: {x: 0.013740597, y: 2.5508483e-13, z: -3.2436052e-13}
+      rotation: {x: 0.000000035390258, y: -0.000000007799827, z: -7.858034e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_02_03SHJnt
+      position: {x: 0.013740597, y: 2.5579538e-13, z: -3.2438052e-13}
+      rotation: {x: -4.656613e-10, y: 0.000000013969839, z: -0.000000029773219, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_02_04SHJnt
+      position: {x: 0.013740597, y: 2.5551116e-13, z: -3.2436274e-13}
+      rotation: {x: -0.00000003352761, y: -0.00000003899913, z: 0.000000030471707,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_03_01SHJnt
+      position: {x: 0.050409872, y: 0.001562871, z: -0.0039288355}
+      rotation: {x: -0.005623479, y: 0.011977896, z: 0.030403405, w: 0.9994502}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_03_02SHJnt
+      position: {x: 0.013740597, y: -1.362821e-13, z: -4.7818195e-13}
+      rotation: {x: 0.000000038417056, y: -0.000000015308615, z: 3.8926373e-10, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_03_03SHJnt
+      position: {x: 0.013740597, y: -1.3613999e-13, z: -4.7819745e-13}
+      rotation: {x: -0.000000031897798, y: 0.00000003131572, z: -2.2191671e-10, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_03_04SHJnt
+      position: {x: 0.013740597, y: -1.3599788e-13, z: -4.78193e-13}
+      rotation: {x: 0.000000038417056, y: -0.000000015308615, z: 3.8926373e-10, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_04_01SHJnt
+      position: {x: 0.04586852, y: -0.0017888045, z: -0.013825806}
+      rotation: {x: -0.0031120188, y: 0.011195233, z: 0.036037855, w: 0.9992829}
+      scale: {x: 1, y: 1, z: 0.99999976}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_04_02SHJnt
+      position: {x: 0.011543416, y: -4.8487435e-13, z: -4.5084157e-13}
+      rotation: {x: 0.000000078231096, y: 0.0000000041909516, z: 0.000000003929017,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_04_03SHJnt
+      position: {x: 0.011543416, y: -4.8444804e-13, z: -4.5082492e-13}
+      rotation: {x: -0.000000038184226, y: -0.000000019441359, z: -0.0000000019499566,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Finger_04_04SHJnt
+      position: {x: 0.011543416, y: -4.841638e-13, z: -4.508116e-13}
+      rotation: {x: -0.0000000027939677, y: 0.000000030267984, z: -0.000000014988473,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Thumb_01_01SHJnt
+      position: {x: 0.021512346, y: -0.014513599, z: 0.023342254}
+      rotation: {x: 0.2281357, y: -0.4430499, z: 0.05736644, w: 0.86508375}
+      scale: {x: 0.99999976, y: 0.99999994, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Thumb_01_02SHJnt
+      position: {x: 0.012338324, y: 4.443734e-12, z: -3.6031621e-13}
+      rotation: {x: 0.00000004470348, y: 0.000000059604638, z: -0.00000008940696,
+        w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      transformModified: 1
+    - name: AnnaRig_r_Thumb_01_03SHJnt
+      position: {x: 0.012338324, y: 4.443592e-12, z: -3.6038726e-13}
+      rotation: {x: 0.000000059604645, y: -0.00000012665987, z: 0.00000012665987,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1.0000002}
+      transformModified: 1
+    - name: AnnaRig_r_Thumb_01_04SHJnt
+      position: {x: 0.012338324, y: 4.4428814e-12, z: -3.6067148e-13}
+      rotation: {x: -0.00000008940696, y: 0.0000000745058, z: -0.0000000745058, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Neck_01SHJnt
+      position: {x: -0.0414324, y: 6.73316e-18, z: 1.8399681e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Neck_02SHJnt
+      position: {x: -0.0414324, y: -7.64209e-33, z: 1.8399681e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Neck_TopSHJnt
+      position: {x: -0.0414324, y: -5.551115e-19, z: 1.8399681e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_Head_TopSHJnt
+      position: {x: -0.14915663, y: 3.113396e-32, z: 1.4102294e-16}
+      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_l_Leg_HipSHJnt
+      position: {x: 0.04966741, y: -4.165669e-17, z: -0.08338003}
+      rotation: {x: 0.077187076, y: -0.6653198, z: 0.7324089, w: 0.12234783}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_l_Leg_KneeSHJnt
+      position: {x: -0.28922418, y: 0, z: 7.105427e-17}
+      rotation: {x: 0.000000005587935, y: -0.057543196, z: 0.000000050757073, w: 0.998343}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: AnnaRig_l_Leg_AnkleSHJnt
+      position: {x: -0.4116192, y: 2.4868996e-16, z: 9.325873e-17}
+      rotation: {x: -0.039244674, y: 0.02497067, z: 0.14358859, w: 0.9885437}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+      transformModified: 1
+    - name: AnnaRig_l_Leg_BallSHJnt
+      position: {x: -0.063018315, y: 0.015270897, z: 0.077431776}
+      rotation: {x: 0.0000012218953, y: 0.7071112, z: 0.0000021606581, w: 0.70710236}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_l_Leg_ToeSHJnt
+      position: {x: -0.074578315, y: -5.3290704e-17, z: -0.0039780256}
+      rotation: {x: 0.000000044703484, y: -0.000000014901161, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: AnnaRig_r_Leg_HipSHJnt
+      position: {x: 0.04966741, y: 2.1984432e-17, z: 0.08338003}
+      rotation: {x: -0.12234757, y: -0.7324089, z: 0.6653198, w: -0.07718733}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_r_Leg_KneeSHJnt
+      position: {x: -0.28922418, y: 3.907985e-16, z: 1.7763568e-17}
+      rotation: {x: 0.000000011175871, y: -0.05754262, z: -0.000000056817953, w: 0.9983431}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: AnnaRig_r_Leg_AnkleSHJnt
+      position: {x: -0.4116192, y: 5.684342e-16, z: -1.7930102e-16}
+      rotation: {x: 0.039244745, y: 0.024970539, z: -0.14358848, w: 0.98854375}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: AnnaRig_r_Leg_BallSHJnt
+      position: {x: -0.063018315, y: -0.015270897, z: 0.077431776}
+      rotation: {x: -0.0000011026858, y: 0.70711124, z: -0.0000021159547, w: 0.7071025}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999999}
+      transformModified: 1
+    - name: AnnaRig_r_Leg_ToeSHJnt
+      position: {x: -0.074578315, y: 3.5527136e-17, z: -0.0039780256}
+      rotation: {x: -0.00000005960463, y: -0.000000029802315, z: -0.00000010430811,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -231,7 +1046,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
