@@ -96,7 +96,7 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     {
         Health = _Health;
         MaxHealth = _MaxHealth;
-        Lives = _Lives;
+        
 
         m_Rigid = gameObject.GetComponent<Rigidbody>();
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;

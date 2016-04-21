@@ -36,6 +36,8 @@ public class DamagingObject : MonoBehaviour
             return;
         }
         coll.GetComponent<IDamageable>().TakeDamage();
+
+
     }
 
 }
