@@ -10,9 +10,9 @@ public class FinishLineTest : MonoBehaviour // placeholder
         if (other.gameObject == player)
         {
             //Debug.Log("Player hit the Finish line");
-            other.gameObject.transform.position = new Vector3(-40, 0.5f, 0); // placeholder
-            
+            //other.gameObject.transform.position = new Vector3(-40, 0.5f, 0); // placeholder
 
+            Application.LoadLevel("IntroMenu");
         }
     }
 
