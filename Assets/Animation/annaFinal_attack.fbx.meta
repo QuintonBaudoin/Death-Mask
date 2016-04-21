@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 06604b6c70d7b8a40a378ae4df215e38
-timeCreated: 1460672330
+guid: c3d470ceda3549149a440ea1c147c42d
+timeCreated: 1460747269
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -166,13 +166,26 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'AnnaRig_Neck_01SHJnt' has translation animation
-      that will be discarded.\n\t'AnnaRig_Neck_02SHJnt' has translation animation
-      that will be discarded.\n\t'AnnaRig_Neck_TopSHJnt' has translation animation
-      that will be discarded.\n\t'AnnaRig_Neck_TopSHJnt' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n"
+    animationImportWarnings: "\nInbetween bone default rotation found in this file
+      is different from the one found in the source avatar:\n\t'AnnaRig_l_Leg_BallSHJnt'
+      : rotation error = 9.816826 deg\n\nClip 'Take 001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'AnnaRig_Spine_01SHJnt' has translation animation
+      that will be discarded.\n\t'AnnaRig_Spine_02SHJnt' has translation animation
+      that will be discarded.\n\t'AnnaRig_Spine_02SHJnt' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'AnnaRig_Spine_03SHJnt'
+      has translation animation that will be discarded.\n\t'AnnaRig_Spine_04SHJnt'
+      has translation animation that will be discarded.\n\t'AnnaRig_Spine_04SHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'AnnaRig_Spine_TopSHJnt'
+      has translation animation that will be discarded.\n\t'AnnaRig_Spine_TopSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'AnnaRig_l_Arm_ShoulderSHJnt'
+      has translation animation that will be discarded.\n\t'AnnaRig_Neck_01SHJnt'
+      has translation animation that will be discarded.\n\t'AnnaRig_Neck_02SHJnt'
+      has translation animation that will be discarded.\n\t'AnnaRig_Neck_TopSHJnt'
+      has translation animation that will be discarded.\n\t'AnnaRig_Neck_TopSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'AnnaRig_l_Leg_BallSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'AnnaRig_r_Leg_BallSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
