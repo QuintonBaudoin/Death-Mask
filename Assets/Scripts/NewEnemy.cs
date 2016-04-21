@@ -93,8 +93,8 @@ public class NewEnemy : MonoBehaviour, IDamageable
             ray.origin = new Vector3(ray.origin.x, ray.origin.y + .1f, ray.origin.z);
         if (Physics.Raycast(ray, out hit, TurnAwayDistance))
         {
-            if (hit.collider.gameObject.tag != "Player")
-                transform.forward = -transform.forward;
+            if (hit.collider.gameObject.tag != "Player") ;
+                
         }
 
     }
@@ -129,10 +129,9 @@ public class NewEnemy : MonoBehaviour, IDamageable
 
 
     }
-
     void HandlePatrol()
     {
-        print(m_OnGround);
+
         if (!m_OnGround && LockY || !Alive)
             return;
         
@@ -147,7 +146,6 @@ public class NewEnemy : MonoBehaviour, IDamageable
 
         GetComponent<Rigidbody>().velocity = vel;
     }
-
     void HandleChase()
     {
         if (!Alive)
@@ -187,11 +185,14 @@ public class NewEnemy : MonoBehaviour, IDamageable
     }
     void OnCollisionEnter(Collision c)
     {
-        if (!Alive)
-            return;
-
+       
         if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
             c.collider.GetComponent<IDamageable>().TakeDamage();
+
+        //if(c.collider.gameObject.tag != "Player")
+        //{
+        //    transform.forward = -transform.forward;
+        //}
     }
     IEnumerator Death()
     {
@@ -202,7 +203,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
         GetComponent<Animator>().SetTrigger("Death");
         StopCoroutine("TurningTimer");
        
-        yield return new WaitForSeconds(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
 
