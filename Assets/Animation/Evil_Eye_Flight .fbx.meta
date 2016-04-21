@@ -85,7 +85,93 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: EvilEye_SHJntGrp
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_01_01SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_01_01SHJnt/EvilEye_l_Wing_01_02SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_01_01SHJnt/EvilEye_l_Wing_01_02SHJnt/EvilEye_l_Wing_01_03SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_01_01SHJnt/EvilEye_l_Wing_01_02SHJnt/EvilEye_l_Wing_01_03SHJnt/EvilEye_l_Wing_01_04SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_02_01SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_02_01SHJnt/EvilEye_l_Wing_02_02SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_02_01SHJnt/EvilEye_l_Wing_02_02SHJnt/EvilEye_l_Wing_02_03SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_l_Arm_ClavicleSHJnt/EvilEye_l_Arm_ShoulderSHJnt/EvilEye_l_Arm_ElbowSHJnt/EvilEye_l_Arm_WristSHJnt/EvilEye_l_Wing_02_01SHJnt/EvilEye_l_Wing_02_02SHJnt/EvilEye_l_Wing_02_03SHJnt/EvilEye_l_Wing_02_04SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_01_01SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_01_01SHJnt/EvilEye_r_Wing_01_02SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_01_01SHJnt/EvilEye_r_Wing_01_02SHJnt/EvilEye_r_Wing_01_03SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_01_01SHJnt/EvilEye_r_Wing_01_02SHJnt/EvilEye_r_Wing_01_03SHJnt/EvilEye_r_Wing_01_04SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_02_01SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_02_01SHJnt/EvilEye_r_Wing_02_02SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_02_01SHJnt/EvilEye_r_Wing_02_02SHJnt/EvilEye_r_Wing_02_03SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_r_Arm_ClavicleSHJnt/EvilEye_r_Arm_ShoulderSHJnt/EvilEye_r_Arm_ElbowSHJnt/EvilEye_r_Arm_WristSHJnt/EvilEye_r_Wing_02_01SHJnt/EvilEye_r_Wing_02_02SHJnt/EvilEye_r_Wing_02_03SHJnt/EvilEye_r_Wing_02_04SHJnt
+        weight: 1
+      - path: EvilEye_SHJntGrp/EvilEye_ROOTSHJnt/EvilEye_Spine_01SHJnt/EvilEye_Spine_TopSHJnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

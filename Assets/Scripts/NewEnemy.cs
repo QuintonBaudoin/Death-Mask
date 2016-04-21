@@ -9,6 +9,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
     public float Speed;
 
     public bool LockY;
+    public bool m_OnGround;
 
     GameObject target = null;
 
@@ -17,7 +18,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
     [SerializeField]
     private int m_MaxHealth;
 
-    private bool m_Alive;
+    private bool m_Alive = true;
 
     public bool Alive
     {
@@ -73,7 +74,8 @@ public class NewEnemy : MonoBehaviour, IDamageable
 
     public void OnDeath()
     {
-        GetComponent<Collider>().enabled = false;
+        //GetComponent<Collider>().enabled = false;
+        Alive = false;
         StartCoroutine("Death");
     }
 
@@ -87,13 +89,24 @@ public class NewEnemy : MonoBehaviour, IDamageable
         RaycastHit hit;
 
         Ray ray = new Ray(transform.position, transform.forward);
-
+        if (LockY)
+            ray.origin = new Vector3(ray.origin.x, ray.origin.y + .1f, ray.origin.z);
         if (Physics.Raycast(ray, out hit, TurnAwayDistance))
         {
             if (hit.collider.gameObject.tag != "Player")
                 transform.forward = -transform.forward;
         }
 
+    }
+    void CheckGround()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position + (Vector3.forward * 0.1f), Vector3.down, out hit, .12f))
+        {
+            m_OnGround = true;
+        }
+        else m_OnGround = false;
     }
     void Start()
     {
@@ -104,9 +117,10 @@ public class NewEnemy : MonoBehaviour, IDamageable
         GetComponent<Rigidbody>().freezeRotation = true;
 
     }
-    void Update()
+    void FixedUpdate()
     {
 
+        CheckGround();
 
         if (target != null)
             HandleChase();
@@ -118,13 +132,17 @@ public class NewEnemy : MonoBehaviour, IDamageable
 
     void HandlePatrol()
     {
-
+        print(m_OnGround);
+        if (!m_OnGround && LockY || !Alive)
+            return;
         
         CheckFront();
         Rigidbody Rigid = GetComponent<Rigidbody>();
         Vector3 vel = Rigid.velocity;
+
         if (!LockY)
             vel.y = 0;
+
         vel.x = transform.forward.x * Speed;
 
         GetComponent<Rigidbody>().velocity = vel;
@@ -132,6 +150,8 @@ public class NewEnemy : MonoBehaviour, IDamageable
 
     void HandleChase()
     {
+        if (!Alive)
+            return;
         Rigidbody Rigid = GetComponent<Rigidbody>();
         Vector3 vel = Rigid.velocity;
         Vector3 dirToPlayer = Vector3.Normalize(target.transform.position - transform.position);
@@ -167,14 +187,21 @@ public class NewEnemy : MonoBehaviour, IDamageable
     }
     void OnCollisionEnter(Collision c)
     {
-        print(c);
+        if (!Alive)
+            return;
+
         if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
             c.collider.GetComponent<IDamageable>().TakeDamage();
     }
     IEnumerator Death()
     {
+        Alive = false;
+        foreach (Collider c in GetComponents<Collider>())
+            c.enabled = false;
+        GetComponent<Rigidbody>().Sleep();
         GetComponent<Animator>().SetTrigger("Death");
-
+        StopCoroutine("TurningTimer");
+       
         yield return new WaitForSeconds(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
     }
