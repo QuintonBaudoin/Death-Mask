@@ -220,13 +220,10 @@ public class NewEnemy : MonoBehaviour, IDamageable
         Destroy(gameObject);
     }
     IEnumerator Hit(IDamageable d)
-    {int i = 0;
+    {
         while(true)
-        {
-            
-            i++;
-            d.TakeDamage();
-            print("Hit" + i);
+        {                    
+            d.TakeDamage();          
             yield return new WaitForSeconds(SecondsPerDamage);
         }
     }
