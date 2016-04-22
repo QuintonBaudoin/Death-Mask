@@ -9,7 +9,7 @@ To set up a camera:
 
 using UnityEngine;
 using System.Collections;
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class DMCamera : MonoBehaviour
 {
     Transform followTarget;
@@ -18,7 +18,7 @@ public class DMCamera : MonoBehaviour
 
     public float smoothing = 2f;
 
-    float FOV;
+    public float FOV;
     //temporary FOV fix
     //this represents the difference between unity's FOV and this FOV.
     //We add this to Camera.main.fieldOfView to make them the same.
@@ -35,6 +35,8 @@ public class DMCamera : MonoBehaviour
     //                                     (followTarget.forward * differenceAngle * 0.2f), 
     //                                      Time.deltaTime * smoothing);
     //}
+
+    /*
     void Start()
     {
         followTarget = GameObject.FindGameObjectWithTag("Player").transform;
@@ -48,6 +50,9 @@ public class DMCamera : MonoBehaviour
 
         rightBoundary = new Vector3(Mathf.Cos(RightBoundAngle), 0, Mathf.Sin(RightBoundAngle) * cameraChild.forward.z);
         leftBoundary = new Vector3(Mathf.Cos(leftBoundAngle), 0, Mathf.Sin(leftBoundAngle) * cameraChild.forward.z);
+
+        Debug.Log(leftBoundary);
+        Debug.Log(rightBoundary);
     }
 
     void Update()
@@ -56,9 +61,9 @@ public class DMCamera : MonoBehaviour
         followTargetDir.y = transform.position.y;
 
         ///Draw FOV lines
-        //Debug.DrawLine(transform.position, transform.position + rightBoundary * 25, Color.red);
-        //Debug.DrawLine(transform.position, transform.position + leftBoundary * 25, Color.red);
-        //Debug.DrawLine(transform.position, transform.position + followTargetDir * 25, Color.white);
+        Debug.DrawLine(transform.position, transform.position + rightBoundary * 25, Color.red);
+        Debug.DrawLine(transform.position, transform.position + leftBoundary * 25, Color.red);
+        Debug.DrawLine(transform.position, transform.position + followTargetDir * 25, Color.white);
 
         float angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
         float angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
@@ -83,4 +88,89 @@ public class DMCamera : MonoBehaviour
 
     }
 
+    */
+    
+
+    Vector3 DirectionFromAngle(float angleInDegrees)
+    {
+        //                                          //convert to radians
+        //float RightBoundAngle = (90 - (FOV / 2)) * (Mathf.PI / 180);
+        //float leftBoundAngle = (90 + (FOV / 2)) * (Mathf.PI / 180);
+        angleInDegrees += cameraChild.eulerAngles.y;
+
+        return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
+    }
+
+    void Start()
+    {
+        followTarget = GameObject.FindGameObjectWithTag("Player").transform;
+        cameraChild = transform.GetChild(0);
+
+        //Debug.Log("Forward angle before LookAt" + cameraChild.forward);
+        //cameraChild.LookAt(lookAt.transform);
+        //Debug.Log("Forward angle after LookAt" + cameraChild.forward);
+
+        //FOV = Camera.main.fieldOfView + tempFOVfix;
+        //FOV = (FOV * FOV) / tempFOVfix;
+        //determine field of view angles
+        //Debug.Log("FOV: " + FOV);
+
+        
+
+
+        /// have to switch sin() and cos() because Unity's unit circle is set back 90 degrees
+        //rightBoundary = new Vector3(Mathf.Cos(RightBoundAngle), 0, Mathf.Sin(RightBoundAngle));
+        //rightBoundary = new Vector3(Mathf.Sin(RightBoundAngle), 0, Mathf.Cos(RightBoundAngle));
+        //leftBoundary = new Vector3(Mathf.Sin(leftBoundAngle), 0, Mathf.Cos(leftBoundAngle));
+
+        //Debug.Log("Left boundary: " + leftBoundAngle);
+        //Debug.Log("right boundary: " + RightBoundAngle);
+    }
+
+    void Update()
+    {
+        //Vector3 direction = cameraChild.position;
+        //direction.y -= direction.y;
+
+        Vector3 followTargetDir = Vector3.Normalize(followTarget.position - transform.position);
+        followTargetDir.y = transform.position.y;
+
+        leftBoundary = DirectionFromAngle(-FOV / 2);
+        rightBoundary = DirectionFromAngle(FOV / 2);
+
+        /////Draw FOV lines
+        Debug.DrawLine(cameraChild.position, cameraChild.position + leftBoundary * 25, Color.red);
+        Debug.DrawLine(cameraChild.position, cameraChild.position + rightBoundary * 25, Color.blue);
+        Debug.DrawLine(transform.position, transform.position + followTargetDir * 25, Color.white);
+
+        float angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
+        float angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
+        //Debug.Log("angleToEdgeL before: " + angleToEdgeL);
+        //Debug.Log("angleToEdgeR before: " + angleToEdgeR);
+        //followTargetDir.y = cameraChild.position.y;
+        //angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
+        //angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
+        //Debug.Log("angleToEdgeL after: " + angleToEdgeL);
+        //Debug.Log("angleToEdgeR after: " + angleToEdgeR);
+
+
+        ////float camToTargetAngle = Vector3.Angle(followTargetDir, cameraChild.forward);
+
+        ////Vector3 newCamPos = followTarget.position - transform.position;
+        ////Debug.Log("newCamPos: " + newCamPos);
+        ////Debug.Log("followTargetForward: " + followTarget.forward);
+        ////newCamPos.x = newCamPos.x * followTarget.forward.x;
+        ////newCamPos.y = newCamPos.y * followTarget.forward.y;
+        ////newCamPos.z = newCamPos.z * followTarget.forward.z;
+
+        if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
+        {
+            Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
+            transform.position = Vector3.Lerp(transform.position, transform.position +
+                                             (followTarget.forward * 5.3f), Time.deltaTime * smoothing);
+        }
+
+        ////transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
+        ////MoveCamera(camToTargetAngle2);
+    }
 }
