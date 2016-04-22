@@ -19,7 +19,7 @@ public class GUIManager : MonoBehaviour
         }
     }
 
-    void Start()
+    void Awake()
     {
         var v = FindObjectsOfType(typeof(Slider));
         foreach(Slider s in v)

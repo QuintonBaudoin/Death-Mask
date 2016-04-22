@@ -5,15 +5,21 @@ using System;
 public class PlayerCharacter : MonoBehaviour, IDamageable
 {
 
+    [SerializeField]
+    private int _Health= 1;
+    [SerializeField]
+    private int _MaxHealth = 1;
+    [SerializeField]
 
-    private int _Health;
-    private int _MaxHealth;
-    private bool _Alive;
-    private int _Lives;
+    private int _Lives = 1;
+    private bool _Alive = true;
+   
 
     public float m_Speed = 5.0f;
-
     public float m_CurrentSpeed;
+
+    float CapsuleHeight;
+    Vector3 CapsuleCenter;
 
     // public float m_jumpSpeed = 5.0f;
     public float m_JumpPower = 5.0f;
@@ -90,6 +96,12 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
     void Start()
     {
+        CapsuleHeight = GetComponent<CapsuleCollider>().height;
+        CapsuleCenter = GetComponent<CapsuleCollider>().center;
+
+        Health = _Health;
+        MaxHealth = _MaxHealth;       
+
         m_Rigid = gameObject.GetComponent<Rigidbody>();
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
 
@@ -97,6 +109,7 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     void FixedUpdate()
     {
         CheckForGround();
+        ResizeCapsule();
         CheckCurrentSpeed();
 
     }
@@ -121,8 +134,6 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     {
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
             movement = 0;
-
-
         if (Mathf.Abs(movement) > 0)
         {
 
@@ -179,6 +190,24 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         }
     }
 
+    void ResizeCapsule()
+    {
+        CapsuleCollider c = GetComponent<CapsuleCollider>();
+
+        if(m_OnGround)
+        {
+            c.center = CapsuleCenter;
+            c.height = CapsuleHeight;
+        }
+
+        else
+        {
+            c.height = CapsuleHeight - .23f;
+            c.center = new Vector3(CapsuleCenter.x, CapsuleCenter.y - .1f, CapsuleCenter.z);
+        }
+
+    }
+
     void CheckCurrentSpeed()
     {
         // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
@@ -204,6 +233,8 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
         GetComponent<Animator>().SetBool("airborn", !m_OnGround);
     }
+
+    
 
     public void TakeDamage()
     {

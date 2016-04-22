@@ -5,7 +5,7 @@ using System.Collections;
 
 public class DamagingObject : MonoBehaviour
 {
-    bool _active;
+    bool _active = false;
 
     public bool active
     {
@@ -28,9 +28,16 @@ public class DamagingObject : MonoBehaviour
 
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.GetComponent<IDamageable>() == null)
+        if (GetComponentInParent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+            active = true;
+        else active = false;
+        if (coll.isTrigger || coll.GetComponent<IDamageable>() == null || active != true)
+        {
             return;
+        }
         coll.GetComponent<IDamageable>().TakeDamage();
+
+
     }
 
 }
