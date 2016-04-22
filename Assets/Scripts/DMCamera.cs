@@ -15,8 +15,10 @@ public class DMCamera : MonoBehaviour
     Transform followTarget;
     Transform cameraChild;
     Vector3 leftBoundary, rightBoundary;
-    public float smoothing = 2f;
+    bool passedStart;
 
+    Vector3 cameraOffset;
+    public float smoothing = 2f;    
     public float FOV;
     //temporary FOV fix
     //this represents the difference between unity's FOV and this FOV.
@@ -25,7 +27,12 @@ public class DMCamera : MonoBehaviour
     //Only if unity's FOV is set to 60,
     //unity FOV needs to subtract 38.7 to be the same as this FOV.
     //this FOV needs to add 27 to be the same as unity FOV.
-    float tempFOVfix = 27.0f;    
+    float tempFOVfix = 27.0f;
+
+    public void ResetCamera()
+    {
+        transform.position = cameraOffset;
+    }
 
     Vector3 DirectionFromAngle(float angleInDegrees)
     {
@@ -42,18 +49,21 @@ public class DMCamera : MonoBehaviour
 
     void Start()
     {
+        cameraOffset = transform.position;
         //track player for camera scrolling
         followTarget = GameObject.FindGameObjectWithTag("Player").transform;
         cameraChild = transform.GetChild(0);
 
         FOV = Camera.main.fieldOfView + tempFOVfix;
-        FOV = (FOV * FOV) / tempFOVfix;
     }
 
     void Update()
     {
         Vector3 followTargetDir = Vector3.Normalize(followTarget.position - transform.position);
-        //followTargetDir.y = transform.position.y;
+        //keep camera and player on the same y plane
+        transform.position = new Vector3(transform.position.x,
+                                        followTarget.position.y,
+                                        transform.position.z);
 
         //determine field of view angles
         leftBoundary = DirectionFromAngle(-FOV / 2);
@@ -67,14 +77,25 @@ public class DMCamera : MonoBehaviour
         float angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
         float angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
 
-        if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
+        //prevent camera from moving before player initially enters fov, getting stuck
+        if (passedStart)
         {
-            Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
-            transform.position = Vector3.Lerp(transform.position, transform.position +
-                                             (followTarget.forward * 5.3f), Time.deltaTime * smoothing);
+            if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
+            {
+                Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
+                transform.position = Vector3.Lerp(transform.position, transform.position +
+                                                 (followTarget.forward * 5.3f), Time.deltaTime * smoothing);
+            }
+
+            //transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
+            //MoveCamera(camToTargetAngle2);
+        }
+        else
+        {
+            if (angleToEdgeL <= 0.7f || angleToEdgeR <= 0.7f)
+                passedStart = true;
         }
 
-        //transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
-        //MoveCamera(camToTargetAngle2);
     }
+
 }
