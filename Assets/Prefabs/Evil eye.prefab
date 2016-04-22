@@ -893,6 +893,7 @@ MonoBehaviour:
   Speed: 2
   LockY: 0
   m_OnGround: 0
+  SecondsPerDamage: 1
   m_Health: 1
   m_MaxHealth: 1
 --- !u!135 &13510958
@@ -987,7 +988,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: SecondsPerDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_OnGround
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182310}
