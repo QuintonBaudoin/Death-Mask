@@ -15,9 +15,10 @@ public class DMCamera : MonoBehaviour
     Transform followTarget;
     Transform cameraChild;
     Vector3 leftBoundary, rightBoundary;
+    bool passedStart;
 
-    public float smoothing = 2f;
-
+    Vector3 cameraOffset;
+    public float smoothing = 2f;    
     public float FOV;
     //temporary FOV fix
     //this represents the difference between unity's FOV and this FOV.
@@ -28,113 +29,43 @@ public class DMCamera : MonoBehaviour
     //this FOV needs to add 27 to be the same as unity FOV.
     float tempFOVfix = 27.0f;
 
-    //void MoveCamera(float differenceAngle)
-    //{
-    //    Debug.Log(differenceAngle);
-    //    transform.position = Vector3.Lerp(transform.position, transform.position + 
-    //                                     (followTarget.forward * differenceAngle * 0.2f), 
-    //                                      Time.deltaTime * smoothing);
-    //}
-
-    /*
-    void Start()
+    public void ResetCamera()
     {
-        followTarget = GameObject.FindGameObjectWithTag("Player").transform;
-        cameraChild = transform.GetChild(0);
-        
-        FOV = Camera.main.fieldOfView + tempFOVfix;
-        //FOV = (FOV * FOV) / tempFOVfix;
-        //determine field of view angles
-        float RightBoundAngle = (90 - (FOV / 2)) * (Mathf.PI / 180);
-        float leftBoundAngle = (90 + (FOV / 2)) * (Mathf.PI / 180);
-
-        rightBoundary = new Vector3(Mathf.Cos(RightBoundAngle), 0, Mathf.Sin(RightBoundAngle) * cameraChild.forward.z);
-        leftBoundary = new Vector3(Mathf.Cos(leftBoundAngle), 0, Mathf.Sin(leftBoundAngle) * cameraChild.forward.z);
-
-        Debug.Log(leftBoundary);
-        Debug.Log(rightBoundary);
+        transform.position = cameraOffset;
     }
-
-    void Update()
-    {
-        Vector3 followTargetDir = Vector3.Normalize(followTarget.position - transform.position);
-        followTargetDir.y = transform.position.y;
-
-        ///Draw FOV lines
-        Debug.DrawLine(transform.position, transform.position + rightBoundary * 25, Color.red);
-        Debug.DrawLine(transform.position, transform.position + leftBoundary * 25, Color.red);
-        Debug.DrawLine(transform.position, transform.position + followTargetDir * 25, Color.white);
-
-        float angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
-        float angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
-        //float camToTargetAngle = Vector3.Angle(followTargetDir, cameraChild.forward);
-
-        //Vector3 newCamPos = followTarget.position - transform.position;
-        //Debug.Log("newCamPos: " + newCamPos);
-        //Debug.Log("followTargetForward: " + followTarget.forward);
-        //newCamPos.x = newCamPos.x * followTarget.forward.x;
-        //newCamPos.y = newCamPos.y * followTarget.forward.y;
-        //newCamPos.z = newCamPos.z * followTarget.forward.z;
-
-        if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
-        {
-            //Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
-            transform.position = Vector3.Lerp(transform.position, transform.position + 
-                                             (followTarget.forward * 5.3f), Time.deltaTime * smoothing);
-        }
-            
-        //transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
-        //MoveCamera(camToTargetAngle2);
-
-    }
-
-    */
-    
 
     Vector3 DirectionFromAngle(float angleInDegrees)
     {
         //                                          //convert to radians
         //float RightBoundAngle = (90 - (FOV / 2)) * (Mathf.PI / 180);
         //float leftBoundAngle = (90 + (FOV / 2)) * (Mathf.PI / 180);
+
+        //add the transform's rotation so that the angles are relative
         angleInDegrees += cameraChild.eulerAngles.y;
 
+        // have to switch sin() and cos() because Unity's unit circle is set back 90 degrees
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
 
     void Start()
     {
+        cameraOffset = transform.position;
+        //track player for camera scrolling
         followTarget = GameObject.FindGameObjectWithTag("Player").transform;
         cameraChild = transform.GetChild(0);
 
-        //Debug.Log("Forward angle before LookAt" + cameraChild.forward);
-        //cameraChild.LookAt(lookAt.transform);
-        //Debug.Log("Forward angle after LookAt" + cameraChild.forward);
-
-        //FOV = Camera.main.fieldOfView + tempFOVfix;
-        //FOV = (FOV * FOV) / tempFOVfix;
-        //determine field of view angles
-        //Debug.Log("FOV: " + FOV);
-
-        
-
-
-        /// have to switch sin() and cos() because Unity's unit circle is set back 90 degrees
-        //rightBoundary = new Vector3(Mathf.Cos(RightBoundAngle), 0, Mathf.Sin(RightBoundAngle));
-        //rightBoundary = new Vector3(Mathf.Sin(RightBoundAngle), 0, Mathf.Cos(RightBoundAngle));
-        //leftBoundary = new Vector3(Mathf.Sin(leftBoundAngle), 0, Mathf.Cos(leftBoundAngle));
-
-        //Debug.Log("Left boundary: " + leftBoundAngle);
-        //Debug.Log("right boundary: " + RightBoundAngle);
+        FOV = Camera.main.fieldOfView + tempFOVfix;
     }
 
     void Update()
     {
-        //Vector3 direction = cameraChild.position;
-        //direction.y -= direction.y;
-
         Vector3 followTargetDir = Vector3.Normalize(followTarget.position - transform.position);
-        followTargetDir.y = transform.position.y;
+        //keep camera and player on the same y plane
+        transform.position = new Vector3(transform.position.x,
+                                        followTarget.position.y,
+                                        transform.position.z);
 
+        //determine field of view angles
         leftBoundary = DirectionFromAngle(-FOV / 2);
         rightBoundary = DirectionFromAngle(FOV / 2);
 
@@ -145,32 +76,26 @@ public class DMCamera : MonoBehaviour
 
         float angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
         float angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
-        //Debug.Log("angleToEdgeL before: " + angleToEdgeL);
-        //Debug.Log("angleToEdgeR before: " + angleToEdgeR);
-        //followTargetDir.y = cameraChild.position.y;
-        //angleToEdgeL = Vector3.Dot(followTargetDir, leftBoundary);
-        //angleToEdgeR = Vector3.Dot(followTargetDir, rightBoundary);
-        //Debug.Log("angleToEdgeL after: " + angleToEdgeL);
-        //Debug.Log("angleToEdgeR after: " + angleToEdgeR);
 
-
-        ////float camToTargetAngle = Vector3.Angle(followTargetDir, cameraChild.forward);
-
-        ////Vector3 newCamPos = followTarget.position - transform.position;
-        ////Debug.Log("newCamPos: " + newCamPos);
-        ////Debug.Log("followTargetForward: " + followTarget.forward);
-        ////newCamPos.x = newCamPos.x * followTarget.forward.x;
-        ////newCamPos.y = newCamPos.y * followTarget.forward.y;
-        ////newCamPos.z = newCamPos.z * followTarget.forward.z;
-
-        if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
+        //prevent camera from moving before player initially enters fov, getting stuck
+        if (passedStart)
         {
-            Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
-            transform.position = Vector3.Lerp(transform.position, transform.position +
-                                             (followTarget.forward * 5.3f), Time.deltaTime * smoothing);
+            if (angleToEdgeL >= 0.99f || angleToEdgeR >= 0.99f)
+            {
+                Debug.DrawLine(transform.position, transform.position + followTargetDir * 10.0f, Color.black);
+                transform.position = Vector3.Lerp(transform.position, transform.position +
+                                                 (followTarget.forward * 5.3f), Time.deltaTime * smoothing);
+            }
+
+            //transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
+            //MoveCamera(camToTargetAngle2);
+        }
+        else
+        {
+            if (angleToEdgeL <= 0.7f || angleToEdgeR <= 0.7f)
+                passedStart = true;
         }
 
-        ////transform.position = Vector3.Lerp(transform.position, transform.position + ((followTarget.position - transform.position).normalized * smoothing), Time.deltaTime * smoothing);
-        ////MoveCamera(camToTargetAngle2);
     }
+
 }
