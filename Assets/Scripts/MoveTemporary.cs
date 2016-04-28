@@ -3,7 +3,14 @@ using System.Collections;
 
 public class MoveTemporary : MonoBehaviour
 {
-    float speed = 0.1f;    
+    float speed = 0.1f;
+    float jumpHeight = 5;
+    Rigidbody body;
+
+    void Start()
+    {
+        body = GetComponent<Rigidbody>();
+    }
 
     void Update()
     {
@@ -28,6 +35,15 @@ public class MoveTemporary : MonoBehaviour
             transform.forward = new Vector3(0, 0, 1);
         }
 
+    }
+
+    void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //body.AddForce(0, jumpHeight, 0);
+            body.velocity = new Vector3(0, jumpHeight, 0);
+        }
     }
 
 

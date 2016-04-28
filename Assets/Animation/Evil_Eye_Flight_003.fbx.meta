@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4acafdc5f50c1054eacedd2997af3cd2
-timeCreated: 1460672930
+guid: a60f83ba294d6fd4c98663c01b35c236
+timeCreated: 1461279187
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -77,7 +77,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -107,160 +107,10 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     human: []
-    skeleton:
-    - name: Evil eye(Clone)
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Evil_Eye
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_SHJntGrp
-      position: {x: 0, y: -0.15150985, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_ROOTSHJnt
-      position: {x: -1.7763568e-17, y: 0.111792445, z: 0.08789152}
-      rotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_Spine_01SHJnt
-      position: {x: -0.051280484, y: 0, z: 1.9186888e-17}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_Spine_TopSHJnt
-      position: {x: -0.051280484, y: 0, z: -1.4233193e-18}
-      rotation: {x: 1.6653345e-16, y: -5.551115e-17, z: 5.551115e-17, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_l_Arm_ClavicleSHJnt
-      position: {x: -0.034110114, y: 0.02124346, z: -0.15792349}
-      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_l_Arm_ShoulderSHJnt
-      position: {x: -0.1103627, y: 8.5265126e-16, z: -2.6645352e-17}
-      rotation: {x: 0, y: -0.016748399, z: 0, w: 0.99985975}
-      scale: {x: 1, y: 1, z: 0.9999999}
-      transformModified: 1
-    - name: EvilEye_l_Arm_ElbowSHJnt
-      position: {x: -0.23576882, y: 7.105427e-16, z: -3.4638957e-16}
-      rotation: {x: 0, y: 0.00001337938, z: 0, w: 1}
-      scale: {x: 0.9999999, y: 1, z: 1.0000001}
-      transformModified: 1
-    - name: EvilEye_l_Arm_WristSHJnt
-      position: {x: -0.23576862, y: 7.105427e-16, z: 2.9309886e-16}
-      rotation: {x: 0, y: 0.016735017, z: 0, w: 0.99986}
-      scale: {x: 1, y: 1, z: 0.99999994}
-      transformModified: 1
-    - name: EvilEye_l_Wing_01_01SHJnt
-      position: {x: -0.13022076, y: -1.4210854e-16, z: -0.036140602}
-      rotation: {x: 0, y: -0.064916514, z: 0, w: 0.9978908}
-      scale: {x: 0.99999994, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_l_Wing_01_02SHJnt
-      position: {x: -0.13968317, y: -1.4210854e-16, z: -0.0026130788}
-      rotation: {x: 0, y: -0.05222733, z: 0, w: 0.99863523}
-      scale: {x: 0.99999994, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_l_Wing_01_03SHJnt
-      position: {x: -0.1864014, y: 7.105427e-16, z: 0.0021094836}
-      rotation: {x: 0, y: -0.020358836, z: 0, w: 0.9997928}
-      scale: {x: 1, y: 1, z: 0.99999994}
-      transformModified: 1
-    - name: EvilEye_l_Wing_01_04SHJnt
-      position: {x: -0.19156586, y: 9.947598e-16, z: -0.0038717198}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_l_Wing_02_01SHJnt
-      position: {x: -0.07744072, y: 5.684342e-16, z: -0.11338589}
-      rotation: {x: 0, y: -0.054434292, z: 0, w: 0.9985174}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-      transformModified: 1
-    - name: EvilEye_l_Wing_02_02SHJnt
-      position: {x: -0.08809033, y: 0, z: -8.5265126e-16}
-      rotation: {x: 0, y: -0.030029286, z: 0, w: 0.9995491}
-      scale: {x: 0.99999994, y: 1, z: 1.0000001}
-      transformModified: 1
-    - name: EvilEye_l_Wing_02_03SHJnt
-      position: {x: -0.16236764, y: 4.2632563e-16, z: -0.0031443003}
-      rotation: {x: -0.00068981753, y: -0.08805719, z: -0.0032874593, w: 0.9961098}
-      scale: {x: 1, y: 1, z: 1.0000002}
-      transformModified: 1
-    - name: EvilEye_l_Wing_02_04SHJnt
-      position: {x: -0.15408304, y: -0.0012800632, z: 0.01346873}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_r_Arm_ClavicleSHJnt
-      position: {x: -0.034110114, y: 0.02124346, z: 0.16848186}
-      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_r_Arm_ShoulderSHJnt
-      position: {x: 0.101369284, y: 4.2632563e-16, z: 1.7763568e-17}
-      rotation: {x: 0, y: 0.015291395, z: 0, w: 0.9998831}
-      scale: {x: 1.0000002, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_r_Arm_ElbowSHJnt
-      position: {x: 0.2353464, y: 2.9842794e-15, z: 1.1546319e-16}
-      rotation: {x: 0, y: -0.000013511629, z: 0, w: 1}
-      scale: {x: 0.99999994, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_r_Arm_WristSHJnt
-      position: {x: 0.23534621, y: 3.410605e-15, z: -1.9539925e-16}
-      rotation: {x: 0, y: -0.015277863, z: 0, w: 0.9998833}
-      scale: {x: 0.9999999, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_r_Wing_01_01SHJnt
-      position: {x: 0.13383496, y: -8.5265126e-16, z: -0.036865786}
-      rotation: {x: 0, y: 0.07334683, z: 0, w: 0.9973065}
-      scale: {x: 0.99999994, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_r_Wing_01_02SHJnt
-      position: {x: 0.13900971, y: 0, z: 4.2632563e-16}
-      rotation: {x: 0, y: 0.019580865, z: 0, w: 0.99980825}
-      scale: {x: 0.99999994, y: 1, z: 0.99999976}
-      transformModified: 1
-    - name: EvilEye_r_Wing_01_03SHJnt
-      position: {x: 0.18713453, y: 1.4210854e-16, z: -0.006953038}
-      rotation: {x: 0, y: -0.10807317, z: 0, w: 0.99414295}
-      scale: {x: 0.99999994, y: 1, z: 1.0000001}
-      transformModified: 1
-    - name: EvilEye_r_Wing_01_04SHJnt
-      position: {x: 0.180451, y: -1.2789769e-15, z: -0.06102786}
-      rotation: {x: 0, y: 0.14769086, z: 0, w: 0.9890336}
-      scale: {x: 1.0000001, y: 1, z: 1}
-      transformModified: 1
-    - name: EvilEye_r_Wing_02_01SHJnt
-      position: {x: 0.07630332, y: -4.2632563e-16, z: -0.11357325}
-      rotation: {x: -0.0000000123389965, y: 0.036955994, z: -0.000000008354265, w: 0.9993169}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-      transformModified: 1
-    - name: EvilEye_r_Wing_02_02SHJnt
-      position: {x: 0.089665085, y: 0, z: -0.0031945105}
-      rotation: {x: 0, y: 0.03178138, z: 0, w: 0.9994949}
-      scale: {x: 0.9999997, y: 1, z: 0.9999997}
-      transformModified: 1
-    - name: EvilEye_r_Wing_02_03SHJnt
-      position: {x: 0.16431423, y: -1.2789769e-15, z: -0.008326193}
-      rotation: {x: 0, y: 0.06054715, z: 0, w: 0.99816537}
-      scale: {x: 1.0000001, y: 1, z: 1.0000002}
-      transformModified: 1
-    - name: EvilEye_r_Wing_02_04SHJnt
-      position: {x: 0.15355088, y: 0, z: 1.1368684e-15}
-      rotation: {x: -0.0000000052323044, y: 0.00000011920926, z: -6.152686e-10, w: 1}
-      scale: {x: 1.0000001, y: 1, z: 1}
-      transformModified: 1
+    skeleton: []
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
