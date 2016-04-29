@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: 274c422105fb0d14f8113e7efc140c79
+timeCreated: 1461960284
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Evil_Eye_l_Arm_ClavicleSHJnt
+    100004: Evil_Eye_l_Arm_Elbow_CurveSHJnt
+    100006: Evil_Eye_l_Arm_Lower_Curve1SHJnt
+    100008: Evil_Eye_l_Arm_Lower_Curve2SHJnt
+    100010: Evil_Eye_l_Arm_Lower_Curve3SHJnt
+    100012: Evil_Eye_l_Arm_Lower_Curve4SHJnt
+    100014: Evil_Eye_l_Arm_Shoulder_CurveSHJnt
+    100016: Evil_Eye_l_Arm_Upper_Curve1SHJnt
+    100018: Evil_Eye_l_Arm_Upper_Curve2SHJnt
+    100020: Evil_Eye_l_Arm_WristSHJnt
+    100022: Evil_Eye_MAINSHJnt
+    100024: Evil_Eye_r_Arm_ClavicleSHJnt
+    100026: Evil_Eye_r_Arm_Elbow_CurveSHJnt
+    100028: Evil_Eye_r_Arm_Lower_Curve1SHJnt
+    100030: Evil_Eye_r_Arm_Lower_Curve2SHJnt
+    100032: Evil_Eye_r_Arm_Lower_Curve3SHJnt
+    100034: Evil_Eye_r_Arm_Lower_Curve4SHJnt
+    100036: Evil_Eye_r_Arm_Shoulder_CurveSHJnt
+    100038: Evil_Eye_r_Arm_Upper_Curve1SHJnt
+    100040: Evil_Eye_r_Arm_Upper_Curve2SHJnt
+    100042: Evil_Eye_r_Arm_WristSHJnt
+    100044: Evil_Eye_ROOTSHJnt
+    100046: Evil_Eye_Spine_01SHJnt
+    100048: Evil_Eye_Spine_TopSHJnt
+    400000: //RootNode
+    400002: Evil_Eye_l_Arm_ClavicleSHJnt
+    400004: Evil_Eye_l_Arm_Elbow_CurveSHJnt
+    400006: Evil_Eye_l_Arm_Lower_Curve1SHJnt
+    400008: Evil_Eye_l_Arm_Lower_Curve2SHJnt
+    400010: Evil_Eye_l_Arm_Lower_Curve3SHJnt
+    400012: Evil_Eye_l_Arm_Lower_Curve4SHJnt
+    400014: Evil_Eye_l_Arm_Shoulder_CurveSHJnt
+    400016: Evil_Eye_l_Arm_Upper_Curve1SHJnt
+    400018: Evil_Eye_l_Arm_Upper_Curve2SHJnt
+    400020: Evil_Eye_l_Arm_WristSHJnt
+    400022: Evil_Eye_MAINSHJnt
+    400024: Evil_Eye_r_Arm_ClavicleSHJnt
+    400026: Evil_Eye_r_Arm_Elbow_CurveSHJnt
+    400028: Evil_Eye_r_Arm_Lower_Curve1SHJnt
+    400030: Evil_Eye_r_Arm_Lower_Curve2SHJnt
+    400032: Evil_Eye_r_Arm_Lower_Curve3SHJnt
+    400034: Evil_Eye_r_Arm_Lower_Curve4SHJnt
+    400036: Evil_Eye_r_Arm_Shoulder_CurveSHJnt
+    400038: Evil_Eye_r_Arm_Upper_Curve1SHJnt
+    400040: Evil_Eye_r_Arm_Upper_Curve2SHJnt
+    400042: Evil_Eye_r_Arm_WristSHJnt
+    400044: Evil_Eye_ROOTSHJnt
+    400046: Evil_Eye_Spine_01SHJnt
+    400048: Evil_Eye_Spine_TopSHJnt
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
