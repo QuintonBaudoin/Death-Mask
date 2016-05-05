@@ -7,7 +7,7 @@ public class CheckPoint : MonoBehaviour
     void OnTriggerEnter(Collider c)
     {
         if (c.tag == "Player")
-        { GameManager.SpawnLocation = gameObject; print(c); }
+        { GameManager.SpawnLocation = gameObject; }
     }
 
 }

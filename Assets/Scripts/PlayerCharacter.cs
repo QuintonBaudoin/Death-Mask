@@ -94,10 +94,6 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         set { _Lives = value; if (_Lives <= 0) NoMoreLives(); else OnDeath(); }
     }
 
-    void Awake()
-    {
-        print(name);
-    }
 
     void Start()
     {
