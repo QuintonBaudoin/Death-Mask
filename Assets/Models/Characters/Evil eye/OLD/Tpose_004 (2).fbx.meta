@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 9bda80dc62b1c634e9940023767bc305
+timeCreated: 1461278945
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Evil_Eye
+    100002: EvilEye_l_Arm_ClavicleSHJnt
+    100004: EvilEye_l_Arm_ElbowSHJnt
+    100006: EvilEye_l_Arm_ShoulderSHJnt
+    100008: EvilEye_l_Arm_WristSHJnt
+    100010: EvilEye_l_Wing_01_01SHJnt
+    100012: EvilEye_l_Wing_01_02SHJnt
+    100014: EvilEye_l_Wing_01_03SHJnt
+    100016: EvilEye_l_Wing_01_04SHJnt
+    100018: EvilEye_l_Wing_02_01SHJnt
+    100020: EvilEye_l_Wing_02_02SHJnt
+    100022: EvilEye_l_Wing_02_03SHJnt
+    100024: EvilEye_l_Wing_02_04SHJnt
+    100026: EvilEye_r_Arm_ClavicleSHJnt
+    100028: EvilEye_r_Arm_ElbowSHJnt
+    100030: EvilEye_r_Arm_ShoulderSHJnt
+    100032: EvilEye_r_Arm_WristSHJnt
+    100034: EvilEye_r_Wing_01_01SHJnt
+    100036: EvilEye_r_Wing_01_02SHJnt
+    100038: EvilEye_r_Wing_01_03SHJnt
+    100040: EvilEye_r_Wing_01_04SHJnt
+    100042: EvilEye_r_Wing_02_01SHJnt
+    100044: EvilEye_r_Wing_02_02SHJnt
+    100046: EvilEye_r_Wing_02_03SHJnt
+    100048: EvilEye_r_Wing_02_04SHJnt
+    100050: EvilEye_ROOTSHJnt
+    100052: EvilEye_SHJntGrp
+    100054: EvilEye_Spine_01SHJnt
+    100056: EvilEye_Spine_TopSHJnt
+    100058: //RootNode
+    400000: Evil_Eye
+    400002: EvilEye_l_Arm_ClavicleSHJnt
+    400004: EvilEye_l_Arm_ElbowSHJnt
+    400006: EvilEye_l_Arm_ShoulderSHJnt
+    400008: EvilEye_l_Arm_WristSHJnt
+    400010: EvilEye_l_Wing_01_01SHJnt
+    400012: EvilEye_l_Wing_01_02SHJnt
+    400014: EvilEye_l_Wing_01_03SHJnt
+    400016: EvilEye_l_Wing_01_04SHJnt
+    400018: EvilEye_l_Wing_02_01SHJnt
+    400020: EvilEye_l_Wing_02_02SHJnt
+    400022: EvilEye_l_Wing_02_03SHJnt
+    400024: EvilEye_l_Wing_02_04SHJnt
+    400026: EvilEye_r_Arm_ClavicleSHJnt
+    400028: EvilEye_r_Arm_ElbowSHJnt
+    400030: EvilEye_r_Arm_ShoulderSHJnt
+    400032: EvilEye_r_Arm_WristSHJnt
+    400034: EvilEye_r_Wing_01_01SHJnt
+    400036: EvilEye_r_Wing_01_02SHJnt
+    400038: EvilEye_r_Wing_01_03SHJnt
+    400040: EvilEye_r_Wing_01_04SHJnt
+    400042: EvilEye_r_Wing_02_01SHJnt
+    400044: EvilEye_r_Wing_02_02SHJnt
+    400046: EvilEye_r_Wing_02_03SHJnt
+    400048: EvilEye_r_Wing_02_04SHJnt
+    400050: EvilEye_ROOTSHJnt
+    400052: EvilEye_SHJntGrp
+    400054: EvilEye_Spine_01SHJnt
+    400056: EvilEye_Spine_TopSHJnt
+    400058: //RootNode
+    4300000: Evil_Eye
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Evil_Eye
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
