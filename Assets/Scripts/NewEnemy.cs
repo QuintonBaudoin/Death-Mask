@@ -78,6 +78,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
     {
         //GetComponent<Collider>().enabled = false;
         Alive = false;
+        StopAllCoroutines();
         StartCoroutine("Death");
     }
   
