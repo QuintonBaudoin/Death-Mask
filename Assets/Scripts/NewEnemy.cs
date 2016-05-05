@@ -214,9 +214,10 @@ public class NewEnemy : MonoBehaviour, IDamageable
         foreach (Collider c in GetComponents<Collider>())
             c.enabled = false;
         GetComponent<Rigidbody>().Sleep();
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         GetComponent<Animator>().SetTrigger("Death");
         StopCoroutine("TurningTimer");
-       
+        
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
