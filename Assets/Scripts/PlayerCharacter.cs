@@ -24,7 +24,7 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     // public float m_jumpSpeed = 5.0f;
     public float m_JumpPower = 5.0f;
     bool m_OnGround;
-    bool m_Orouch;
+   
     Rigidbody m_Rigid;
 
     [SerializeField]
@@ -94,6 +94,7 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         set { _Lives = value; if (_Lives <= 0) NoMoreLives(); else OnDeath(); }
     }
 
+
     void Start()
     {
         CapsuleHeight = GetComponent<CapsuleCollider>().height;
@@ -115,13 +116,12 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     }
 
 
-
     public void ReceiveInput(int direction, bool jump, bool attack)
     {
         if (direction > 1)
             direction = direction / direction;
 
-        HandleMovement(direction * m_Speed);
+        HandleMovement(direction);
         HandleJump(jump);
         HandleAttack(attack);
 
@@ -130,27 +130,31 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     }
 
 
-    void HandleMovement(float movement)
-    {
+    void HandleMovement(float direction)
+    {   Vector3 pos = m_Rigid.position;
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            movement = 0;
+            direction = 0;
+        float movement = direction * m_Speed * Time.deltaTime;
+
         if (Mathf.Abs(movement) > 0)
         {
 
             GetComponent<Animator>().SetBool("moving", true);
             Vector3 forward = gameObject.transform.forward;
-            forward.x = movement;
+            forward.x = direction;
             gameObject.transform.forward = forward;
+
+            pos.x += movement;
         }
 
-        if (Mathf.Abs(movement) <= 0)
+      else
+        { 
             GetComponent<Animator>().SetBool("moving", false);
+            
+        }
 
-        Vector3 vel = m_Rigid.velocity;
-        vel.x = movement;
-        vel.z = 0;
 
-        m_Rigid.velocity = vel;
+        m_Rigid.MovePosition(pos);
     }
     void HandleJump(bool jump)
     {
@@ -177,7 +181,7 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
         { m_WeaponA.GetComponent<DamagingObject>().active = true; return; }
-        if (m_WeaponA == null)
+        if (m_WeaponA == null || m_OnGround == false)
             return;
 
         if (m_WeaponA.GetComponent<DamagingObject>())
@@ -202,8 +206,8 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
         else
         {
-            c.height = CapsuleHeight - .23f;
-            c.center = new Vector3(CapsuleCenter.x, CapsuleCenter.y - .1f, CapsuleCenter.z);
+            c.height = 1.15f;
+            c.center = new Vector3(CapsuleCenter.x, .56f, CapsuleCenter.z);
         }
 
     }
@@ -248,5 +252,6 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     {
         GameManager.ResetLevel(); 
     }
+    
 
 }

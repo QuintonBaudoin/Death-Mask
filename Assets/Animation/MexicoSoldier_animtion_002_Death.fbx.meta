@@ -1,0 +1,1210 @@
+fileFormatVersion: 2
+guid: f7f49d6a39086884a8eac9dbdfebc57b
+timeCreated: 1461345741
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: MexicoShootingMonsterRig_Head_JawEndSHJnt
+    100002: MexicoShootingMonsterRig_Head_JawSHJnt
+    100004: MexicoShootingMonsterRig_Head_TopSHJnt
+    100006: MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt
+    100008: MexicoShootingMonsterRig_l_Arm_ElbowSHJnt
+    100010: MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt
+    100012: MexicoShootingMonsterRig_l_Arm_WristSHJnt
+    100014: MexicoShootingMonsterRig_l_Eye_01SHJnt
+    100016: MexicoShootingMonsterRig_l_Finger_01_01SHJnt
+    100018: MexicoShootingMonsterRig_l_Finger_01_02SHJnt
+    100020: MexicoShootingMonsterRig_l_Finger_01_03SHJnt
+    100022: MexicoShootingMonsterRig_l_Finger_01_04SHJnt
+    100024: MexicoShootingMonsterRig_l_Finger_02_01SHJnt
+    100026: MexicoShootingMonsterRig_l_Finger_02_02SHJnt
+    100028: MexicoShootingMonsterRig_l_Finger_02_03SHJnt
+    100030: MexicoShootingMonsterRig_l_Finger_02_04SHJnt
+    100032: MexicoShootingMonsterRig_l_Finger_03_01SHJnt
+    100034: MexicoShootingMonsterRig_l_Finger_03_02SHJnt
+    100036: MexicoShootingMonsterRig_l_Finger_03_03SHJnt
+    100038: MexicoShootingMonsterRig_l_Finger_03_04SHJnt
+    100040: MexicoShootingMonsterRig_l_Finger_04_01SHJnt
+    100042: MexicoShootingMonsterRig_l_Finger_04_02SHJnt
+    100044: MexicoShootingMonsterRig_l_Finger_04_03SHJnt
+    100046: MexicoShootingMonsterRig_l_Finger_04_04SHJnt
+    100048: MexicoShootingMonsterRig_l_Leg_AnkleSHJnt
+    100050: MexicoShootingMonsterRig_l_Leg_BallSHJnt
+    100052: MexicoShootingMonsterRig_l_Leg_HipSHJnt
+    100054: MexicoShootingMonsterRig_l_Leg_KneeSHJnt
+    100056: MexicoShootingMonsterRig_l_Leg_ToeSHJnt
+    100058: MexicoShootingMonsterRig_l_Thumb_01_01SHJnt
+    100060: MexicoShootingMonsterRig_l_Thumb_01_02SHJnt
+    100062: MexicoShootingMonsterRig_l_Thumb_01_03SHJnt
+    100064: MexicoShootingMonsterRig_l_Thumb_01_04SHJnt
+    100066: MexicoShootingMonsterRig_MAINSHJnt
+    100068: MexicoShootingMonsterRig_Neck_01SHJnt
+    100070: MexicoShootingMonsterRig_Neck_02SHJnt
+    100072: MexicoShootingMonsterRig_Neck_TopSHJnt
+    100074: MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt
+    100076: MexicoShootingMonsterRig_r_Arm_ElbowSHJnt
+    100078: MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt
+    100080: MexicoShootingMonsterRig_r_Arm_WristSHJnt
+    100082: MexicoShootingMonsterRig_r_Eye_01SHJnt
+    100084: MexicoShootingMonsterRig_r_Finger_01_01SHJnt
+    100086: MexicoShootingMonsterRig_r_Finger_01_02SHJnt
+    100088: MexicoShootingMonsterRig_r_Finger_01_03SHJnt
+    100090: MexicoShootingMonsterRig_r_Finger_01_04SHJnt
+    100092: MexicoShootingMonsterRig_r_Finger_02_01SHJnt
+    100094: MexicoShootingMonsterRig_r_Finger_02_02SHJnt
+    100096: MexicoShootingMonsterRig_r_Finger_02_03SHJnt
+    100098: MexicoShootingMonsterRig_r_Finger_02_04SHJnt
+    100100: MexicoShootingMonsterRig_r_Finger_03_01SHJnt
+    100102: MexicoShootingMonsterRig_r_Finger_03_02SHJnt
+    100104: MexicoShootingMonsterRig_r_Finger_03_03SHJnt
+    100106: MexicoShootingMonsterRig_r_Finger_03_04SHJnt
+    100108: MexicoShootingMonsterRig_r_Finger_04_01SHJnt
+    100110: MexicoShootingMonsterRig_r_Finger_04_02SHJnt
+    100112: MexicoShootingMonsterRig_r_Finger_04_03SHJnt
+    100114: MexicoShootingMonsterRig_r_Finger_04_04SHJnt
+    100116: MexicoShootingMonsterRig_r_Leg_AnkleSHJnt
+    100118: MexicoShootingMonsterRig_r_Leg_BallSHJnt
+    100120: MexicoShootingMonsterRig_r_Leg_HipSHJnt
+    100122: MexicoShootingMonsterRig_r_Leg_KneeSHJnt
+    100124: MexicoShootingMonsterRig_r_Leg_ToeSHJnt
+    100126: MexicoShootingMonsterRig_r_Thumb_01_01SHJnt
+    100128: MexicoShootingMonsterRig_r_Thumb_01_02SHJnt
+    100130: MexicoShootingMonsterRig_r_Thumb_01_03SHJnt
+    100132: MexicoShootingMonsterRig_r_Thumb_01_04SHJnt
+    100134: MexicoShootingMonsterRig_ROOTSHJnt
+    100136: MexicoShootingMonsterRig_Spine_01SHJnt
+    100138: MexicoShootingMonsterRig_Spine_02SHJnt
+    100140: MexicoShootingMonsterRig_Spine_03SHJnt
+    100142: MexicoShootingMonsterRig_Spine_04SHJnt
+    100144: MexicoShootingMonsterRig_Spine_TopSHJnt
+    100146: //RootNode
+    400000: MexicoShootingMonsterRig_Head_JawEndSHJnt
+    400002: MexicoShootingMonsterRig_Head_JawSHJnt
+    400004: MexicoShootingMonsterRig_Head_TopSHJnt
+    400006: MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt
+    400008: MexicoShootingMonsterRig_l_Arm_ElbowSHJnt
+    400010: MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt
+    400012: MexicoShootingMonsterRig_l_Arm_WristSHJnt
+    400014: MexicoShootingMonsterRig_l_Eye_01SHJnt
+    400016: MexicoShootingMonsterRig_l_Finger_01_01SHJnt
+    400018: MexicoShootingMonsterRig_l_Finger_01_02SHJnt
+    400020: MexicoShootingMonsterRig_l_Finger_01_03SHJnt
+    400022: MexicoShootingMonsterRig_l_Finger_01_04SHJnt
+    400024: MexicoShootingMonsterRig_l_Finger_02_01SHJnt
+    400026: MexicoShootingMonsterRig_l_Finger_02_02SHJnt
+    400028: MexicoShootingMonsterRig_l_Finger_02_03SHJnt
+    400030: MexicoShootingMonsterRig_l_Finger_02_04SHJnt
+    400032: MexicoShootingMonsterRig_l_Finger_03_01SHJnt
+    400034: MexicoShootingMonsterRig_l_Finger_03_02SHJnt
+    400036: MexicoShootingMonsterRig_l_Finger_03_03SHJnt
+    400038: MexicoShootingMonsterRig_l_Finger_03_04SHJnt
+    400040: MexicoShootingMonsterRig_l_Finger_04_01SHJnt
+    400042: MexicoShootingMonsterRig_l_Finger_04_02SHJnt
+    400044: MexicoShootingMonsterRig_l_Finger_04_03SHJnt
+    400046: MexicoShootingMonsterRig_l_Finger_04_04SHJnt
+    400048: MexicoShootingMonsterRig_l_Leg_AnkleSHJnt
+    400050: MexicoShootingMonsterRig_l_Leg_BallSHJnt
+    400052: MexicoShootingMonsterRig_l_Leg_HipSHJnt
+    400054: MexicoShootingMonsterRig_l_Leg_KneeSHJnt
+    400056: MexicoShootingMonsterRig_l_Leg_ToeSHJnt
+    400058: MexicoShootingMonsterRig_l_Thumb_01_01SHJnt
+    400060: MexicoShootingMonsterRig_l_Thumb_01_02SHJnt
+    400062: MexicoShootingMonsterRig_l_Thumb_01_03SHJnt
+    400064: MexicoShootingMonsterRig_l_Thumb_01_04SHJnt
+    400066: MexicoShootingMonsterRig_MAINSHJnt
+    400068: MexicoShootingMonsterRig_Neck_01SHJnt
+    400070: MexicoShootingMonsterRig_Neck_02SHJnt
+    400072: MexicoShootingMonsterRig_Neck_TopSHJnt
+    400074: MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt
+    400076: MexicoShootingMonsterRig_r_Arm_ElbowSHJnt
+    400078: MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt
+    400080: MexicoShootingMonsterRig_r_Arm_WristSHJnt
+    400082: MexicoShootingMonsterRig_r_Eye_01SHJnt
+    400084: MexicoShootingMonsterRig_r_Finger_01_01SHJnt
+    400086: MexicoShootingMonsterRig_r_Finger_01_02SHJnt
+    400088: MexicoShootingMonsterRig_r_Finger_01_03SHJnt
+    400090: MexicoShootingMonsterRig_r_Finger_01_04SHJnt
+    400092: MexicoShootingMonsterRig_r_Finger_02_01SHJnt
+    400094: MexicoShootingMonsterRig_r_Finger_02_02SHJnt
+    400096: MexicoShootingMonsterRig_r_Finger_02_03SHJnt
+    400098: MexicoShootingMonsterRig_r_Finger_02_04SHJnt
+    400100: MexicoShootingMonsterRig_r_Finger_03_01SHJnt
+    400102: MexicoShootingMonsterRig_r_Finger_03_02SHJnt
+    400104: MexicoShootingMonsterRig_r_Finger_03_03SHJnt
+    400106: MexicoShootingMonsterRig_r_Finger_03_04SHJnt
+    400108: MexicoShootingMonsterRig_r_Finger_04_01SHJnt
+    400110: MexicoShootingMonsterRig_r_Finger_04_02SHJnt
+    400112: MexicoShootingMonsterRig_r_Finger_04_03SHJnt
+    400114: MexicoShootingMonsterRig_r_Finger_04_04SHJnt
+    400116: MexicoShootingMonsterRig_r_Leg_AnkleSHJnt
+    400118: MexicoShootingMonsterRig_r_Leg_BallSHJnt
+    400120: MexicoShootingMonsterRig_r_Leg_HipSHJnt
+    400122: MexicoShootingMonsterRig_r_Leg_KneeSHJnt
+    400124: MexicoShootingMonsterRig_r_Leg_ToeSHJnt
+    400126: MexicoShootingMonsterRig_r_Thumb_01_01SHJnt
+    400128: MexicoShootingMonsterRig_r_Thumb_01_02SHJnt
+    400130: MexicoShootingMonsterRig_r_Thumb_01_03SHJnt
+    400132: MexicoShootingMonsterRig_r_Thumb_01_04SHJnt
+    400134: MexicoShootingMonsterRig_ROOTSHJnt
+    400136: MexicoShootingMonsterRig_Spine_01SHJnt
+    400138: MexicoShootingMonsterRig_Spine_02SHJnt
+    400140: MexicoShootingMonsterRig_Spine_03SHJnt
+    400142: MexicoShootingMonsterRig_Spine_04SHJnt
+    400144: MexicoShootingMonsterRig_Spine_TopSHJnt
+    400146: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'MexicoShootingMonsterRig_Spine_01SHJnt' has
+      translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Spine_02SHJnt'
+      has translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Spine_02SHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Spine_03SHJnt'
+      has translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Spine_04SHJnt'
+      has translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Spine_04SHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Spine_TopSHJnt'
+      has translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Spine_TopSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Neck_01SHJnt'
+      has translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Neck_02SHJnt'
+      has translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Neck_TopSHJnt'
+      has translation animation that will be discarded.\n\t'MexicoShootingMonsterRig_Neck_TopSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_l_Leg_HipSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_l_Leg_HipSHJnt/MexicoShootingMonsterRig_l_Leg_KneeSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_l_Leg_HipSHJnt/MexicoShootingMonsterRig_l_Leg_KneeSHJnt/MexicoShootingMonsterRig_l_Leg_AnkleSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_l_Leg_HipSHJnt/MexicoShootingMonsterRig_l_Leg_KneeSHJnt/MexicoShootingMonsterRig_l_Leg_AnkleSHJnt/MexicoShootingMonsterRig_l_Leg_BallSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_l_Leg_HipSHJnt/MexicoShootingMonsterRig_l_Leg_KneeSHJnt/MexicoShootingMonsterRig_l_Leg_AnkleSHJnt/MexicoShootingMonsterRig_l_Leg_BallSHJnt/MexicoShootingMonsterRig_l_Leg_ToeSHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_r_Leg_HipSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_r_Leg_HipSHJnt/MexicoShootingMonsterRig_r_Leg_KneeSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_r_Leg_HipSHJnt/MexicoShootingMonsterRig_r_Leg_KneeSHJnt/MexicoShootingMonsterRig_r_Leg_AnkleSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_r_Leg_HipSHJnt/MexicoShootingMonsterRig_r_Leg_KneeSHJnt/MexicoShootingMonsterRig_r_Leg_AnkleSHJnt/MexicoShootingMonsterRig_r_Leg_BallSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_r_Leg_HipSHJnt/MexicoShootingMonsterRig_r_Leg_KneeSHJnt/MexicoShootingMonsterRig_r_Leg_AnkleSHJnt/MexicoShootingMonsterRig_r_Leg_BallSHJnt/MexicoShootingMonsterRig_r_Leg_ToeSHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_01_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_01_01SHJnt/MexicoShootingMonsterRig_l_Finger_01_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_01_01SHJnt/MexicoShootingMonsterRig_l_Finger_01_02SHJnt/MexicoShootingMonsterRig_l_Finger_01_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_01_01SHJnt/MexicoShootingMonsterRig_l_Finger_01_02SHJnt/MexicoShootingMonsterRig_l_Finger_01_03SHJnt/MexicoShootingMonsterRig_l_Finger_01_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_02_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_02_01SHJnt/MexicoShootingMonsterRig_l_Finger_02_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_02_01SHJnt/MexicoShootingMonsterRig_l_Finger_02_02SHJnt/MexicoShootingMonsterRig_l_Finger_02_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_02_01SHJnt/MexicoShootingMonsterRig_l_Finger_02_02SHJnt/MexicoShootingMonsterRig_l_Finger_02_03SHJnt/MexicoShootingMonsterRig_l_Finger_02_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_03_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_03_01SHJnt/MexicoShootingMonsterRig_l_Finger_03_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_03_01SHJnt/MexicoShootingMonsterRig_l_Finger_03_02SHJnt/MexicoShootingMonsterRig_l_Finger_03_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_03_01SHJnt/MexicoShootingMonsterRig_l_Finger_03_02SHJnt/MexicoShootingMonsterRig_l_Finger_03_03SHJnt/MexicoShootingMonsterRig_l_Finger_03_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_04_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_04_01SHJnt/MexicoShootingMonsterRig_l_Finger_04_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_04_01SHJnt/MexicoShootingMonsterRig_l_Finger_04_02SHJnt/MexicoShootingMonsterRig_l_Finger_04_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Finger_04_01SHJnt/MexicoShootingMonsterRig_l_Finger_04_02SHJnt/MexicoShootingMonsterRig_l_Finger_04_03SHJnt/MexicoShootingMonsterRig_l_Finger_04_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Thumb_01_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Thumb_01_01SHJnt/MexicoShootingMonsterRig_l_Thumb_01_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Thumb_01_01SHJnt/MexicoShootingMonsterRig_l_Thumb_01_02SHJnt/MexicoShootingMonsterRig_l_Thumb_01_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_l_Arm_ElbowSHJnt/MexicoShootingMonsterRig_l_Arm_WristSHJnt/MexicoShootingMonsterRig_l_Thumb_01_01SHJnt/MexicoShootingMonsterRig_l_Thumb_01_02SHJnt/MexicoShootingMonsterRig_l_Thumb_01_03SHJnt/MexicoShootingMonsterRig_l_Thumb_01_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt/MexicoShootingMonsterRig_Neck_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt/MexicoShootingMonsterRig_Neck_02SHJnt/MexicoShootingMonsterRig_Neck_TopSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt/MexicoShootingMonsterRig_Neck_02SHJnt/MexicoShootingMonsterRig_Neck_TopSHJnt/MexicoShootingMonsterRig_Head_JawSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt/MexicoShootingMonsterRig_Neck_02SHJnt/MexicoShootingMonsterRig_Neck_TopSHJnt/MexicoShootingMonsterRig_Head_JawSHJnt/MexicoShootingMonsterRig_Head_JawEndSHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt/MexicoShootingMonsterRig_Neck_02SHJnt/MexicoShootingMonsterRig_Neck_TopSHJnt/MexicoShootingMonsterRig_Head_TopSHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt/MexicoShootingMonsterRig_Neck_02SHJnt/MexicoShootingMonsterRig_Neck_TopSHJnt/MexicoShootingMonsterRig_Head_TopSHJnt/MexicoShootingMonsterRig_l_Eye_01SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_Neck_01SHJnt/MexicoShootingMonsterRig_Neck_02SHJnt/MexicoShootingMonsterRig_Neck_TopSHJnt/MexicoShootingMonsterRig_Head_TopSHJnt/MexicoShootingMonsterRig_r_Eye_01SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_01_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_01_01SHJnt/MexicoShootingMonsterRig_r_Finger_01_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_01_01SHJnt/MexicoShootingMonsterRig_r_Finger_01_02SHJnt/MexicoShootingMonsterRig_r_Finger_01_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_01_01SHJnt/MexicoShootingMonsterRig_r_Finger_01_02SHJnt/MexicoShootingMonsterRig_r_Finger_01_03SHJnt/MexicoShootingMonsterRig_r_Finger_01_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_02_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_02_01SHJnt/MexicoShootingMonsterRig_r_Finger_02_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_02_01SHJnt/MexicoShootingMonsterRig_r_Finger_02_02SHJnt/MexicoShootingMonsterRig_r_Finger_02_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_02_01SHJnt/MexicoShootingMonsterRig_r_Finger_02_02SHJnt/MexicoShootingMonsterRig_r_Finger_02_03SHJnt/MexicoShootingMonsterRig_r_Finger_02_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_03_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_03_01SHJnt/MexicoShootingMonsterRig_r_Finger_03_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_03_01SHJnt/MexicoShootingMonsterRig_r_Finger_03_02SHJnt/MexicoShootingMonsterRig_r_Finger_03_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_03_01SHJnt/MexicoShootingMonsterRig_r_Finger_03_02SHJnt/MexicoShootingMonsterRig_r_Finger_03_03SHJnt/MexicoShootingMonsterRig_r_Finger_03_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_04_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_04_01SHJnt/MexicoShootingMonsterRig_r_Finger_04_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_04_01SHJnt/MexicoShootingMonsterRig_r_Finger_04_02SHJnt/MexicoShootingMonsterRig_r_Finger_04_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Finger_04_01SHJnt/MexicoShootingMonsterRig_r_Finger_04_02SHJnt/MexicoShootingMonsterRig_r_Finger_04_03SHJnt/MexicoShootingMonsterRig_r_Finger_04_04SHJnt
+        weight: 0
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Thumb_01_01SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Thumb_01_01SHJnt/MexicoShootingMonsterRig_r_Thumb_01_02SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Thumb_01_01SHJnt/MexicoShootingMonsterRig_r_Thumb_01_02SHJnt/MexicoShootingMonsterRig_r_Thumb_01_03SHJnt
+        weight: 1
+      - path: MexicoShootingMonsterRig_MAINSHJnt/MexicoShootingMonsterRig_ROOTSHJnt/MexicoShootingMonsterRig_Spine_01SHJnt/MexicoShootingMonsterRig_Spine_02SHJnt/MexicoShootingMonsterRig_Spine_03SHJnt/MexicoShootingMonsterRig_Spine_04SHJnt/MexicoShootingMonsterRig_Spine_TopSHJnt/MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt/MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt/MexicoShootingMonsterRig_r_Arm_ElbowSHJnt/MexicoShootingMonsterRig_r_Arm_WristSHJnt/MexicoShootingMonsterRig_r_Thumb_01_01SHJnt/MexicoShootingMonsterRig_r_Thumb_01_02SHJnt/MexicoShootingMonsterRig_r_Thumb_01_03SHJnt/MexicoShootingMonsterRig_r_Thumb_01_04SHJnt
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human:
+    - boneName: MexicoShootingMonsterRig_ROOTSHJnt
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Leg_HipSHJnt
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Leg_HipSHJnt
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Leg_KneeSHJnt
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Leg_KneeSHJnt
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Leg_AnkleSHJnt
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Leg_AnkleSHJnt
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_Spine_01SHJnt
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_Spine_03SHJnt
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_Neck_01SHJnt
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_Neck_02SHJnt
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Arm_ElbowSHJnt
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Arm_ElbowSHJnt
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Arm_WristSHJnt
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Arm_WristSHJnt
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Leg_BallSHJnt
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Leg_BallSHJnt
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_Head_JawSHJnt
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Thumb_01_01SHJnt
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Thumb_01_02SHJnt
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Thumb_01_03SHJnt
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_01_01SHJnt
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_01_02SHJnt
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_01_03SHJnt
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_02_01SHJnt
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_02_02SHJnt
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_02_03SHJnt
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_03_01SHJnt
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_03_02SHJnt
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_03_03SHJnt
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_04_01SHJnt
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_04_02SHJnt
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_l_Finger_04_03SHJnt
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Thumb_01_01SHJnt
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Thumb_01_02SHJnt
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Thumb_01_03SHJnt
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_01_01SHJnt
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_01_02SHJnt
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_01_03SHJnt
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_02_01SHJnt
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_02_02SHJnt
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_02_03SHJnt
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_03_01SHJnt
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_03_02SHJnt
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_03_03SHJnt
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_04_01SHJnt
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_04_02SHJnt
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MexicoShootingMonsterRig_r_Finger_04_03SHJnt
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: MexicoSoldier_model_004_Tpose(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonster_Body
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_MAINSHJnt
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_ROOTSHJnt
+      position: {x: -7.784237e-18, y: 0.88747084, z: -0.0566635}
+      rotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Spine_01SHJnt
+      position: {x: -0.122412816, y: 0.013548734, z: 0.0003286714}
+      rotation: {x: 0.022393525, y: -0.0025151968, z: -0.009937704, w: 0.99969673}
+      scale: {x: 1, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Spine_02SHJnt
+      position: {x: -0.08830872, y: 0.018350894, z: 0.00068618293}
+      rotation: {x: 0.00004085898, y: 0.0022007672, z: 0.017166344, w: 0.9998502}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Spine_03SHJnt
+      position: {x: -0.072606675, y: 0.010134727, z: -0.00006268969}
+      rotation: {x: -0.00005376339, y: 0.0021036714, z: 0.0033103526, w: 0.9999924}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Spine_04SHJnt
+      position: {x: -0.077573314, y: -0.019676844, z: -0.00031369584}
+      rotation: {x: 0.000044956792, y: -0.00022882217, z: -0.016500708, w: 0.99986386}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000002}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Spine_TopSHJnt
+      position: {x: -0.056677442, y: 0.0068933526, z: -0.00069551275}
+      rotation: {x: 0.022360561, y: 0.0014691052, z: -0.005871444, w: -0.99973166}
+      scale: {x: 0.99999964, y: 1, z: 0.9999996}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Arm_ClavicleSHJnt
+      position: {x: -0.013935089, y: -0.0020414595, z: -0.057260092}
+      rotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Arm_ShoulderSHJnt
+      position: {x: -0.07928753, y: 0.022923855, z: -0.0021698023}
+      rotation: {x: 0.007673383, y: -0.0029026167, z: 0.029536903, w: 0.99953}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Arm_ElbowSHJnt
+      position: {x: -0.22582908, y: 2.1316282e-16, z: -2.1316282e-16}
+      rotation: {x: 0.000000038649883, y: 0.000021228565, z: -0.00000006071058, w: 1}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Arm_WristSHJnt
+      position: {x: -0.22582854, y: 7.105427e-16, z: 0}
+      rotation: {x: 0.00046049178, y: 0.02743169, z: 0.01677492, w: 0.9994828}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_01_01SHJnt
+      position: {x: -0.1251698, y: -0.008351738, z: 0.030961992}
+      rotation: {x: -0.00000009273849, y: 0.000000008586471, z: 0.00000008940696,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_01_02SHJnt
+      position: {x: -0.024305267, y: -0.003046002, z: 0.0010301608}
+      rotation: {x: -0.00085689256, y: 0.02028911, z: 0.039770957, w: 0.99900246}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_01_03SHJnt
+      position: {x: -0.028081017, y: 0.00070783537, z: -0.00096617884}
+      rotation: {x: 0.0017610597, y: 0.0041937544, z: -0.048111856, w: 0.99883157}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_01_04SHJnt
+      position: {x: -0.025782082, y: -0.003884069, z: -0.0012822803}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_02_01SHJnt
+      position: {x: -0.12559699, y: -0.009272846, z: 0.01195808}
+      rotation: {x: -0.00000009273849, y: 0.000000008586471, z: 0.00000008940696,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_02_02SHJnt
+      position: {x: -0.02703533, y: -0.00448781, z: -0.00044112248}
+      rotation: {x: 0.0025713712, y: -0.020853013, z: 0.054557808, w: 0.9982895}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_02_03SHJnt
+      position: {x: -0.031136882, y: 0.0005345322, z: 0.0016718089}
+      rotation: {x: -0.00015938909, y: 0.007725808, z: -0.005438853, w: 0.99995536}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_02_04SHJnt
+      position: {x: -0.028551983, y: -0.0011733617, z: -0.0008300842}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_03_01SHJnt
+      position: {x: -0.12579314, y: -0.010185566, z: -0.0064731245}
+      rotation: {x: -0.00000009273849, y: 0.000000008586471, z: 0.00000008940696,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_03_02SHJnt
+      position: {x: -0.024220891, y: 0.00031512193, z: 0.0017974202}
+      rotation: {x: 0.0000000014551935, y: 0.0000000116415375, z: 0.000000029802322,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_03_03SHJnt
+      position: {x: -0.03277916, y: 0.0005164158, z: 0.00021880813}
+      rotation: {x: -0.00043283965, y: -0.018902153, z: -0.020227166, w: 0.9996167}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_03_04SHJnt
+      position: {x: -0.030821612, y: -0.0025905396, z: 0.0030802803}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_04_01SHJnt
+      position: {x: -0.12541306, y: -0.011041133, z: -0.02420012}
+      rotation: {x: 0.0029893366, y: 0.021478485, z: 0.048053935, w: 0.9986093}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_04_02SHJnt
+      position: {x: -0.020441916, y: 0.0035101243, z: -0.0002972702}
+      rotation: {x: -0.006436062, y: -0.041128695, z: -0.04307821, w: 0.99820405}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_04_03SHJnt
+      position: {x: -0.023505662, y: 0.00064804906, z: 0.002893178}
+      rotation: {x: -0.017492464, y: -0.016466297, z: -0.1384299, w: 0.99008083}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Finger_04_04SHJnt
+      position: {x: -0.024776796, y: -0.008368324, z: 0.004126293}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Thumb_01_01SHJnt
+      position: {x: -0.046751745, y: -0.0132386, z: 0.034851417}
+      rotation: {x: 0.007252237, y: 0.67406225, z: 0.05667037, w: 0.7364618}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Thumb_01_02SHJnt
+      position: {x: -0.016736409, y: 0.0038449108, z: -0.009185516}
+      rotation: {x: 0.0010005455, y: -0.03129996, z: -0.01492498, w: 0.9993982}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Thumb_01_03SHJnt
+      position: {x: -0.01940682, y: 0.0028984365, z: -0.0073793093}
+      rotation: {x: 0, y: -0.000000018626448, z: -0.00000005960463, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000002}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Thumb_01_04SHJnt
+      position: {x: -0.021309584, y: 0.00325612, z: -0.0089094695}
+      rotation: {x: 0, y: -0.22342668, z: -0, w: 0.9747208}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Arm_ClavicleSHJnt
+      position: {x: -0.013935089, y: -0.0020414595, z: 0.06290878}
+      rotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Arm_ShoulderSHJnt
+      position: {x: 0.07928753, y: 0.022923855, z: -0.0021698023}
+      rotation: {x: 0.0076734554, y: 0.0029025304, z: -0.029536556, w: 0.9995301}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.99999994}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Arm_ElbowSHJnt
+      position: {x: 0.22582908, y: 3.5527135e-16, z: 7.105427e-17}
+      rotation: {x: -0.00000005541368, y: -0.000021130074, z: 0.00000005816399, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Arm_WristSHJnt
+      position: {x: 0.22582854, y: 6.3948843e-16, z: 0}
+      rotation: {x: 0.00046057368, y: -0.027431808, z: -0.016774891, w: 0.99948287}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_01_01SHJnt
+      position: {x: 0.1251698, y: -0.008351738, z: 0.030961992}
+      rotation: {x: 0.000000007264684, y: 0.00000012436843, z: -0.000000089406946,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_01_02SHJnt
+      position: {x: 0.024305267, y: -0.003046002, z: 0.0010301608}
+      rotation: {x: -0.00085704733, y: -0.020289622, z: -0.039772715, w: 0.9990024}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_01_03SHJnt
+      position: {x: 0.028081017, y: 0.00070783537, z: -0.00096617884}
+      rotation: {x: 0.001761193, y: -0.00419354, z: 0.04811168, w: 0.9988316}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_01_04SHJnt
+      position: {x: 0.025782082, y: -0.003884069, z: -0.0012822803}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_02_01SHJnt
+      position: {x: 0.12559699, y: -0.009272846, z: 0.01195808}
+      rotation: {x: 0.000000007264684, y: 0.00000012436843, z: -0.000000089406946,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_02_02SHJnt
+      position: {x: 0.02703533, y: -0.00448781, z: -0.00044112248}
+      rotation: {x: 0.002571259, y: 0.020852678, z: -0.05455641, w: 0.99828964}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_02_03SHJnt
+      position: {x: 0.031136882, y: 0.0005345322, z: 0.0016718089}
+      rotation: {x: -0.00015938305, y: -0.007725498, z: 0.005438176, w: 0.99995536}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_02_04SHJnt
+      position: {x: 0.028551983, y: -0.0011733617, z: -0.0008300842}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_03_01SHJnt
+      position: {x: 0.12579314, y: -0.010185566, z: -0.0064731245}
+      rotation: {x: 0.000000007264684, y: 0.00000012436843, z: -0.000000089406946,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_03_02SHJnt
+      position: {x: 0.024220891, y: 0.00031512193, z: 0.0017974202}
+      rotation: {x: -0.0000000529176, y: 0.000000013169071, z: 0.00000011920926, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_03_03SHJnt
+      position: {x: 0.03277916, y: 0.0005164158, z: 0.00021880813}
+      rotation: {x: -0.00043278778, y: 0.018902656, z: 0.020228554, w: 0.9996166}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_03_04SHJnt
+      position: {x: 0.030821612, y: -0.0025905396, z: 0.0030802803}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_04_01SHJnt
+      position: {x: 0.12541306, y: -0.011041133, z: -0.02420012}
+      rotation: {x: 0.002988964, y: -0.021477032, z: -0.048047867, w: 0.99860966}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_04_02SHJnt
+      position: {x: 0.020441916, y: 0.0035101243, z: -0.0002972702}
+      rotation: {x: -0.0064358655, y: 0.04112871, z: 0.043075047, w: 0.99820423}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_04_03SHJnt
+      position: {x: 0.023505662, y: 0.00064804906, z: 0.002893178}
+      rotation: {x: -0.017492872, y: 0.016466832, z: 0.13843295, w: 0.99008036}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Finger_04_04SHJnt
+      position: {x: 0.024776796, y: -0.008368324, z: 0.004126293}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Thumb_01_01SHJnt
+      position: {x: 0.046751745, y: -0.0132386, z: 0.034851417}
+      rotation: {x: 0.0072520603, y: -0.6740629, z: -0.056669734, w: 0.7364612}
+      scale: {x: 1.0000002, y: 0.99999976, z: 1.0000004}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Thumb_01_02SHJnt
+      position: {x: 0.016736409, y: 0.0038449108, z: -0.009185516}
+      rotation: {x: 0.0010005011, y: 0.031302534, z: 0.014926003, w: 0.99939805}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Thumb_01_03SHJnt
+      position: {x: 0.01940682, y: 0.0028984365, z: -0.0073793093}
+      rotation: {x: 0, y: 0.00000004470347, z: 0.000000059604623, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Thumb_01_04SHJnt
+      position: {x: 0.021309584, y: 0.00325612, z: -0.0089094695}
+      rotation: {x: 0, y: 0.22342668, z: -0, w: 0.9747208}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Neck_01SHJnt
+      position: {x: -0.058651958, y: 0.051588655, z: 5.3290704e-17}
+      rotation: {x: 0, y: 0, z: -0.2158305, w: 0.9764309}
+      scale: {x: 1, y: 1.0000005, z: 1.0000001}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Neck_02SHJnt
+      position: {x: -0.026707845, y: -0.035505317, z: 4.4408918e-17}
+      rotation: {x: 0, y: 0, z: -0.23969725, w: -0.9708477}
+      scale: {x: 0.9999998, y: 0.99999976, z: 0.9999998}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Neck_TopSHJnt
+      position: {x: -0.03350552, y: -0.019387351, z: -8.881784e-18}
+      rotation: {x: 0, y: 0, z: -0.10699058, w: 0.9942601}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.99999994}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Head_JawSHJnt
+      position: {x: -0.017949961, y: -0.048148073, z: 4.796163e-16}
+      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Head_JawEndSHJnt
+      position: {x: -2.6645352e-17, y: -0.06780434, z: 0.050417032}
+      rotation: {x: 0.8970247, y: -0.000000006401003, z: -0.000000039621888, w: 0.4419804}
+      scale: {x: 1, y: 1, z: 0.99999976}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_Head_TopSHJnt
+      position: {x: -0.14420266, y: 2.1316282e-16, z: 1.687539e-16}
+      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Eye_01SHJnt
+      position: {x: -0.04806755, y: -0.08962868, z: 0.082165465}
+      rotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Eye_01SHJnt
+      position: {x: 0.04806755, y: -0.08962868, z: 0.082165465}
+      rotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Leg_HipSHJnt
+      position: {x: 0.04806755, y: -0.015605668, z: -0.0961351}
+      rotation: {x: -0.011838854, y: -0.7320092, z: 0.6800261, w: 0.039837062}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Leg_KneeSHJnt
+      position: {x: -0.3253699, y: -3.0198067e-16, z: -7.105427e-17}
+      rotation: {x: -0.000000007450581, y: -0.06367189, z: -0.00000009549251, w: 0.99797094}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Leg_AnkleSHJnt
+      position: {x: -0.41947427, y: -3.1974422e-16, z: 8.8817837e-17}
+      rotation: {x: 0.037943147, y: 0.027091105, z: 0.017416254, w: 0.9987608}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Leg_BallSHJnt
+      position: {x: -0.07210133, y: -8.8817837e-17, z: 0.12016887}
+      rotation: {x: 0.00000023841855, y: 0.7071115, z: 0.00000083445946, w: 0.7071022}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_l_Leg_ToeSHJnt
+      position: {x: -0.07210133, y: 3.5527136e-17, z: 1.1007363e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Leg_HipSHJnt
+      position: {x: 0.04806755, y: -0.015605668, z: 0.0961351}
+      rotation: {x: -0.03983691, y: -0.6800261, z: 0.73200923, w: 0.011838646}
+      scale: {x: 0.9999998, y: 1, z: 0.99999976}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Leg_KneeSHJnt
+      position: {x: -0.3253699, y: -7.105427e-17, z: -1.1546319e-16}
+      rotation: {x: -0.000000020489097, y: -0.06367144, z: -0.00000009872019, w: 0.99797094}
+      scale: {x: 0.99999976, y: 0.9999998, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Leg_AnkleSHJnt
+      position: {x: -0.41947427, y: 2.3909763e-14, z: -5.4622974e-16}
+      rotation: {x: -0.037943255, y: 0.027090978, z: -0.017416107, w: 0.9987608}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Leg_BallSHJnt
+      position: {x: -0.07210133, y: -1.0658141e-16, z: 0.12016887}
+      rotation: {x: -0.0000001490116, y: 0.7071115, z: -0.00000065564694, w: 0.7071022}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.99999976}
+      transformModified: 1
+    - name: MexicoShootingMonsterRig_r_Leg_ToeSHJnt
+      position: {x: -0.07210133, y: -1.7763568e-17, z: 1.13838515e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 7786cfca076b5a4479f089f58ff91b21,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

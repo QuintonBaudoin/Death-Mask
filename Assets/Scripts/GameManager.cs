@@ -22,8 +22,9 @@ public static class GameManager
         if (SpawnLocation != null && p != null)
             p.transform.position = SpawnLocation.transform.position;
         else
-            throw new System.Exception("Problem Recalling" + p + " to " + SpawnLocation);
-    }    
+            throw new System.Exception("Problem Recalling " + p + " to " + SpawnLocation);
+    }
+
     public static void PlayerRecall(Vector3 pos)
     {
         GameObject p = GameObject.FindGameObjectWithTag("Player");
@@ -32,7 +33,7 @@ public static class GameManager
         p.transform.position = pos;
 
         else
-            throw new System.Exception("Problem Recalling" + p + " to " + pos);
+            throw new System.Exception("Problem Recalling " + p + " to " + pos);
 
 
     }

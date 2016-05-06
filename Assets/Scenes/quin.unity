@@ -427,6 +427,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1763029712}
   - 114: {fileID: 1763029711}
+  - 114: {fileID: 1763029713}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -445,6 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2218ac4e811d0854fb2b8775c6e348ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followTarget: {fileID: 0}
   smoothing: 2
   FOV: 80
 --- !u!4 &1763029712
@@ -460,3 +462,15 @@ Transform:
   - {fileID: 1337179884}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1763029713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1763029710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff45c16133792647b77366748a4916b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: []
