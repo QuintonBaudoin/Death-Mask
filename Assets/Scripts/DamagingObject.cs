@@ -7,6 +7,8 @@ public class DamagingObject : MonoBehaviour
 {
     bool _active = false;
 
+    public float NockBack;
+
     public bool active
     {
         get
@@ -35,6 +37,7 @@ public class DamagingObject : MonoBehaviour
         { return;   }
         coll.GetComponent<IDamageable>().TakeDamage();
 
+        coll.gameObject.GetComponent<Rigidbody>().AddForce(GetComponentInParent<Transform>().forward.x * NockBack,0,0);
 
     }
 
