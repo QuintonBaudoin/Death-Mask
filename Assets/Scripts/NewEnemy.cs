@@ -11,7 +11,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
     public bool LockY;
     public bool m_OnGround;
 
-    public float SecondsPerDamage;
+    public float SecondsPerDamage = .5f;
 
     GameObject target = null;
 
