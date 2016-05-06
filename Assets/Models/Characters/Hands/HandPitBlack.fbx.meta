@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: bd63f15422eb07245811be7f2cc0042a
+timeCreated: 1462550363
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ForearmGrey
+    100002: //RootNode
+    100004: PitHand_Joint_ArmJointBottom
+    100006: PitHand_Joint_ArmJointLower
+    100008: PitHand_Joint_ArmJointMiddle
+    100010: PitHand_Joint_ArmJointTop
+    100012: PitHand_Joint_LowerIndex
+    100014: PitHand_Joint_LowerMiddle
+    100016: PitHand_Joint_LowerPinky
+    100018: PitHand_Joint_LowerRing
+    100020: PitHand_Joint_LowerThumb
+    100022: PitHand_Joint_MiddleIndex
+    100024: PitHand_Joint_MiddleMiddle
+    100026: PitHand_Joint_MiddlePinky
+    100028: PitHand_Joint_MiddleRing
+    100030: PitHand_Joint_MiddleThumb
+    100032: PitHand_Joint_ThumbTip
+    100034: PitHand_Joint_TipIndex
+    100036: PitHand_Joint_TipMiddle
+    100038: PitHand_Joint_TipPinky
+    100040: PitHand_Joint_TipRing
+    100042: PitHand_Joint_TopIndex
+    100044: PitHand_Joint_TopMiddle
+    100046: PitHand_Joint_TopPinky
+    100048: PitHand_Joint_TopRing
+    100050: PitHand_Joint_Wrist
+    400000: ForearmGrey
+    400002: //RootNode
+    400004: PitHand_Joint_ArmJointBottom
+    400006: PitHand_Joint_ArmJointLower
+    400008: PitHand_Joint_ArmJointMiddle
+    400010: PitHand_Joint_ArmJointTop
+    400012: PitHand_Joint_LowerIndex
+    400014: PitHand_Joint_LowerMiddle
+    400016: PitHand_Joint_LowerPinky
+    400018: PitHand_Joint_LowerRing
+    400020: PitHand_Joint_LowerThumb
+    400022: PitHand_Joint_MiddleIndex
+    400024: PitHand_Joint_MiddleMiddle
+    400026: PitHand_Joint_MiddlePinky
+    400028: PitHand_Joint_MiddleRing
+    400030: PitHand_Joint_MiddleThumb
+    400032: PitHand_Joint_ThumbTip
+    400034: PitHand_Joint_TipIndex
+    400036: PitHand_Joint_TipMiddle
+    400038: PitHand_Joint_TipPinky
+    400040: PitHand_Joint_TipRing
+    400042: PitHand_Joint_TopIndex
+    400044: PitHand_Joint_TopMiddle
+    400046: PitHand_Joint_TopPinky
+    400048: PitHand_Joint_TopRing
+    400050: PitHand_Joint_Wrist
+    4300000: ForearmGrey
+    9500000: //RootNode
+    13700000: ForearmGrey
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
