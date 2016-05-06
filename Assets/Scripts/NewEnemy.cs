@@ -84,6 +84,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
   
     public void TakeDamage()
     {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
         Health--;
     }
 
