@@ -101,10 +101,11 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         CapsuleCenter = GetComponent<CapsuleCollider>().center;
 
         Health = _Health;
-        MaxHealth = _MaxHealth;       
+        MaxHealth = _MaxHealth;
 
         m_Rigid = gameObject.GetComponent<Rigidbody>();
-        m_Rigid.constraints = RigidbodyConstraints.FreezeRotation;
+        m_Rigid.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
+
 
     }
     void FixedUpdate()
