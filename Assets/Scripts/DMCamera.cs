@@ -12,7 +12,8 @@ using System.Collections;
 //[ExecuteInEditMode]
 public class DMCamera : MonoBehaviour
 {
-    Transform followTarget;
+    [SerializeField]
+    private Transform followTarget;
     Transform cameraChild;
     Vector3 leftBoundary, rightBoundary;
     bool passedStart;
@@ -46,15 +47,18 @@ public class DMCamera : MonoBehaviour
         // have to switch sin() and cos() because Unity's unit circle is set back 90 degrees
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
-
+    
     void Start()
     {
         cameraOffset = transform.position;
         //track player for camera scrolling
-        followTarget = GameObject.FindGameObjectWithTag("Player").transform;
+       // followTarget = FindObjectOfType<PlayerCharacter>().transform;
+        followTarget = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        print(followTarget.gameObject);
+        print(followTarget.position);
         cameraChild = transform.GetChild(0);
 
-        FOV = Camera.main.fieldOfView + tempFOVfix;
+        //FOV = Camera.main.fieldOfView + tempFOVfix;
     }
 
     void Update()

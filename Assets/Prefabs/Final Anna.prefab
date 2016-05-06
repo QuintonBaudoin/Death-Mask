@@ -1288,8 +1288,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.47, y: 0.145, z: -0.1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -41.5, y: 0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 439920}
@@ -2251,8 +2251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169e1963fa21248408dcac9b2576efbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Health: 1
-  _MaxHealth: 1
+  _Health: 3
+  _MaxHealth: 3
   _Lives: 1
   m_Speed: 5
   m_CurrentSpeed: 0
@@ -2330,7 +2330,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 77a4d0f962bc63c4692cda839e9ae908, type: 2}
+  - {fileID: 2100000, guid: d997e69a1270a7a4d8f0a35010056d82, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
