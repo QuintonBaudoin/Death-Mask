@@ -32,9 +32,7 @@ public class DamagingObject : MonoBehaviour
             active = true;
         else active = false;
         if (coll.isTrigger || coll.GetComponent<IDamageable>() == null || active != true)
-        {
-            return;
-        }
+        { return;   }
         coll.GetComponent<IDamageable>().TakeDamage();
 
 
