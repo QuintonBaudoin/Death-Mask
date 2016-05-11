@@ -110,7 +110,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
         {
             m_OnGround = true;
         }
-        else m_OnGround = false;
+        else { m_OnGround = false;  }
     }
     void Start()
     {
@@ -148,7 +148,8 @@ public class NewEnemy : MonoBehaviour, IDamageable
 
         vel.x = transform.forward.x * Speed;
 
-        GetComponent<Rigidbody>().velocity = vel;
+        Rigid.velocity = vel;
+        
     }
     void HandleChase()
     {
