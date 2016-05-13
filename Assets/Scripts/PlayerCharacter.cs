@@ -16,7 +16,7 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
    
 
     public float m_Speed = 5.0f;
-    public float m_CurrentSpeed;
+  
 
     float CapsuleHeight;
     Vector3 CapsuleCenter;
@@ -30,6 +30,11 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     [SerializeField]
     public GameObject m_WeaponA;
 
+    /// <summary>
+    /// IDamageable.Health
+    /// 
+    /// Used to manage health
+    /// </summary>
     public int Health
     {
         get
@@ -51,6 +56,11 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
         }
     }
+    /// <summary>
+    /// IDamageable.MaxHealth
+    /// 
+    /// Used to manage max health
+    /// </summary>
     public int MaxHealth
     {
         get
@@ -71,6 +81,11 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
         }
     }
+    /// <summary>
+    /// IDamageable.Alive
+    /// 
+    /// Used to manage Alive
+    /// </summary>s
     public bool Alive
     {
         get
@@ -88,6 +103,10 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         }
     }
 
+   
+   /// <summary>
+   /// manages lives
+   /// </summary>
     public int Lives
     {
         get { return _Lives; }
@@ -97,13 +116,16 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
     void Start()
     {
+        ///Sets memory for capsule stats
         CapsuleHeight = GetComponent<CapsuleCollider>().height;
         CapsuleCenter = GetComponent<CapsuleCollider>().center;
-
+        ///sets a refrence to rigidbody
+        m_Rigid = gameObject.GetComponent<Rigidbody>();
+        //Funnels starting stats into health and max health to insure correct stats;
         Health = _Health;
         MaxHealth = _MaxHealth;
 
-        m_Rigid = gameObject.GetComponent<Rigidbody>();
+        //Sets constraints
         m_Rigid.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
 
 
@@ -112,11 +134,15 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     {
         CheckForGround();
         ResizeCapsule();
-        CheckCurrentSpeed();
-
+       
     }
 
-
+    /// <summary>
+    /// Used by the CharacterController
+    /// </summary>
+    /// <param name="direction">will ither be -1, +1, or 0 to give direction for wich way to move</param>
+    /// <param name="jump">Bool to say weather jump key was pressed or not</param>
+    /// <param name="attack">bool to say weather attack keys or not</param>
     public void ReceiveInput(int direction, bool jump, bool attack)
     {
         if (direction > 1)
@@ -127,74 +153,79 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         HandleAttack(attack);
 
 
-
+       
     }
 
-
+    /// <summary>
+    /// Handles Movement
+    /// </summary>
+    /// <param name="direction"></param>
     void HandleMovement(float direction)
-    {   Vector3 pos = m_Rigid.position;
+    {   Vector3 pos = m_Rigid.position;//gives me position based on rigid body
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            direction = 0;
-        float movement = direction * m_Speed * Time.deltaTime;
+            direction = 0;//Sets direction to 0
+        float movement = direction * m_Speed * Time.deltaTime;//Calculates the amount of movement based on direction, speed, and time
 
         if (Mathf.Abs(movement) > 0)
         {
 
-            GetComponent<Animator>().SetBool("moving", true);
-            Vector3 forward = gameObject.transform.forward;
-            forward.x = direction;
-            gameObject.transform.forward = forward;
+            GetComponent<Animator>().SetBool("moving", true);///Sets weather moving into animator
+            Vector3 forward = gameObject.transform.forward;///sets tmp variable based on our forward
+            forward.x = direction;//changes forward based on direction
+            gameObject.transform.forward = forward;//sets forward
 
-            pos.x += movement;
+            pos.x += movement;///ads movment to our position
         }
 
       else
         { 
-            GetComponent<Animator>().SetBool("moving", false);
+            GetComponent<Animator>().SetBool("moving", false);//we not movin
             
         }
 
 
-        m_Rigid.MovePosition(pos);
+        m_Rigid.MovePosition(pos);///Makes anna move
     }
+    /// <summary>
+    ///Handles jump
+    /// </summary>
     void HandleJump(bool jump)
     {
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack")) //prevents us from jumping when attackign
             jump = false;
 
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("jump"))
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("jump"))///prevents jump when jumping
             jump = false;
 
-        if (m_OnGround && jump)
+        if (m_OnGround && jump)///sees if we are on ground or jumping
         {
 
-            GetComponent<Animator>().SetTrigger("jump");
-            Vector3 vel = m_Rigid.velocity;
-
-            vel.y = m_JumpPower;
-
-            m_Rigid.velocity = vel;
+            GetComponent<Animator>().SetTrigger("jump"); //triggers jump animation
+          
+            m_Rigid.AddForce(0, m_JumpPower, 0,ForceMode.Impulse);///Adds force up
         }
 
     }
     void HandleAttack(bool attack)
     {
 
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))//if attacking keeps weapon damage active
         { m_WeaponA.GetComponent<DamagingObject>().active = true; return; }
-        if (m_WeaponA == null || m_OnGround == false)
+
+        if (m_WeaponA == null || m_OnGround == false)///If no weapon or not on ground we cant attack
             return;
 
-        if (m_WeaponA.GetComponent<DamagingObject>())
+        if (m_WeaponA.GetComponent<DamagingObject>())//if weapon has correct script we set it to attack and start attack animatoin
         {
             if (attack == true)
                 GetComponent<Animator>().SetTrigger("attack");
 
 
-            m_WeaponA.GetComponent<DamagingObject>().active = attack;
         }
-    }
-
+    }    
+    /// <summary>
+    ///Resizes capsule to match jump animation
+    /// </summary>
     void ResizeCapsule()
     {
         CapsuleCollider c = GetComponent<CapsuleCollider>();
@@ -213,19 +244,9 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
     }
 
-    void CheckCurrentSpeed()
-    {
-        // print(GetComponent<Rigidbody>().velocity.x + "  " + GetComponent<Rigidbody>().velocity.y + " " + GetComponent<Rigidbody>().velocity.z);
-
-
-        m_CurrentSpeed = Vector3.Magnitude(m_Rigid.velocity);
-
-        if (m_CurrentSpeed < .01)
-        {
-            m_CurrentSpeed = 0;
-        }
-
-    }
+    /// <summary>
+    /// Checks if we are on ground
+    /// </summary>
     void CheckForGround()
     {
         RaycastHit hit;
@@ -234,25 +255,35 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         {
             m_OnGround = true;
         }
-        else m_OnGround = false;
+        else { m_OnGround = false; GetComponent<Animator>().ResetTrigger("attack"); }
 
         GetComponent<Animator>().SetBool("airborn", !m_OnGround);
     }
 
     
-
+    /// <summary>
+    /// Gives damge
+    /// </summary>
     public void TakeDamage()
     {
         Health--;
     }
+    /// <summary>
+    /// when die(but with lives)
+    /// </summary>
     public void OnDeath()
     {  
         GameManager.PlayerRecall();
     }
+    /// <summary>
+    /// when lives hit 0
+    /// </summary>
     void NoMoreLives()
     {
         GameManager.ResetLevel(); 
     }
     
+   
 
 }
+ 
