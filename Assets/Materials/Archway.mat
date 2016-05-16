@@ -26,7 +26,7 @@ Material:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 540685c25dcba0a4b9c2c876013ff758, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -34,6 +34,13 @@ Material:
           name: _DetailNormalMap
         second:
           m_Texture: {fileID: 2800000, guid: d51e2e4291ea595499125021043b17ea, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -69,14 +76,7 @@ Material:
           name: _DetailAlbedoMap
         second:
           m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _MetallicGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
+          m_Scale: {x: 2.53, y: 2}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
@@ -93,10 +93,6 @@ Material:
         second: 0.5
       data:
         first:
-          name: _Parallax
-        second: 0.02
-      data:
-        first:
           name: _ZWrite
         second: 1
       data:
@@ -105,8 +101,16 @@ Material:
         second: 0
       data:
         first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
           name: _BumpScale
         second: 3
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
       data:
         first:
           name: _OcclusionStrength
@@ -123,10 +127,6 @@ Material:
         first:
           name: _Mode
         second: 0
-      data:
-        first:
-          name: _Metallic
-        second: 0
     m_Colors:
       data:
         first:
@@ -135,4 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+        second: {r: 0.49264705, g: 0.49264705, b: 0.49264705, a: 1}
