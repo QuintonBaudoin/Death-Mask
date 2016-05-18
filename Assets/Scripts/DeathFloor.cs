@@ -8,7 +8,7 @@ public class DeathFloor : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             other.GetComponent<PlayerCharacter>().OnDeath();
-            other.GetComponent<PlayerCharacter>().TakeDamage();
+            other.GetComponent<PlayerCharacter>().TakeDamage(gameObject);
         }
     }
 }

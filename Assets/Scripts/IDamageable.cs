@@ -10,6 +10,6 @@ public interface IDamageable
     bool Alive
     { get; set; }
     
-    void TakeDamage();
+    void TakeDamage(GameObject Hitter);
     void OnDeath();
 }

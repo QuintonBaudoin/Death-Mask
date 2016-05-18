@@ -75,8 +75,8 @@ public class Enemy : MonoBehaviour, IDamageable
             Alive = false;
     }
 
-    [ContextMenu ("Damage")]
-    public void TakeDamage()
+    //[ContextMenu ("Damage")]
+    public void TakeDamage(GameObject hitter)
     {
         // trigger animation
         Health --;
@@ -91,7 +91,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         if(c.gameObject.GetComponent<IDamageable>() != null && c.tag == "Player")
         {
-            c.GetComponent<IDamageable>().TakeDamage();
+            c.GetComponent<IDamageable>().TakeDamage(gameObject);
         }
     }
 }
