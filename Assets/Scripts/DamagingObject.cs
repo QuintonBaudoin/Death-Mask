@@ -35,7 +35,7 @@ public class DamagingObject : MonoBehaviour
         else active = false;
         if (coll.isTrigger || coll.GetComponent<IDamageable>() == null || active != true)
         { return;   }
-        coll.GetComponent<IDamageable>().TakeDamage();
+        coll.GetComponent<IDamageable>().TakeDamage(gameObject);
 
         coll.gameObject.GetComponent<Rigidbody>().AddForce(GetComponentInParent<Transform>().forward.x * NockBack,0,0);
 
