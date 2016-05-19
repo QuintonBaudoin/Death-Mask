@@ -82,11 +82,20 @@ public class NewEnemy : MonoBehaviour, IDamageable
         StartCoroutine("Death");
     }
   
-    public void TakeDamage()
+    public void TakeDamage(GameObject other)
     {
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        Vector3 a = new Vector3(other.transform.forward.x, 0, 0);
+           GetComponent<Rigidbody>().AddForce(other.transform.forward.x * 80, 0.3f * 80, 0, ForceMode.Impulse);
+        //ForceMode.Impulse
         Health--;
     }
+
+
+
+
+
+
+
 
     void CheckFront()
     {
@@ -177,7 +186,7 @@ public class NewEnemy : MonoBehaviour, IDamageable
         Rigid.velocity = vel;
     }
 
-    IEnumerator TurningTimer()
+    IEnumerator TurningTimer()  // Hit Delay
     {
 
         while (true)
@@ -210,7 +219,9 @@ public class NewEnemy : MonoBehaviour, IDamageable
             StopCoroutine("Hit");
         }
     }
-    IEnumerator Death()
+
+
+    IEnumerator Death() 
     {
         Alive = false;
         foreach (Collider c in GetComponents<Collider>())
@@ -219,21 +230,21 @@ public class NewEnemy : MonoBehaviour, IDamageable
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         GetComponent<Animator>().SetTrigger("Death");
         StopCoroutine("TurningTimer");
-        
+
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
-    IEnumerator Hit(IDamageable d)
+    IEnumerator Hit(IDamageable d)  
     {
         while(true)
         {                    
-            d.TakeDamage();          
+            d.TakeDamage(gameObject);          
             yield return new WaitForSeconds(SecondsPerDamage);
         }
     }
+
     void OnTriggerEnter(Collider c)
     {
-
         if (c.gameObject.tag == "Player" && c.gameObject.GetComponent<IDamageable>() != null)
         {
             StopCoroutine("TurningTimer");
@@ -242,8 +253,6 @@ public class NewEnemy : MonoBehaviour, IDamageable
     }
     void OnTriggerExit(Collider c)
     {
-       
-
         if (c.gameObject == target)
         {
             StartCoroutine("TurningTimer");
