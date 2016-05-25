@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -66,7 +66,8 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000248, guid: bd5d96869db13ff4ea4303fe565be16d,
+    type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -539,7 +540,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 405380, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_LocalPosition.z
@@ -565,29 +566,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
-      propertyPath: TurnAroundTimer
-      value: 7.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
-      propertyPath: SecondsPerDamage
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
-      propertyPath: m_MaxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
-      propertyPath: m_Health
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
-      propertyPath: m_Constraints
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
-      propertyPath: Speed
-      value: 0.5
+      propertyPath: m_Drag
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
@@ -674,7 +655,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 423165734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: 3.31, z: -6}
+  m_LocalPosition: {x: -40, y: 2.47, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1219,7 +1200,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405660, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: 0.208
       objectReference: {fileID: 0}
     - target: {fileID: 405660, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1244,6 +1225,10 @@ Prefab:
     - target: {fileID: 405660, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505840, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
+      propertyPath: m_Center.z
+      value: 0.43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 565a87a4efc8dde47873f352550a8286, type: 2}
@@ -1614,11 +1599,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_MaxHealth
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_Health
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_Constraints
@@ -1627,6 +1612,22 @@ Prefab:
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: Speed
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: LockY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: DoesItWalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
@@ -1740,11 +1741,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_MaxHealth
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_Health
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_Constraints
@@ -1753,6 +1754,22 @@ Prefab:
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: Speed
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: LockY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: DoesItWalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
@@ -1810,11 +1827,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_MaxHealth
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_Health
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: m_Constraints
@@ -1823,6 +1840,22 @@ Prefab:
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: Speed
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: LockY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: DoesItWalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
@@ -1968,6 +2001,26 @@ Prefab:
     - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
       propertyPath: Speed
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: LockY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: SecondsPerDamage
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401112, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: DoesItWalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426722, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f910634c531e6a49ae529aa3b3d4d57, type: 2}
