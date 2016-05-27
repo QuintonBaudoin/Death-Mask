@@ -4,31 +4,23 @@ using System;
 
 public class PlayerCharacter : MonoBehaviour, IDamageable
 {
-
-    [SerializeField]
-    private int _Health= 1;
-    [SerializeField]
-    private int _MaxHealth = 1;
-    [SerializeField]
-
-    private int _Lives = 1;
+    [SerializeField] private int _Health    = 1;
+    [SerializeField] private int _MaxHealth = 1;
+    [SerializeField] private int _Lives     = 1;
     private bool _Alive = true;
-   
 
     public float m_Speed = 5.0f;
-  
 
-    float CapsuleHeight;
-    Vector3 CapsuleCenter;
+    private float CapsuleHeight;    // For Capsule resizing 
+    private Vector3 CapsuleCenter;  // For Capsule resizing
 
     // public float m_jumpSpeed = 5.0f;
-    public float m_JumpPower = 5.0f;
-    bool m_OnGround;
+    [SerializeField] private float m_JumpPower = 5.0f;
+    private bool m_OnGround;
    
-    Rigidbody m_Rigid;
+    Rigidbody m_Rigid;  // Our RigidBody    // Grabbed at Start()
 
-    [SerializeField]
-    public GameObject m_WeaponA;
+    [SerializeField] private GameObject m_WeaponA;
 
     /// <summary>
     /// IDamageable.Health
@@ -130,11 +122,11 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
 
 
     }
+
     void FixedUpdate()
     {
         CheckForGround();
         ResizeCapsule();
-       
     }
 
     /// <summary>
@@ -151,9 +143,6 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
         HandleMovement(direction);
         HandleJump(jump);
         HandleAttack(attack);
-
-
-       
     }
 
     /// <summary>
@@ -161,14 +150,16 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     /// </summary>
     /// <param name="direction"></param>
     void HandleMovement(float direction)
-    {   Vector3 pos = m_Rigid.position;//gives me position based on rigid body
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            direction = 0;//Sets direction to 0
-        float movement = direction * m_Speed * Time.deltaTime;//Calculates the amount of movement based on direction, speed, and time
+    {
+        Vector3 pos = m_Rigid.position;//gives me position based on rigid body
+
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack"))   // If attacking, can not move
+            direction = 0;  //Sets direction to 0
+
+        float movement = direction * m_Speed * Time.deltaTime;  //Calculates the amount of movement based on direction, speed, and time
 
         if (Mathf.Abs(movement) > 0)
         {
-
             GetComponent<Animator>().SetBool("moving", true);///Sets weather moving into animator
             Vector3 forward = gameObject.transform.forward;///sets tmp variable based on our forward
             forward.x = direction;//changes forward based on direction
@@ -180,12 +171,18 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
       else
         { 
             GetComponent<Animator>().SetBool("moving", false);//we not movin
-            
         }
-
 
         m_Rigid.MovePosition(pos);///Makes anna move
     }
+
+
+
+
+
+
+
+
     /// <summary>
     ///Handles jump
     /// </summary>
@@ -264,7 +261,7 @@ public class PlayerCharacter : MonoBehaviour, IDamageable
     /// <summary>
     /// Gives damge
     /// </summary>
-    public void TakeDamage()
+    public void TakeDamage(GameObject other)
     {
         Health--;
     }

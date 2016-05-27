@@ -8,12 +8,14 @@ public class NewEnemy : MonoBehaviour, IDamageable
     public float TurnAroundTimer = 1;
     public float Speed;
 
-    public bool LockY;
+    public bool DoesItWalk;
     public bool m_OnGround;
 
     public float SecondsPerDamage = .5f;
 
     GameObject target = null;
+
+    Rigidbody m_Rigid;
 
     [SerializeField]
     private int m_Health;
@@ -82,26 +84,17 @@ public class NewEnemy : MonoBehaviour, IDamageable
         StartCoroutine("Death");
     }
   
-    public void TakeDamage()
+    public void TakeDamage(GameObject other)
     {
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        Vector3 a = new Vector3(other.transform.forward.x, 0, 0);
+           m_Rigid.AddForce(other.transform.forward.x * 2, 3, 0, ForceMode.Impulse);
+        //ForceMode.Impulse
         Health--;
     }
 
-    void CheckFront()
-    {
-        RaycastHit hit;
 
-        Ray ray = new Ray(transform.position, transform.forward);
-        if (LockY)
-            ray.origin = new Vector3(ray.origin.x, ray.origin.y + .1f, ray.origin.z);
-        if (Physics.Raycast(ray, out hit, TurnAwayDistance))
-        {
-            if (hit.collider.gameObject.tag != "Player") ;
-                
-        }
 
-    }
+
     void CheckGround()
     {
         RaycastHit hit;
@@ -118,7 +111,9 @@ public class NewEnemy : MonoBehaviour, IDamageable
         Health = m_Health;
         MaxHealth = m_MaxHealth;
         transform.forward = new Vector3(1, 0, 0);
-        GetComponent<Rigidbody>().freezeRotation = true;
+
+        m_Rigid = GetComponent<Rigidbody>();
+        m_Rigid.freezeRotation = true;
 
     }
     void FixedUpdate()
@@ -136,48 +131,43 @@ public class NewEnemy : MonoBehaviour, IDamageable
     void HandlePatrol()
     {
 
-        if (!m_OnGround && LockY || !Alive)
+        if (!m_OnGround && DoesItWalk || !Alive)
             return;
         
-        CheckFront();
-        Rigidbody Rigid = GetComponent<Rigidbody>();
-        Vector3 vel = Rigid.velocity;
+       
+        Vector3 pos = m_Rigid.position;
 
-        if (!LockY)
-            vel.y = 0;
-
-        vel.x = transform.forward.x * Speed;
-
-        Rigid.velocity = vel;
+        pos.x += transform.forward.x * Speed * Time.deltaTime;
+        m_Rigid.MovePosition(pos);
         
     }
     void HandleChase()
     {
         if (!Alive)
             return;
-        Rigidbody Rigid = GetComponent<Rigidbody>();
-        Vector3 vel = Rigid.velocity;
+       
+        Vector3 pos = m_Rigid.position;
         Vector3 dirToPlayer = Vector3.Normalize(new Vector3(target.transform.position.x, target.transform.position.y + 1, target.transform.position.z) - transform.position);
 
         transform.forward = dirToPlayer;
 
         dirToPlayer.z = 0; ///Keeps the game in 2D movement
-        if (LockY)
+        if (DoesItWalk)
         {
             dirToPlayer.y = 0;
             transform.forward = dirToPlayer;
-            vel.x = dirToPlayer.x * Speed;
+            pos.x += transform.forward.x * Speed *Time.deltaTime;
         }
         else
         {
             
             transform.forward = dirToPlayer;
-            vel = dirToPlayer * Speed;
+            pos += transform.forward * Speed * Time.deltaTime;
         }
-        Rigid.velocity = vel;
+        m_Rigid.MovePosition(pos);
     }
 
-    IEnumerator TurningTimer()
+    IEnumerator TurningTimer()  // Hit Delay
     {
 
         while (true)
@@ -202,7 +192,6 @@ public class NewEnemy : MonoBehaviour, IDamageable
         //    transform.forward = -transform.forward;
         //}
     }
-
     void OnCollisionExit(Collision c)
     {
         if (c.collider.GetComponent<IDamageable>() != null && c.collider.gameObject.tag == "Player")
@@ -210,30 +199,33 @@ public class NewEnemy : MonoBehaviour, IDamageable
             StopCoroutine("Hit");
         }
     }
-    IEnumerator Death()
+
+
+    IEnumerator Death() 
     {
         Alive = false;
+     
         foreach (Collider c in GetComponents<Collider>())
             c.enabled = false;
-        GetComponent<Rigidbody>().Sleep();
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         GetComponent<Animator>().SetTrigger("Death");
         StopCoroutine("TurningTimer");
-        
+
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
+       
     }
-    IEnumerator Hit(IDamageable d)
+    IEnumerator Hit(IDamageable d)  
     {
         while(true)
         {                    
-            d.TakeDamage();          
+            d.TakeDamage(gameObject);          
             yield return new WaitForSeconds(SecondsPerDamage);
         }
     }
+
     void OnTriggerEnter(Collider c)
     {
-
         if (c.gameObject.tag == "Player" && c.gameObject.GetComponent<IDamageable>() != null)
         {
             StopCoroutine("TurningTimer");
@@ -242,8 +234,6 @@ public class NewEnemy : MonoBehaviour, IDamageable
     }
     void OnTriggerExit(Collider c)
     {
-       
-
         if (c.gameObject == target)
         {
             StartCoroutine("TurningTimer");
