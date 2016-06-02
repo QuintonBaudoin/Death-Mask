@@ -77,7 +77,85 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerIndex
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerIndex/PitHand_Joint_MiddleIndex
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerIndex/PitHand_Joint_MiddleIndex/PitHand_Joint_TopIndex
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerIndex/PitHand_Joint_MiddleIndex/PitHand_Joint_TopIndex/PitHand_Joint_TipIndex
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerMiddle
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerMiddle/PitHand_Joint_MiddleMiddle
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerMiddle/PitHand_Joint_MiddleMiddle/PitHand_Joint_TopMiddle
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerMiddle/PitHand_Joint_MiddleMiddle/PitHand_Joint_TopMiddle/PitHand_Joint_TipMiddle
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerPinky
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerPinky/PitHand_Joint_MiddlePinky
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerPinky/PitHand_Joint_MiddlePinky/PitHand_Joint_TopPinky
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerPinky/PitHand_Joint_MiddlePinky/PitHand_Joint_TopPinky/PitHand_Joint_TipPinky
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerRing
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerRing/PitHand_Joint_MiddleRing
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerRing/PitHand_Joint_MiddleRing/PitHand_Joint_TopRing
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerRing/PitHand_Joint_MiddleRing/PitHand_Joint_TopRing/PitHand_Joint_TipRing
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerThumb
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerThumb/PitHand_Joint_MiddleThumb
+        weight: 1
+      - path: PitHand_Joint_ArmJointBottom/PitHand_Joint_ArmJointLower/PitHand_Joint_ArmJointMiddle/PitHand_Joint_ArmJointTop/PitHand_Joint_Wrist/PitHand_Joint_LowerThumb/PitHand_Joint_MiddleThumb/PitHand_Joint_ThumbTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
