@@ -21,4 +21,9 @@ public class GUIButton : MonoBehaviour
         SceneManager.LoadScene("IntroMenu");
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
 }
